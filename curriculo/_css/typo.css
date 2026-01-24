@@ -1,0 +1,97 @@
+@import url("reset.css");
+
+* html .clearBoth { /* Peekaboo */
+	height: 1%;
+}
+body, table, p, input, select, textarea, button, div, a, label, ul, li, pre, cite, legend {
+	color: #000;
+	font: normal 15px Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+html, body {
+	border: 0; 
+	margin: 0; 
+	padding: 0; 
+	width: 100%; 
+	height: 100%;
+}
+form {
+	display: inline; 
+	margin: 0; 
+	padding: 0; 
+	height: 25px; 
+	line-height: 25px;
+}
+input, textarea {
+	border: solid 1px #BBB; 
+	cursor: pointer;
+	cursor: hand;
+}
+
+
+.mail_ok {
+	color:#900;
+	text-align:center;
+	font-size:18px;
+}
+.mail_no {
+	color: #F00;
+	text-align:center;
+}
+
+
+#div {
+	padding: 10px;
+}
+#div h1 {
+	font: bold 14px verdana, arial, helvetica, sans-serif;
+	margin-bottom: 15px;
+}
+#frm fieldset {
+	border: 1px solid #FFF;
+	width: 500px;
+	margin: 10px 0px;
+	padding: 10px;
+}
+#frm fieldset legend {
+	color: #FFFFFF;
+	font-size: 22px;
+	font-weight: bold;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+#frm fieldset label {
+	display: block;
+	color: #000;
+}
+#frm p,
+#frm span {
+	display: block;
+	border-bottom: dashed 1px #CC6600;
+	padding: 10px 0px 10px 15px;
+}
+#frm span {
+	text-align: right;
+	padding-right: 10px;
+}
+#frm input,
+#frm textarea {
+	color: #555;
+	padding: 4px;
+	width: 450px;
+}
+#frm .text {
+	height: 70px;
+}
+#frm .file {
+	font-weight: normal;
+	padding-right: 7px;
+	width: 350px;
+}
+#frm .send {
+	color: #FFFFFF;
+	background: #065322;
+	border: solid 2px #065322;
+	font-weight: bold;
+	width: 130px;
+}
