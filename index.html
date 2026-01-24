@@ -67,21 +67,30 @@
 </a>
 
 <script>
-  // Quando rolar a página, muda a posição do botão
   window.addEventListener("scroll", function() {
     const btn = document.getElementById("whatsapp-btn");
-    if (window.scrollY > 200) { 
-      // Se rolou mais de 200px, fixa embaixo
+    if (window.scrollY > 200) {
+      // Muda para botão circular flutuante
       btn.style.position = "fixed";
       btn.style.top = "auto";
       btn.style.bottom = "20px";
       btn.style.right = "20px";
+      btn.style.width = "60px";
+      btn.style.height = "60px";
+      btn.style.borderRadius = "50%";
+      btn.style.padding = "0";
+      btn.innerHTML = '<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width:30px; height:30px;">';
     } else {
-      // Se está no topo, volta para posição original
+      // Volta para o botão original no topo
       btn.style.position = "absolute";
       btn.style.top = "20px";
       btn.style.bottom = "auto";
       btn.style.right = "20px";
+      btn.style.width = "auto";
+      btn.style.height = "auto";
+      btn.style.borderRadius = "5px";
+      btn.style.padding = "10px 20px";
+      btn.innerHTML = '<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width:20px; vertical-align:middle; margin-right:8px;"> Fale conosco';
     }
   });
 </script>
