@@ -47,7 +47,7 @@
     }
 
     .logo {
-      height: 60px;
+      height: 100px; /* logo maior */
     }
 
     .nav ul {
@@ -64,14 +64,41 @@
       font-weight: 600;
     }
 
+    /* Hero rotativo */
     .hero {
-      background: url('assets/images/banner_resultado_no_celular.jpg') center/cover no-repeat;
-      color: #fff;
-      text-align: center;
-      padding: 100px 20px;
+      position: relative;
+      height: 500px;
+      overflow: hidden;
     }
 
-    .hero h1 {
+    .hero-slide {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-size: cover;
+      background-position: center;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+
+    .hero-slide.active {
+      opacity: 1;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.4); /* overlay escuro */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      padding: 20px;
+    }
+
+    .hero-overlay h1 {
       font-size: 2.5rem;
       margin-bottom: 20px;
     }
@@ -134,11 +161,11 @@
       margin: 0 10px;
     }
 
-    /* WhatsApp flutuante */
+    /* WhatsApp flutuante à direita */
     .whatsapp-float {
       position: fixed;
       bottom: 20px;
-      left: 20px;
+      right: 20px;
       background: #25D366;
       color: #fff;
       border-radius: 50%;
@@ -186,12 +213,16 @@
     </div>
   </header>
 
-  <!-- Hero -->
+  <!-- Hero rotativo -->
   <section class="hero">
-    <div class="container">
-      <h1>Exames laboratoriais com confiança</h1>
-      <p>Atendimento humanizado e resultados rápidos para você e sua família.</p>
-      <a href="#contato" class="btn">Agende seu exame</a>
+    <div class="hero-slide active" style="background-image: url('assets/images/banner_exame_paternidade.jpg');"></div>
+    <div class="hero-slide" style="background-image: url('assets/images/banner_resultado_no_celular.jpg');"></div>
+    <div class="hero-overlay">
+      <div>
+        <h1>Exames laboratoriais com confiança</h1>
+        <p>Atendimento humanizado e resultados rápidos para você e sua família.</p>
+        <a href="#contato" class="btn">Agende seu exame</a>
+      </div>
     </div>
   </section>
 
@@ -237,11 +268,4 @@
     </div>
   </footer>
 
-  <!-- Botão WhatsApp Flutuante -->
-  <a href="https://wa.me/5573981438577" target="_blank" class="whatsapp-float">
-    <img src="assets/images/arrow.png" alt="WhatsApp">
-  </a>
-
-</body>
-</html>
 
