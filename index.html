@@ -1,1034 +1,182 @@
 <!DOCTYPE html>
-<html lang="pt">
-<head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Laboratório Biolab - Itabuna"><meta name="keywords" content="Biolab, Biolab Itabuna, Itabuna, Laboratório Biolab, Laboratório Itabuna, Laboratório"><meta name="author" content="Fernando Virgílio"><!-- SITE TITLE -->
-	<title>Laborat&oacute;rio Biolab - Itabuna</title>
-	<!-- =========================
-      FAV AND TOUCH ICONS  
-============================== -->
-	<link href="images/favicon.ico" rel="shortcut icon" />
-	<link href="images/apple-touch-icon.png" rel="apple-touch-icon" />
-	<link href="images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72" />
-	<link href="images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114" /><!-- =========================
-     STYLESHEETS   
-============================== -->
-	<link href="css/master.css" rel="stylesheet" type="text/css" />
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Laboratório Biolab | Itabuna</title>
+
+  <meta name="description" content="Laboratório Biolab em Itabuna. Exames laboratoriais com rapidez, confiança e atendimento humanizado." />
+  <meta name="keywords" content="Laboratório Biolab, exames laboratoriais, Itabuna, coleta domiciliar, exames clínicos" />
+  <meta name="author" content="Laboratório Biolab" />
+  <meta name="theme-color" content="#0d6efd" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/favicon.ico" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/main.css" />
 </head>
-<body data-spy="scroll" data-target=".navbar">
-<div class="preloader" id="preloader"><img alt="" src="images/preloader.gif" /></div>
-<!-- =========================
-     TOP BAR
-============================== -->
 
-<div class="top-bar" id="top-bar">
-<div class="container">
-<div class="row"><!-- TOP BAR LEFT -->
-<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-<div class="top-bar-adress">Rua Lafayete Borborema, 31 Centro, Itabuna - Bahia</div>
-</div>
-<!-- TOP BAR RIGHT -->
+<body>
 
-<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-<div class="top-bar-social"><!--<a href="#"><i class="fa fa-google-plus"></i></a> 
-                    <a href="#"><i class="fa fa-twitter"></i></a> 
-                    <a href="#"><i class="fa fa-skype"></i></a> --></div>
+<!-- ================= HEADER ================= -->
+<header class="site-header">
+  <div class="container header-content">
+    <img src="assets/images/logo_biolab.png" alt="Laboratório Biolab" class="logo" />
 
-<div class="top-bar-mail"><a href="#">contato@laboratoriobiolab.com</a></div>
-</div>
-</div>
-</div>
-</div>
-<!-- =========================
-     END TOP BAR   
-============================== --><!-- =========================
-     HEADER
-============================== -->
+    <nav class="main-nav">
+      <a href="index.html" class="active">Início</a>
+      <a href="quem-somos.html">Quem Somos</a>
+      <a href="servicos.html">Serviços</a>
+      <a href="convenios.html">Convênios</a>
+      <a href="contato.html">Contato</a>
+      <a href="https://biolab.sisvida.com.br/resultados" target="_blank" class="btn-outline">
+        Resultados
+      </a>
+    </nav>
+  </div>
+</header>
 
-<div class="header" id="header">
-<div class="container">
-<div class="row"><!-- HEADER LOGO -->
-<div class="col-lg-4 col-md-4 col-sm-5 col-xs-12">
-<div class="header-logo"><a href="index.html"><img alt="" src="images/logo_biolab.png" /> </a></div>
-</div>
-<!-- HEADER BUTTONS -->
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="container hero-content">
+    <h1>Laboratório Biolab</h1>
+    <p>Exames laboratoriais com confiança, rapidez e atendimento humanizado em Itabuna.</p>
 
-<div class="col-lg-8 col-md-8 col-sm-7 col-xs-12">
-<div class="header-button"><a class="fancybox-2 btn btn-default" href="#bookform1">AGENDAMENTO</a></div>
+    <div class="hero-buttons">
+      <a href="#agendamento" class="btn-primary">Agendar Exame</a>
+      <a href="https://biolab.sisvida.com.br/resultados" target="_blank" class="btn-secondary">
+        Ver Resultados
+      </a>
+    </div>
+  </div>
+</section>
 
-<div class="header-phone"><!-- Botão WhatsApp -->
-<a id="whatsapp-btn" href="https://wa.me/5573981438577" target="_blank" 
-   style="background-color:#25D366; color:white; 
-          padding:10px 20px; border-radius:5px; text-decoration:none; 
-          font-family:Arial; font-weight:bold; 
-          position:absolute; top:20px; right:20px; 
-          z-index:1000;">
-   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
-        alt="WhatsApp" style="width:20px; vertical-align:middle; margin-right:8px;">
-   Fale conosco
+<!-- ================= SERVICES ================= -->
+<section class="services">
+  <div class="container">
+    <h2 class="section-title">Nossos Serviços</h2>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>Coleta Domiciliar</h3>
+        <p>Conforto e segurança para você realizar seus exames em casa.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Coleta com Hora Marcada</h3>
+        <p>Agendamento rápido para evitar filas e espera.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Atendimento Infantil</h3>
+        <p>Equipe preparada para cuidar dos pequenos com carinho.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Resultados Online</h3>
+        <p>Acesse seus exames com segurança pela internet.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="about">
+  <div class="container about-grid">
+    <div>
+      <h2>Biolab Itabuna</h2>
+      <p>
+        O Laboratório Biolab atua há mais de uma década oferecendo exames laboratoriais
+        com precisão, ética e compromisso com a saúde.
+      </p>
+
+      <ul>
+        <li>✔️ Coleta domiciliar</li>
+        <li>✔️ Resultados online</li>
+        <li>✔️ Atendimento humanizado</li>
+        <li>✔️ Tecnologia e confiança</li>
+      </ul>
+    </div>
+
+    <div class="about-image"></div>
+  </div>
+</section>
+
+<!-- ================= NUMBERS ================= -->
+<section class="numbers">
+  <div class="container numbers-grid">
+    <div>
+      <strong>14+</strong>
+      <span>Anos de experiência</span>
+    </div>
+    <div>
+      <strong>80+</strong>
+      <span>Municípios atendidos</span>
+    </div>
+    <div>
+      <strong>100%</strong>
+      <span>Compromisso com qualidade</span>
+    </div>
+    <div>
+      <strong>Online</strong>
+      <span>Resultados rápidos</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= AGENDAMENTO ================= -->
+<section class="agendamento" id="agendamento">
+  <div class="container">
+    <h2 class="section-title">Agendamento</h2>
+
+    <form class="form-agendamento" netlify>
+      <input type="text" name="nome" placeholder="Nome completo" required />
+      <input type="tel" name="telefone" placeholder="Telefone / WhatsApp" required />
+      <input type="email" name="email" placeholder="E-mail" />
+      <textarea name="mensagem" placeholder="Mensagem"></textarea>
+
+      <button type="submit" class="btn-primary">Enviar</button>
+    </form>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <h4>Contato</h4>
+      <p>(73) 3211-9692</p>
+      <p>(73) 98143-8577</p>
+      <p>contato@laboratoriobiolab.com</p>
+    </div>
+
+    <div>
+      <h4>Endereço</h4>
+      <p>Rua Lafayete Borborema, 31<br>Centro – Itabuna / BA</p>
+    </div>
+
+    <div>
+      <h4>Funcionamento</h4>
+      <p>Seg a Sex: 6h30 às 17h30<br>Sáb: 7h às 11h</p>
+    </div>
+  </div>
+
+  <div class="footer-copy">
+    © 2026 Laboratório Biolab • Todos os direitos reservados
+  </div>
+</footer>
+
+<!-- ================= WHATSAPP ================= -->
+<a href="https://wa.me/5573981438577" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+  <img src="assets/images/whatsapp.svg" alt="WhatsApp">
 </a>
 
-<script>
-  window.addEventListener("scroll", function() {
-    const btn = document.getElementById("whatsapp-btn");
-    if (window.scrollY > 200) {
-      // Muda para botão circular flutuante
-      btn.style.position = "fixed";
-      btn.style.top = "auto";
-      btn.style.bottom = "20px";
-      btn.style.right = "20px";
-      btn.style.width = "60px";
-      btn.style.height = "60px";
-      btn.style.borderRadius = "50%";
-      btn.style.padding = "0";
-      btn.innerHTML = '<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width:30px; height:30px;">';
-    } else {
-      // Volta para o botão original no topo
-      btn.style.position = "absolute";
-      btn.style.top = "20px";
-      btn.style.bottom = "auto";
-      btn.style.right = "20px";
-      btn.style.width = "auto";
-      btn.style.height = "auto";
-      btn.style.borderRadius = "5px";
-      btn.style.padding = "10px 20px";
-      btn.innerHTML = '<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width:20px; vertical-align:middle; margin-right:8px;"> Fale conosco';
-    }
-  });
-</script>
-
-</a> 98143 8577 </div>
-</div>
-</div>
-</div>
-</div>
-<!-- =========================
-     END HEADER
-============================== --><!-- =========================
-     MAIN MENU
-============================== -->
-
-<div id="smartposition"></div>
-
-<div class="top-menu" id="top-menu">
-<div class="container">
-<div class="row">
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-<div class="mobile-bar-cont">
-<div class="top-menu-logo"><a href="#"><img alt="" src="images/logo_biolab.png" /> </a></div>
-
-<div class="mobile-bar">
-<div class="show-menu" id="show-menu"></div>
-</div>
-</div>
-
-<ul class="nav navbar-nav">
-	<li class="active"><a href="index.html">IN&Iacute;CIO</a></li>
-	<li class="dropdown"><a data-toggle="dropdown" href="#">BIOLAB</a>
-	<ul class="dropdown-menu" role="menu">
-		<li><a href="quem_somos.html">Quem Somos</a></li>
-		<li><a href="politica_de_qualidade.html">Pol&iacute;tica de Qualidade</a></li>
-		<li><a href="unidade.html">Unidade</a></li>
-	</ul>
-	</li>
-	<li class="dropdown"><a data-toggle="dropdown" href="#">SERVI&Ccedil;OS</a>
-	<ul class="dropdown-menu" role="menu">
-		<li><a href="coleta_domiciliar.html">Coleta Domiciliar</a></li>
-		<li><a href="coleta_hora_marcada.html">Coleta com hora marcada</a></li>
-	</ul>
-	</li>
-	<li><a href="convenios.html">CONV&Ecirc;NIOS</a></li>
-	<li><a href="dicas.html">DICAS</a></li>
-	<li class="dropdown"><a data-toggle="dropdown" href="#">CONTATO</a>
-	<ul class="dropdown-menu" role="menu">
-		<li><a href="fale_conosco.html">Fale Conosco</a></li>
-		<li><a href="Trabalhe_conosco.html">Trabalhe Conosco</a></li>
-	</ul>
-	</li>
-	<li><a href="http://biolab.sisvida.com.br/resultados" target="_blank">RESULTADOS</a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<!-- =========================
-     END MAIN MENU
-============================== --><!-- =========================
-     HEADER SLIDER
-============================== -->
-
-<div class="slider" id="slider">
-<div class="sp-slides"><!-- HEADER SLIDER ITEM -->
-<div class="sp-slide"><img alt="" class="sp-image" data-src="images/banner_exame_paternidade.jpg" src="css/images/blank.gif" />
-<div class="container">
-<h3 class="sp-layer slider-welcome" data-hide-delay="0" data-hide-transition="left" data-horizontal="15" data-position="leftCenter" data-show-delay="0" data-show-transition="left" data-vertical="-370">Exame de Paternidade</h3>
-
-<h1 class="sp-layer slider-title" data-hide-delay="200" data-hide-transition="left" data-horizontal="15" data-position="leftCenter" data-show-delay="200" data-show-transition="left" data-vertical="-230">Acabe com sua d&uacute;vida!</h1>
-
-<h2 class="sp-layer slider-subtitle" data-hide-delay="400" data-hide-transition="left" data-horizontal="15" data-position="leftCenter" data-show-delay="400" data-show-transition="left" data-vertical="-120">Fa&ccedil;a seu exame de DNA</h2>
-
-<p class="sp-layer slider-text" data-hide-delay="600" data-hide-transition="left" data-horizontal="15" data-position="leftCenter" data-show-delay="600" data-show-transition="left" data-vertical="80">O Laborat&oacute;rio Biolab trabalha com testes de alta qualidade, que geram<br />
-um resultado com 99,999% ou mais de certeza.</p>
-
-<p class="sp-layer slider-button" data-hide-delay="800" data-hide-transition="left" data-horizontal="15" data-position="leftCenter" data-show-delay="800" data-show-transition="left" data-vertical="300"><a class="btn btn-primary" href="#">LEIA MAIS</a></p>
-</div>
-</div>
-
-</div>
-<!-- HEADER SLIDER ITEM -->
-
-<div class="sp-slide"><img alt="" class="sp-image" data-src="images/banner_resultado_no_celular.jpg" src="css/images/blank.gif" />
-<div class="container">
-<h3 class="sp-layer slider-welcome" data-hide-delay="0" data-hide-transition="left" data-horizontal="15" data-position="leftCenter" data-show-delay="0" data-show-transition="left" data-vertical="-370">Resultado Online</h3>
-
-<h1 class="sp-layer slider-title" data-hide-delay="200" data-hide-transition="left" data-horizontal="15" data-position="leftCenter" data-show-delay="200" data-show-transition="left" data-vertical="-230">Voc&ecirc; pode retirar</h1>
-
-<h2 class="sp-layer slider-subtitle" data-hide-delay="400" data-hide-transition="left" data-horizontal="15" data-position="leftCenter" data-show-delay="400" data-show-transition="left" data-vertical="-120">atrav&eacute;s do nosso site</h2>
-
-<p class="sp-layer slider-text" data-hide-delay="600" data-hide-transition="left" data-horizontal="15" data-position="leftCenter" data-show-delay="600" data-show-transition="left" data-vertical="80">Necess&aacute;rio data de nascimento e senha de acesso</p>
-
-<p class="sp-layer slider-button" data-hide-delay="800" data-hide-transition="left" data-horizontal="15" data-position="leftCenter" data-show-delay="800" data-show-transition="left" data-vertical="300"><a class="btn btn-primary" href="https://biolab.sisvida.com.br/resultados" target="_blank">ACESSE AGORA</a></p>
-</div>
-</div>
-</div>
-</div>
-<!-- =========================
-     END HEADER SLIDER
-============================== --><!-- =========================
-     SERVICES
-============================== -->
-
-<div class="services" id="services"><!-- SERVICES ITEM -->
-<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 service bg-primary-2">
-<div class="service-icon"><!-- <i class="flaticon-medical-1"></i> --></div>
-
-<div class="service-title">
-<h3>Coleta Domiciliar</h3>
-</div>
-
-<div class="service-text">Para do conforto de casa possa ser atendida!</div>
-</div>
-<!-- SERVICES ITEM -->
-
-<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 service bg-child-2">
-<div class="service-icon"><!-- <i class="flaticon-medical-1"></i> --></div>
-
-<div class="service-title">
-<h3>Coleta hora marcada</h3>
-</div>
-
-<div class="service-text">Central de marca&ccedil;&atilde;o para melhor lhe servir!</div>
-</div>
-<!-- SERVICES ITEM -->
-
-<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 service bg-child-3">
-<div class="service-icon"><!-- <i class="flaticon-medical-1"></i> --></div>
-
-<div class="service-title">
-<h3>Atendimento Infantil</h3>
-</div>
-
-<div class="service-text">Texto</div>
-</div>
-<!-- SERVICES ITEM -->
-
-<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 service bg-child-4">
-<div class="service-icon"><!-- <i class="flaticon-medical-1"></i> --></div>
-
-<div class="service-title">
-<h3>Resultado OnLine</h3>
-</div>
-
-<div class="service-text">Para do conforto de casa possa acessar os seus exames! <a href="https://biolab.sisvida.com.br/resultados" target="_blank">Acesse aqui</a></div>
-</div>
-</div>
-<!-- =========================
-     END SERVICES
-============================== --><!-- =========================
-     ABOUT
-============================== -->
-
-<div class="about">
-<div class="container">
-<div class="row"><!-- ABOUT TEXT -->
-<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 about-text">
-<h2 class="section-title"><span class="bold700">BIOLAB</span> ITABUNA</h2>
-
-<p>Resumo sobre o Laborat&oacute;rio</p>
-
-<ul class="text-list">
-	<li>Coleta Domiciliar</li>
-	<li>Coleta com hora marcada</li>
-	<li>Resultados OnLine</li>
-	<li>Atendimento Infantil</li>
-</ul>
-
-<p>TEXTO <a href="#">Leia mais </a></p>
-</div>
-<!-- ABOUT BACKGROUND -->
-
-<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 about-bg"></div>
-</div>
-</div>
-</div>
-<!-- =========================
-     END ABOUT
-============================== --><!-- =========================
-     NUMBERS
-============================== -->
-
-<div class="numbers" id="numbers">
-<div class="numbers-overlay">
-<div class="container">
-<div class="row">
-<h2 class="section-title"><span class="bold700">Biolab</span> Laborat&oacute;rio</h2>
-<!--<p class="section-subtitle">Nossos números</p>--><!-- NUMBERS ITEM -->
-
-<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 numbers-item">
-<div class="numbers-item-number" id="num1">14</div>
-
-<div class="numbers-item-title">ANOS<br />
-DE EXPERI&Ecirc;NCIA</div>
-</div>
-<!-- NUMBERS ITEM -->
-
-<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 numbers-item">
-<div class="numbers-item-number" id="num2">XX</div>
-
-<div class="numbers-item-title">PACIENTES POR ANO</div>
-</div>
-<!-- NUMBERS ITEM -->
-
-<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 numbers-item">
-<div class="numbers-item-number" id="num3">84</div>
-
-<div class="numbers-item-title">MUNIC&Iacute;PIOS<br />
-ATENDIDAS</div>
-</div>
-<!-- NUMBERS ITEM -->
-
-<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 numbers-item">
-<div class="numbers-item-number" id="num4">XX</div>
-
-<div class="numbers-item-title">PESQUISSA<br />
-DE SATISFA&Ccedil;&Atilde;O</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- =========================
-     END NUMBERS
-============================== --><!-- =========================
-    REVIEW
-============================== -->
-
-<div class="review">
-<div class="container">
-<div class="row">
-<h2 class="section-title">NOSSA <span class="bold700">MOTIVA&Ccedil;&Atilde;O</span></h2>
-<!--<p class="section-subtitle">Texto </p> -->
-
-<div class="review-container">
-<div class="owl-review" id="owl-review"><!-- REVIEW ITEM -->
-<div class="review-item">
-<div class="review-item-image"><img alt="" src="images/depoimento01.jpg" /></div>
-
-<div align="justify" class="review-item-text">Laborat&oacute;rio onde voc&ecirc; pode confiar em fazer os seus exames , e com proficionais de muita responsabilidade</div>
-
-<div class="review-item-name">Ana Andrade Cerqueira</div>
-
-<div class="review-item-position">Ubaitaba - FanPage</div>
-
-<div class="review-item-quote"><img alt="" src="images/quote.png" /></div>
-</div>
-<!-- REVIEW ITEM -->
-
-<div class="review-item">
-<div class="review-item-image"><img alt="" src="images/review1.jpg" /></div>
-
-<div align="justify" class="review-item-text">Desde a faculdade o Dr. Eudes j&aacute; demonstrava que seria um profissional de alto gabarito e muita compet&ecirc;ncia.</div>
-
-<div class="review-item-name">Danilo Argollo Bragan&ccedil;a</div>
-
-<div class="review-item-position">Palmas - FanPage</div>
-
-<div class="review-item-quote"><img alt="" src="images/quote.png" /></div>
-</div>
-<!-- REVIEW ITEM -->
-
-<div class="review-item">
-<div class="review-item-image"><img alt="" src="images/review1.jpg" /></div>
-
-<div class="review-item-text">Descri&ccedil;&atilde;o do depoimentos 03</div>
-
-<div class="review-item-name">Nome do Paciente</div>
-
-<div class="review-item-position">Cidade</div>
-
-<div class="review-item-quote"><img alt="" src="images/quote.png" /></div>
-</div>
-<!-- REVIEW ITEM -->
-
-<div class="review-item">
-<div class="review-item-image"><img alt="" src="images/review1.jpg" /></div>
-
-<div class="review-item-text">Descri&ccedil;&atilde;o do depoimentos 04</div>
-
-<div class="review-item-name">Nome do Paciente</div>
-
-<div class="review-item-position">Cidade</div>
-
-<div class="review-item-quote"><img alt="" src="images/quote.png" /></div>
-</div>
-</div>
-<!-- REVIEW BUTTONS -->
-
-<div class="carousel-btn carousel-next" id="next-review"></div>
-
-<div class="carousel-btn carousel-prev" id="prev-review"></div>
-</div>
-</div>
-</div>
-</div>
-<!-- =========================
-    END REVIEW
-============================== --><!-- =========================
-    CLIENTS
-============================== -->
-
-<div class="clients">
-<div class="container">
-<div class="row">
-<h2 class="section-title">NOSSOS <span class="bold700">CONV&Ecirc;NIOS</span></h2>
-
-<div class="clients-container">
-<div class="owl-clients" id="owl-clients"><!-- CLIENTS ITEM -->
-<div class="clients-item"><img alt="" src="images/convenio_cassi.jpg" /></div>
-<!-- CLIENTS ITEM -->
-
-<div class="clients-item"><img alt="" src="images/convenio_intermedica.jpg" /></div>
-<!-- CLIENTS ITEM -->
-
-<div class="clients-item"><img alt="" src="images/convenio_life_empresarial.jpg" /></div>
-<!-- CLIENTS ITEM -->
-
-<div class="clients-item"><img alt="" src="images/convenio_mediservice.jpg" /></div>
-<!-- CLIENTS ITEM -->
-
-<div class="clients-item"><img alt="" src="images/convenio_correios.jpg" /></div>
-<!-- CLIENTS ITEM -->
-
-<div class="clients-item"><img alt="" src="images/convenio_porto_seguro.jpg" /></div>
-<!-- CLIENTS ITEM -->
-
-<div class="clients-item"><img alt="" src="images/convenio_portal_saude.jpg" /></div>
-<!-- CLIENTS ITEM -->
-
-<div class="clients-item"><img alt="" src="images/" /></div>
-<!-- CLIENTS ITEM -->
-
-<div class="clients-item"><img alt="" src="images/" /></div>
-</div>
-<!-- CLIENTS BUTTONS -->
-
-<div class="carousel-btn carousel-next" id="next-clients"></div>
-
-<div class="carousel-btn carousel-prev" id="prev-clients"></div>
-</div>
-</div>
-</div>
-</div>
-<!-- =========================
-    END CLIENTS
-============================== --><!-- =========================
-    FOOTER
-============================== -->
-
-<div class="footer">
-<div class="container">
-<div class="row">
-<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 footer-matchheight">
-<div class="row"><!-- FOOTER ITEM 1 -->
-<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 footer-item footer-item-1">
-<h3 class="footer-title footer-title-line">&Uacute;LTIMAS NOT&Iacute;CIAS</h3>
-
-<div class="tweet">
-<div class="tweet-login"><a href="#">@Biolab</a></div>
-
-<div class="tweet-text">Titulo 01</div>
-
-<div class="tweet-date">00.00.0000</div>
-</div>
-
-<div class="tweet">
-<div class="tweet-login"><a href="#">@Biolab</a></div>
-
-<div class="tweet-text">Titulo 01</div>
-
-<div class="tweet-date">00.00.0000</div>
-</div>
-
-<div class="tweet">
-<div class="tweet-login"><a href="#">@Biolab</a></div>
-
-<div class="tweet-text">Titulo 01</div>
-
-<div class="tweet-date">00.00.0000</div>
-</div>
-</div>
-<!-- FOOTER ITEM 2 -->
-
-<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 footer-item footer-item-2">
-<h3 class="footer-title footer-title-line">FUNCIONAMENTO</h3>
-
-<div class="opening-left">Domingo<br />
-Segunda<br />
-Ter&ccedil;a<br />
-Quarta<br />
-Quinta<br />
-Sexta<br />
-S&aacute;bado</div>
-
-<div class="opening-right">Fechado<br />
-6:30 &agrave;s 17:30<br />
-6:30 &agrave;s 17:30<br />
-6:30 &agrave;s 17:30<br />
-6:30 &agrave;s 17:30<br />
-6:30 &agrave;s 17:30<br />
-7:00 &agrave;s 11:00</div>
-</div>
-
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 footer-copyright">
-<div align="left">Desenvolvimento: <a href="http://www.fernandovirgilio.com.br" target="_blank"><img src="images/logo_fernando_virgilio.png" /></a></div>
-</div>
-</div>
-</div>
-<!-- FOOTER ITEM 3 -->
-
-<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 footer-item footer-item-3 footer-matchheight" id="footer-item-3">
-<h3 class="footer-title">CONTATOS</h3>
-
-<div class="footer-item-3-phone">(73) 3211 9692</div>
-
-<div class="footer-item-3-phone">(73) 98143 8577 Whatsapp</div>
-
-<!-- Botão WhatsApp -->
-<a href="https://wa.me/5573981438577" target="_blank" 
-   style="display:inline-block; background-color:#25D366; color:white; 
-          padding:10px 20px; border-radius:5px; text-decoration:none; 
-          font-family:Arial; font-weight:bold;">
-   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
-        alt="WhatsApp" style="width:20px; vertical-align:middle; margin-right:8px;">
-   Fale conosco pelo WhatsApp
-</a>
-
-
-<div align="justify" class="footer-item-3-location">Rua Lafayete Borborema, 31 Centro, Itabuna - Bahia</div>
-
-<div class="footer-item-3-mail"><a href="#">contato@laboratoriobiolab.com</a></div>
-
-<div class="footer-item-3-socials"><!-- <a href="#"><i class="fa fa-google-plus"></i></a> 
-                    <a href="#"><i class="fa fa-twitter"></i></a> 
-                    <a href="#"><i class="fa fa-skype"></i></a> --></div>
-</div>
-<!-- FOOTER ITEM 4 -->
-
-<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 footer-item footer-item-4 footer-matchheight" id="footer-item-4"></div>
-</div>
-</div>
-</div>
-<!-- =========================
-    END FOOTER
-============================== --><!-- =========================
-    POPUP FORMS
-============================== -->
-
-<div class="bookform bookform-1" id="bookform1">
-<div class="bookform-left">
-<h2 class="section-title"><span class="bold700">AGENDAMENTO</span></h2>
-
-<form action="js/sendmail-book.php" class="bookform-form" method="post" role="form">
-<div class="row">
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 booking-form-item f-doctor"><select class="form-doctor" id="form-doctor" name="form-doctor"><option selected="selected" value="Não selecionado">Selecione o Servi&ccedil;o</option><option value="Serviço 01">Servi&ccedil;o 01</option><option value="Serviço 02">Servi&ccedil;o 02</option><option value="Serviço 03">Servi&ccedil;o 03</option><option value="Serviço 04">Servi&ccedil;o 04</option> </select></div>
-</div>
-
-<div class="row">
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 booking-form-item name"><input data-validation="required" id="name1" name="name" placeholder="Nome" type="text" />
-<div class="help help-sm help-red">!</div>
-</div>
-</div>
-
-<div class="row">
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 booking-form-item phone"><input data-validation="required" id="phone1" name="phone" placeholder="Telefone" type="text" />
-<div class="help help-sm help-red">!</div>
-</div>
-</div>
-
-<div class="row">
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 booking-form-item email"><input id="email1" name="email" placeholder="E-mail" type="text" /></div>
-</div>
-
-<div class="row">
-<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 booking-form-item date"><input class="datepicker-f" data-validation="required" id="datepicker1" name="date" placeholder="Data" type="text" />
-<div class="help help-sm help-red">!</div>
-</div>
-
-<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 booking-form-item time-f"><input class="timepicker-f" data-validation="required" id="timepicker1" name="time" placeholder="Hora" type="text" />
-<div class="help help-sm help-red">!</div>
-</div>
-</div>
-
-<div class="row">
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 booking-form-item"><textarea id="message1" name="message" placeholder="Mensagem..."></textarea></div>
-</div>
-
-<div class="row" style="display:none;">
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 booking-form-item honeypot"><label class="fl_label" for="last">Honeypot:</label> <input class="form-control fl_input" id="last" name="last" type="text" value="" /></div>
-</div>
-
-<div class="row latest-row">
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 booking-form-item"><button class="btn btn-primary">Enviar</button><a class="fb-close" href="javascript:jQuery.fancybox.close();" id="fb-close1">Cancelar</a></div>
-</div>
-
-<div class="form-messages form-messages-modal"></div>
-</form>
-</div>
-
-<div class="bookform-right">
-<div class="bookform-right-info-1">
-<h5>Por favor, selecione o servi&ccedil;o</h5>
-Texto</div>
-
-<div class="bookform-right-info-2">Texto 2</div>
-</div>
-</div>
-
-<div class="bookform" id="bookform2">
-<div class="bookform-left">
-<h2 class="section-title"><span class="bold700">AGENDAMENTO</span></h2>
-
-<form action="js/sendmail-book.php" class="bookform-form" method="post" role="form">
-<div class="row">
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 booking-form-item name"><input data-validation="required" id="name2" name="name" placeholder="Nome" type="text" />
-<div class="help help-sm help-red">!</div>
-</div>
-</div>
-
-<div class="row">
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 booking-form-item phone"><input data-validation="required" id="phone2" name="phone" placeholder="Telefone" type="text" />
-<div class="help help-sm help-red">!</div>
-</div>
-</div>
-
-<div class="row">
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 booking-form-item email"><input id="email2" name="email" placeholder="E-mail" type="text" /></div>
-</div>
-
-<div class="row">
-<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 booking-form-item date"><input class="datepicker-f" data-validation="required" id="datepicker2" name="date" placeholder="Data" type="text" />
-<div class="help help-sm help-red">!</div>
-</div>
-
-<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 booking-form-item time-f"><input class="timepicker-f" data-validation="required" id="timepicker2" name="time" placeholder="Hora" type="text" />
-<div class="help help-sm help-red">!</div>
-</div>
-</div>
-
-<div class="row">
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 booking-form-item"><textarea id="message2" name="message" placeholder="Mensagem..."></textarea></div>
-</div>
-
-<div class="row" style="display:none;">
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 booking-form-item honeypot"><label class="fl_label" for="last">Honeypot:</label> <input class="form-control fl_input" id="last" name="last" type="text" value="" /></div>
-</div>
-
-<div class="row latest-row">
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 booking-form-item"><button class="btn btn-primary">Enviar</button><a class="fb-close" href="javascript:jQuery.fancybox.close();" id="fb-close2">Cancelar</a></div>
-</div>
-
-<div class="form-messages form-messages-modal"></div>
-</form>
-</div>
-
-<div class="bookform-right">
-<div class="doctor-info">
-<div class="doctor-info-image"><img alt="" src="images/doctor1.jpg" /></div>
-
-<div class="doctor-info-name">Wyatt Esmond</div>
-
-<div class="doctor-info-position">General Dentist</div>
-
-<div class="doctor-info-hours-title">OPENING HOURS</div>
-
-<div class="doctor-info-hours">
-<div class="doctor-info-hours-clock"><img alt="" src="images/clock.png" /></div>
-
-<div class="doctor-info-hours-left">Monday<br />
-Tuesday<br />
-Wednesday<br />
-Thursday<br />
-Friday<br />
-Saturday<br />
-Sunday</div>
-
-<div class="doctor-info-hours-right">Closed<br />
-9:00 am - 7:15 pm<br />
-9:00 am - 7:15 pm<br />
-9:00 am - 7:15 pm<br />
-9:00 am - 7:15 pm<br />
-9:00 am - 7:15 pm<br />
-Closed</div>
-</div>
-
-<div class="doctor-info-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-</div>
-</div>
-</div>
-
-<div class="bookform" id="bookform3">
-<div class="bookform-left">
-<h2 class="section-title"><span class="bold700">BOOK APPOINTMENT</span></h2>
-
-<form action="js/sendmail-book.php" class="bookform-form" method="post" role="form">
-<div class="row">
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 booking-form-item name"><input data-validation="required" id="name3" name="name" placeholder="Your name" type="text" />
-<div class="help help-sm help-red">!</div>
-</div>
-</div>
-
-<div class="row">
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 booking-form-item phone"><input data-validation="required" id="phone3" name="phone" placeholder="Phone" type="text" />
-<div class="help help-sm help-red">!</div>
-</div>
-</div>
-
-<div class="row">
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 booking-form-item email"><input id="email3" name="email" placeholder="E-mail" type="text" /></div>
-</div>
-
-<div class="row">
-<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 booking-form-item date"><input class="datepicker-f" data-validation="required" id="datepicker3" name="date" placeholder="Date" type="text" />
-<div class="help help-sm help-red">!</div>
-</div>
-
-<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 booking-form-item time-f"><input class="timepicker-f" data-validation="required" id="timepicker3" name="time" placeholder="Time" type="text" />
-<div class="help help-sm help-red">!</div>
-</div>
-</div>
-
-<div class="row">
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 booking-form-item"><textarea id="message3" name="message" placeholder="Your message.."></textarea></div>
-</div>
-
-<div class="row" style="display:none;">
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 booking-form-item honeypot"><label class="fl_label" for="last">Honeypot:</label> <input class="form-control fl_input" id="last" name="last" type="text" value="" /></div>
-</div>
-
-<div class="row latest-row">
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 booking-form-item"><button class="btn btn-primary">SUBMIT</button><a class="fb-close" href="javascript:jQuery.fancybox.close();" id="fb-close3">Cancel</a></div>
-</div>
-
-<div class="form-messages form-messages-modal"></div>
-</form>
-</div>
-
-<div class="bookform-right">
-<div class="doctor-info">
-<div class="doctor-info-image"><img alt="" src="images/doctor2.jpg" /></div>
-
-<div class="doctor-info-name">Arnie Alban</div>
-
-<div class="doctor-info-position">Pedodontics</div>
-
-<div class="doctor-info-hours-title">OPENING HOURS</div>
-
-<div class="doctor-info-hours">
-<div class="doctor-info-hours-clock"><img alt="" src="images/clock.png" /></div>
-
-<div class="doctor-info-hours-left">Monday<br />
-Tuesday<br />
-Wednesday<br />
-Thursday<br />
-Friday<br />
-Saturday<br />
-Sunday</div>
-
-<div class="doctor-info-hours-right">Closed<br />
-9:00 am - 7:15 pm<br />
-9:00 am - 7:15 pm<br />
-9:00 am - 7:15 pm<br />
-9:00 am - 7:15 pm<br />
-9:00 am - 7:15 pm<br />
-Closed</div>
-</div>
-
-<div class="doctor-info-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-</div>
-</div>
-</div>
-
-<div class="bookform" id="bookform4">
-<div class="bookform-left">
-<h2 class="section-title"><span class="bold700">BOOK APPOINTMENT</span></h2>
-
-<form action="js/sendmail-book.php" class="bookform-form" method="post" role="form">
-<div class="row">
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 booking-form-item name"><input data-validation="required" id="name4" name="name" placeholder="Your name" type="text" />
-<div class="help help-sm help-red">!</div>
-</div>
-</div>
-
-<div class="row">
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 booking-form-item phone"><input data-validation="required" id="phone4" name="phone" placeholder="Phone" type="text" />
-<div class="help help-sm help-red">!</div>
-</div>
-</div>
-
-<div class="row">
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 booking-form-item email"><input id="email4" name="email" placeholder="E-mail" type="text" /></div>
-</div>
-
-<div class="row">
-<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 booking-form-item date"><input class="datepicker-f" data-validation="required" id="datepicker4" name="date" placeholder="Date" type="text" />
-<div class="help help-sm help-red">!</div>
-</div>
-
-<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 booking-form-item time-f"><input class="timepicker-f" data-validation="required" id="timepicker4" name="time" placeholder="Time" type="text" />
-<div class="help help-sm help-red">!</div>
-</div>
-</div>
-
-<div class="row">
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 booking-form-item"><textarea id="message4" name="message" placeholder="Your message.."></textarea></div>
-</div>
-
-<div class="row" style="display:none;">
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 booking-form-item honeypot"><label class="fl_label" for="last">Honeypot:</label> <input class="form-control fl_input" id="last" name="last" type="text" value="" /></div>
-</div>
-
-<div class="row latest-row">
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 booking-form-item"><button class="btn btn-primary">SUBMIT</button><a class="fb-close" href="javascript:jQuery.fancybox.close();" id="fb-close4">Cancel</a></div>
-</div>
-
-<div class="form-messages form-messages-modal"></div>
-</form>
-</div>
-
-<div class="bookform-right">
-<div class="doctor-info">
-<div class="doctor-info-image"><img alt="" src="images/doctor3.jpg" /></div>
-
-<div class="doctor-info-name">Dustin Callahan</div>
-
-<div class="doctor-info-position">Ortodontist</div>
-
-<div class="doctor-info-hours-title">OPENING HOURS</div>
-
-<div class="doctor-info-hours">
-<div class="doctor-info-hours-clock"><img alt="" src="images/clock.png" /></div>
-
-<div class="doctor-info-hours-left">Monday<br />
-Tuesday<br />
-Wednesday<br />
-Thursday<br />
-Friday<br />
-Saturday<br />
-Sunday</div>
-
-<div class="doctor-info-hours-right">Closed<br />
-9:00 am - 7:15 pm<br />
-9:00 am - 7:15 pm<br />
-9:00 am - 7:15 pm<br />
-9:00 am - 7:15 pm<br />
-9:00 am - 7:15 pm<br />
-Closed</div>
-</div>
-
-<div class="doctor-info-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-</div>
-</div>
-</div>
-
-<div class="bookform" id="bookform5">
-<div class="bookform-left">
-<h2 class="section-title"><span class="bold700">BOOK APPOINTMENT</span></h2>
-
-<form action="js/sendmail-book.php" class="bookform-form" method="post" role="form">
-<div class="row">
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 booking-form-item name"><input data-validation="required" id="name5" name="name" placeholder="Your name" type="text" />
-<div class="help help-sm help-red">!</div>
-</div>
-</div>
-
-<div class="row">
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 booking-form-item phone"><input data-validation="required" id="phone5" name="phone" placeholder="Phone" type="text" />
-<div class="help help-sm help-red">!</div>
-</div>
-</div>
-
-<div class="row">
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 booking-form-item email"><input id="email5" name="email" placeholder="E-mail" type="text" /></div>
-</div>
-
-<div class="row">
-<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 booking-form-item date"><input class="datepicker-f" data-validation="required" id="datepicker5" name="date" placeholder="Date" type="text" />
-<div class="help help-sm help-red">!</div>
-</div>
-
-<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 booking-form-item time-f"><input class="timepicker-f" data-validation="required" id="timepicker5" name="time" placeholder="Time" type="text" />
-<div class="help help-sm help-red">!</div>
-</div>
-</div>
-
-<div class="row">
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 booking-form-item"><textarea id="message5" name="message" placeholder="Your message.."></textarea></div>
-</div>
-
-<div class="row" style="display:none;">
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 booking-form-item honeypot"><label class="fl_label" for="last">Honeypot:</label> <input class="form-control fl_input" id="last" name="last" type="text" value="" /></div>
-</div>
-
-<div class="row latest-row">
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 booking-form-item"><button class="btn btn-primary">SUBMIT</button><a class="fb-close" href="javascript:jQuery.fancybox.close();" id="fb-close5">Cancel</a></div>
-</div>
-
-<div class="form-messages form-messages-modal"></div>
-</form>
-</div>
-
-<div class="bookform-right">
-<div class="doctor-info">
-<div class="doctor-info-image"><img alt="" src="images/doctor4.jpg" /></div>
-
-<div class="doctor-info-name">Kristin Weaver</div>
-
-<div class="doctor-info-position">Hygienist</div>
-
-<div class="doctor-info-hours-title">OPENING HOURS</div>
-
-<div class="doctor-info-hours">
-<div class="doctor-info-hours-clock"><img alt="" src="images/clock.png" /></div>
-
-<div class="doctor-info-hours-left">Monday<br />
-Tuesday<br />
-Wednesday<br />
-Thursday<br />
-Friday<br />
-Saturday<br />
-Sunday</div>
-
-<div class="doctor-info-hours-right">Closed<br />
-9:00 am - 7:15 pm<br />
-9:00 am - 7:15 pm<br />
-9:00 am - 7:15 pm<br />
-9:00 am - 7:15 pm<br />
-9:00 am - 7:15 pm<br />
-Closed</div>
-</div>
-
-<div class="doctor-info-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-</div>
-</div>
-</div>
-
-<div class="bookform" id="bookform6">
-<div class="bookform-left">
-<h2 class="section-title"><span class="bold700">BOOK APPOINTMENT</span></h2>
-
-<form action="js/sendmail-book.php" class="bookform-form" method="post" role="form">
-<div class="row">
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 booking-form-item name"><input data-validation="required" id="name6" name="name" placeholder="Your name" type="text" />
-<div class="help help-sm help-red">!</div>
-</div>
-</div>
-
-<div class="row">
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 booking-form-item phone"><input data-validation="required" id="phone6" name="phone" placeholder="Phone" type="text" />
-<div class="help help-sm help-red">!</div>
-</div>
-</div>
-
-<div class="row">
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 booking-form-item email"><input id="email6" name="email" placeholder="E-mail" type="text" /></div>
-</div>
-
-<div class="row">
-<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 booking-form-item date"><input class="datepicker-f" data-validation="required" id="datepicker6" name="date" placeholder="Date" type="text" />
-<div class="help help-sm help-red">!</div>
-</div>
-
-<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 booking-form-item time-f"><input class="timepicker-f" data-validation="required" id="timepicker6" name="time" placeholder="Time" type="text" />
-<div class="help help-sm help-red">!</div>
-</div>
-</div>
-
-<div class="row">
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 booking-form-item"><textarea id="message6" name="message" placeholder="Your message.."></textarea></div>
-</div>
-
-<div class="row" style="display:none;">
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 booking-form-item honeypot"><label class="fl_label" for="last">Honeypot:</label> <input class="form-control fl_input" id="last" name="last" type="text" value="" /></div>
-</div>
-
-<div class="row latest-row">
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 booking-form-item"><button class="btn btn-primary">SUBMIT</button><a class="fb-close" href="javascript:jQuery.fancybox.close();" id="fb-close6">Cancel</a></div>
-</div>
-
-<div class="form-messages form-messages-modal"></div>
-</form>
-</div>
-
-<div class="bookform-right">
-<div class="doctor-info">
-<div class="doctor-info-image"><img alt="" src="images/doctor5.jpg" /></div>
-
-<div class="doctor-info-name">Leslie Adams</div>
-
-<div class="doctor-info-position">Prosthodontics</div>
-
-<div class="doctor-info-hours-title">OPENING HOURS</div>
-
-<div class="doctor-info-hours">
-<div class="doctor-info-hours-clock"><img alt="" src="images/clock.png" /></div>
-
-<div class="doctor-info-hours-left">Monday<br />
-Tuesday<br />
-Wednesday<br />
-Thursday<br />
-Friday<br />
-Saturday<br />
-Sunday</div>
-
-<div class="doctor-info-hours-right">Closed<br />
-9:00 am - 7:15 pm<br />
-9:00 am - 7:15 pm<br />
-9:00 am - 7:15 pm<br />
-9:00 am - 7:15 pm<br />
-9:00 am - 7:15 pm<br />
-Closed</div>
-</div>
-
-<div class="doctor-info-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-</div>
-</div>
-</div>
-<!-- =========================
-    END POPUP FORMS
-============================== -->
-
-<div class="totop" id="totop"></div>
 </body>
-<link href="css/responsive.css" rel="stylesheet" type="text/css" /><!-- =========================
-     SCRIPTS   
-============================== --><!-- JQUERY --><script src="js/jquery-2.2.0.min.js"></script><!-- BOOTSTRAP --><script src="js/bootstrap.min.js"></script><!-- SLIDER PRO --><script src="js/jquery.sliderPro.min.js"></script><!-- LIGHTBOX --><script src="js/jquery.fancybox.pack.js"></script><!-- CAROUSEL --><script src="js/owl.carousel.js"></script><!-- STAR RATING --><script src="js/jquery.barrating.min.js"></script><!-- ISOTOPE FILTER --><script src="js/isotope.pkgd.min.js"></script><!-- SCROLLSPY --><script src="js/scrollspy.js"></script><!-- DATEPICKER --><script src="js/moment.js"></script><script src="js/bootstrap-datetimepicker.min.js"></script><!-- JQUERY FORM --><script src='js/jquery.form.js'></script><!-- FORM VALIDATOR --><script src='js/jquery.form-validator.js'></script><!-- SELECT STYLING --><script src='js/jquery.selectBox.js'></script><!-- MATCHHEIGHT --><script src='js/jquery.matchHeight.js'></script><!-- IMAGES LOADED --><script src='js/imagesloaded.pkgd.min.js'></script><!-- CUSTOM SCRIPT --><script src="js/theme.js"></script><!-- GOOGLE MAPS --><script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyC1N87a_NHjocaepKKcovPAYTMUkJBr9pQ&amp;language=pt&amp;sensor=true"></script><!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries --><!--[if lt IE 9]>
-	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-<![endif]--><!-- Google Analitycs --><script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-98404609-1', 'auto');
-  ga('send', 'pageview');
-
-</script><!-- Google Analitycs --></html>
+</html>
