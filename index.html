@@ -14,7 +14,7 @@
   <!-- Header fixo -->
   <header class="header">
     <div class="container flex-between">
-      <img src="assets/images/logo_biolab.png" alt="Laboratório Biolab" class="logo">
+      <img src="assets/images/logo_biolab.png" alt="Logo do Laboratório Biolab" class="logo">
       <nav class="nav">
         <ul>
           <li><a href="#servicos">Serviços</a></li>
@@ -25,48 +25,54 @@
     </div>
   </header>
 
-  <!-- Hero clean -->
+  <!-- Hero rotativo -->
   <section class="hero">
+    <div class="hero-slide active" style="background-image: url('assets/images/banner_exame_paternidade.jpg');"></div>
+    <div class="hero-slide" style="background-image: url('assets/images/banner_resultado_no_celular.jpg');"></div>
     <div class="hero-overlay">
-      <h1>Exames laboratoriais com confiança</h1>
-      <p>Atendimento humanizado e resultados rápidos para você e sua família.</p>
-      <a href="#contato" class="btn">Agende seu exame</a>
+      <div>
+        <h1>Exames laboratoriais com confiança</h1>
+        <p>Atendimento humanizado e resultados rápidos para você e sua família.</p>
+        <a href="#contato" class="btn">Agende seu exame</a>
+      </div>
     </div>
   </section>
 
-  <!-- Serviços em cards -->
-  <section id="servicos" class="services">
-    <div class="container grid">
-      <article class="card">
-        <img src="assets/images/banner_exame_paternidade.jpg" alt="Exame de Paternidade">
-        <h2>Exames Clínicos</h2>
-        <p>Realizamos uma ampla gama de exames laboratoriais com precisão.</p>
-      </article>
-      <article class="card">
-        <img src="assets/images/recepcao_biolab.jpg" alt="Recepção Biolab">
-        <h2>Coleta Domiciliar</h2>
-        <p>Conforto e praticidade com coleta de exames na sua casa.</p>
-      </article>
-      <article class="card">
-        <img src="assets/images/fundo_atendimento.jpg" alt="Atendimento humanizado">
-        <h2>Atendimento Humanizado</h2>
-        <p>Equipe preparada para cuidar de você com atenção e respeito.</p>
-      </article>
-    </div>
-  </section>
+  <!-- Serviços -->
+  <main>
+    <section id="servicos" class="services">
+      <div class="container grid">
+        <article class="card">
+          <img src="assets/images/banner_exame_paternidade.jpg" alt="Exame de Paternidade">
+          <h2>Exames Clínicos</h2>
+          <p>Realizamos uma ampla gama de exames laboratoriais com precisão.</p>
+        </article>
+        <article class="card">
+          <img src="assets/images/recepcao_biolab.jpg" alt="Recepção do Laboratório Biolab">
+          <h2>Coleta Domiciliar</h2>
+          <p>Conforto e praticidade com coleta de exames na sua casa.</p>
+        </article>
+        <article class="card">
+          <img src="assets/images/fundo_atendimento.jpg" alt="Atendimento humanizado">
+          <h2>Atendimento Humanizado</h2>
+          <p>Equipe preparada para cuidar de você com atenção e respeito.</p>
+        </article>
+      </div>
+    </section>
 
-  <!-- Contato -->
-  <section id="contato" class="contact">
-    <div class="container">
-      <h2>Entre em contato</h2>
-      <p>Agende seus exames ou tire suas dúvidas.</p>
-      <a href="https://wa.me/5573981438577" target="_blank" class="btn whatsapp">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"> Fale conosco
-      </a>
-    </div>
-  </section>
+    <!-- Contato -->
+    <section id="contato" class="contact">
+      <div class="container">
+        <h2>Entre em contato</h2>
+        <p>Agende seus exames ou tire suas dúvidas.</p>
+        <a href="https://wa.me/5573981438577" target="_blank" class="btn whatsapp">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"> Fale conosco
+        </a>
+      </div>
+    </section>
+  </main>
 
-  <!-- Footer minimalista -->
+  <!-- Footer -->
   <footer class="footer">
     <div class="container flex-between">
       <p>&copy; 2026 Laboratório Biolab - Todos os direitos reservados.</p>
@@ -76,10 +82,30 @@
     </div>
   </footer>
 
-  <!-- Botão WhatsApp flutuante -->
+  <!-- Botão WhatsApp Flutuante -->
   <a href="https://wa.me/5573981438577" target="_blank" class="whatsapp-float">
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
   </a>
+
+  <!-- Script Hero Rotativo -->
+  <script>
+    const slides = document.querySelectorAll('.hero-slide');
+    let currentSlide = 0;
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.remove('active');
+        if (i === index) slide.classList.add('active');
+      });
+    }
+
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+    }
+
+    setInterval(nextSlide, 6000); // troca a cada 6 segundos
+  </script>
 
 </body>
 </html>
