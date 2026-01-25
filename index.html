@@ -4,61 +4,243 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Laboratório Biolab | Itabuna</title>
-  <meta name="description" content="Laboratório Biolab em Itabuna. Exames laboratoriais com rapidez, confiança e atendimento humanizado." />
-  <meta name="keywords" content="Laboratório Biolab, exames laboratoriais, Itabuna, coleta domiciliar, exames clínicos" />
+  <meta name="description" content="Exames laboratoriais com rapidez, confiança e atendimento humanizado em Itabuna." />
   <meta name="author" content="Laboratório Biolab" />
-  <meta name="theme-color" content="#0d6efd" />
-
-  <!-- Favicon -->
   <link rel="icon" href="assets/images/favicon.ico" />
 
   <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
   <!-- CSS -->
   <link rel="stylesheet" href="assets/css/main.css" />
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .top-bar {
+      background: #0d6efd;
+      color: #fff;
+      padding: 8px 20px;
+      font-size: 14px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .flex-between {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header {
+      background: #fff;
+      border-bottom: 1px solid #eee;
+      padding: 15px 0;
+    }
+
+    .logo {
+      height: 50px;
+    }
+
+    .nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+    }
+
+    .hero {
+      background: url('assets/images/banner.jpg') center/cover no-repeat;
+      color: #fff;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #0d6efd;
+      color: #fff;
+      padding: 12px 25px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #084298;
+    }
+
+    .services {
+      padding: 60px 20px;
+      background: #f9f9f9;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: center;
+    }
+
+    .card img {
+      max-width: 100%;
+      border-radius: 6px;
+      margin-bottom: 15px;
+    }
+
+    .contact {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .footer {
+      background: #0d6efd;
+      color: #fff;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    .footer nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    /* WhatsApp flutuante */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      background: #25D366;
+      color: #fff;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      z-index: 999;
+      transition: transform 0.3s;
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+    }
+
+    .whatsapp-float img {
+      width: 35px;
+      height: 35px;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- TOP BAR -->
+  <!-- Top Bar -->
   <div class="top-bar">
-    <div class="container">
-      <div class="top-bar-left">
-        Rua Lafayete Borborema, 31 Centro, Itabuna - Bahia
-      </div>
-      <div class="top-bar-right">
-        <a href="mailto:contato@laboratoriobiolab.com">contato@laboratoriobiolab.com</a>
-      </div>
+    <div class="container flex-between">
+      <span>Rua Lafayete Borborema, 31 - Centro, Itabuna - BA</span>
+      <a href="mailto:contato@laboratoriobiolab.com">contato@laboratoriobiolab.com</a>
     </div>
   </div>
 
-  <!-- HEADER -->
+  <!-- Header -->
   <header>
-    <div class="container">
-      <h1>Laboratório Biolab</h1>
-      <!-- Exemplo de logo -->
-      <img src="assets/images/logo.png" alt="Logo Laboratório Biolab">
+    <div class="container flex-between">
+      <img src="assets/images/logo.png" alt="Laboratório Biolab" class="logo">
+      <nav class="nav">
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
-  <!-- CONTEÚDO PRINCIPAL -->
-  <main>
-    <section>
-      <h2>Exames laboratoriais com confiança</h2>
-      <p>Atendimento humanizado e resultados rápidos.</p>
-      <!-- Exemplo de imagem ilustrativa -->
-      <img src="assets/images/exames.jpg" alt="Exames laboratoriais">
-    </section>
-  </main>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h1>Exames laboratoriais com confiança</h1>
+      <p>Atendimento humanizado e resultados rápidos para você e sua família.</p>
+      <a href="#contato" class="btn">Agende seu exame</a>
+    </div>
+  </section>
 
-  <!-- WHATSAPP -->
-  <div class="whatsapp">
-    <a href="https://wa.me/5599999999999" target="_blank">
-      <img src="assets/images/whatsapp.svg" alt="WhatsApp">
-    </a>
-  </div>
+  <!-- Serviços -->
+  <section id="servicos" class="services">
+    <div class="container grid">
+      <div class="card">
+        <img src="assets/images/exames.jpg" alt="Exames clínicos">
+        <h3>Exames Clínicos</h3>
+        <p>Realizamos uma ampla gama de exames laboratoriais com precisão.</p>
+      </div>
+      <div class="card">
+        <img src="assets/images/coleta.jpg" alt="Coleta domiciliar">
+        <h3>Coleta Domiciliar</h3>
+        <p>Conforto e praticidade com coleta de exames na sua casa.</p>
+      </div>
+      <div class="card">
+        <img src="assets/images/atendimento.jpg" alt="Atendimento humanizado">
+        <h3>Atendimento Humanizado</h3>
+        <p>Equipe preparada para cuidar de você com atenção e respeito.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="contact">
+    <div class="container">
+      <h2>Entre em contato</h2>
+      <p>Agende seus exames ou tire suas dúvidas.</p>
+      <a href="https://wa.me/5573981438577" target="_blank" class="btn whatsapp">
+        <img src="assets/images/whatsapp.svg" alt="WhatsApp"> Fale conosco
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container flex-between">
+      <p>&copy; 2026 Laboratório Biolab - Todos os direitos reservados.</p>
+      <nav>
+        <a href="#sobre">Sobre</a> | <a href="#servicos">Serviços</a> | <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Botão WhatsApp Flutuante -->
+  <a href="https://wa.me/5573981438577" target="_blank" class="whatsapp-float">
+    <img src="assets/images/whatsapp.svg" alt="WhatsApp">
+  </a>
 
 </body>
 </html>
