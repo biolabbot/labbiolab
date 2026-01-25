@@ -11,182 +11,8 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
-  <!-- CSS -->
+  <!-- CSS externo -->
   <link rel="stylesheet" href="assets/css/main.css" />
-
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-
-    .top-bar {
-      background: #0d6efd;
-      color: #fff;
-      padding: 8px 20px;
-      font-size: 14px;
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-
-    .flex-between {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    header {
-      background: #fff;
-      border-bottom: 1px solid #eee;
-      padding: 15px 0;
-    }
-
-    .logo {
-      height: 100px; /* logo maior */
-    }
-
-    .nav ul {
-      list-style: none;
-      display: flex;
-      gap: 20px;
-      margin: 0;
-      padding: 0;
-    }
-
-    .nav a {
-      text-decoration: none;
-      color: #333;
-      font-weight: 600;
-    }
-
-    /* Hero rotativo */
-    .hero {
-      position: relative;
-      height: 500px;
-      overflow: hidden;
-    }
-
-    .hero-slide {
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background-size: cover;
-      background-position: center;
-      opacity: 0;
-      transition: opacity 1s ease-in-out;
-    }
-
-    .hero-slide.active {
-      opacity: 1;
-    }
-
-    .hero-overlay {
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: rgba(0,0,0,0.4); /* overlay escuro para contraste */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: #fff;
-      padding: 20px;
-    }
-
-    .hero-overlay h1 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-    }
-
-    .btn {
-      display: inline-block;
-      background: #0d6efd;
-      color: #fff;
-      padding: 12px 25px;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: background 0.3s;
-    }
-
-    .btn:hover {
-      background: #084298;
-    }
-
-    .services {
-      padding: 60px 20px;
-      background: #f9f9f9;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      padding: 20px;
-      text-align: center;
-    }
-
-    .card img {
-      max-width: 100%;
-      border-radius: 6px;
-      margin-bottom: 15px;
-    }
-
-    .contact {
-      padding: 60px 20px;
-      text-align: center;
-    }
-
-    .footer {
-      background: #0d6efd;
-      color: #fff;
-      padding: 20px;
-      font-size: 14px;
-    }
-
-    .footer nav a {
-      color: #fff;
-      text-decoration: none;
-      margin: 0 10px;
-    }
-
-    /* WhatsApp flutuante à direita */
-    .whatsapp-float {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #25D366;
-      border-radius: 50%;
-      width: 60px;
-      height: 60px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-      z-index: 999;
-      transition: transform 0.3s;
-    }
-
-    .whatsapp-float:hover {
-      transform: scale(1.1);
-    }
-
-    .whatsapp-float img {
-      width: 35px;
-      height: 35px;
-    }
-  </style>
 </head>
 <body>
 
@@ -199,9 +25,9 @@
   </div>
 
   <!-- Header -->
-  <header>
+  <header class="header">
     <div class="container flex-between">
-      <img src="assets/images/logo_biolab.png" alt="Laboratório Biolab" class="logo">
+      <img src="assets/images/logo_biolab.png" alt="Logo do Laboratório Biolab" class="logo">
       <nav class="nav">
         <ul>
           <li><a href="#sobre">Sobre</a></li>
@@ -226,36 +52,38 @@
   </section>
 
   <!-- Serviços -->
-  <section id="servicos" class="services">
-    <div class="container grid">
-      <div class="card">
-        <img src="assets/images/banner_exame_paternidade.jpg" alt="Exame de Paternidade">
-        <h3>Exames Clínicos</h3>
-        <p>Realizamos uma ampla gama de exames laboratoriais com precisão.</p>
+  <main>
+    <section id="servicos" class="services">
+      <div class="container grid">
+        <article class="card">
+          <img src="assets/images/banner_exame_paternidade.jpg" alt="Exame de Paternidade">
+          <h2>Exames Clínicos</h2>
+          <p>Realizamos uma ampla gama de exames laboratoriais com precisão.</p>
+        </article>
+        <article class="card">
+          <img src="assets/images/recepcao_biolab.jpg" alt="Recepção do Laboratório Biolab">
+          <h2>Coleta Domiciliar</h2>
+          <p>Conforto e praticidade com coleta de exames na sua casa.</p>
+        </article>
+        <article class="card">
+          <img src="assets/images/fundo_atendimento.jpg" alt="Atendimento humanizado">
+          <h2>Atendimento Humanizado</h2>
+          <p>Equipe preparada para cuidar de você com atenção e respeito.</p>
+        </article>
       </div>
-      <div class="card">
-        <img src="assets/images/recepcao_biolab.jpg" alt="Recepção Biolab">
-        <h3>Coleta Domiciliar</h3>
-        <p>Conforto e praticidade com coleta de exames na sua casa.</p>
-      </div>
-      <div class="card">
-        <img src="assets/images/fundo_atendimento.jpg" alt="Atendimento humanizado">
-        <h3>Atendimento Humanizado</h3>
-        <p>Equipe preparada para cuidar de você com atenção e respeito.</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contato -->
-  <section id="contato" class="contact">
-    <div class="container">
-      <h2>Entre em contato</h2>
-      <p>Agende seus exames ou tire suas dúvidas.</p>
-      <a href="https://wa.me/5573981438577" target="_blank" class="btn whatsapp">
-        <img src="assets/images/whatsapp.png" alt="WhatsApp"> Fale conosco
-      </a>
-    </div>
-  </section>
+    <!-- Contato -->
+    <section id="contato" class="contact">
+      <div class="container">
+        <h2>Entre em contato</h2>
+        <p>Agende seus exames ou tire suas dúvidas.</p>
+        <a href="https://wa.me/5573981438577" target="_blank" class="btn whatsapp">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Ícone do WhatsApp"> Fale conosco
+        </a>
+      </div>
+    </section>
+  </main>
 
   <!-- Footer -->
   <footer class="footer">
@@ -269,4 +97,8 @@
 
   <!-- Botão WhatsApp Flutuante -->
   <a href="https://wa.me/5573981438577" target="_blank" class="whatsapp-float">
-    <img src="assets/images/whatsapp.png" alt="WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+  </a>
+
+</body>
+</html>
