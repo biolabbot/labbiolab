@@ -43,7 +43,7 @@ body {
   gap: 40px;
   margin: 0;
   padding: 0;
-  font-size: 10px; /* aumentei de 9px para 10px */
+  font-size: 16px; /* atualizado para 16px */
 }
 
 .nav a {
@@ -190,7 +190,7 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 15px;
-    font-size: 11px; /* levemente maior para toque em telas pequenas */
+    font-size: 18px; /* maior para toque em telas pequenas */
   }
 
   .nav {
@@ -201,3 +201,4 @@ body {
     padding: 10px 0;
   }
 }
+
