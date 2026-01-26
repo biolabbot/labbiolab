@@ -161,7 +161,7 @@ body {
 .carousel-track {
   display: flex;
   gap: 20px;
-  animation: slide 36s infinite; /* tempo maior para 9 comentários */
+  animation: slide 36s infinite;
 }
 
 .comentario {
@@ -177,6 +177,30 @@ body {
   margin-top: 10px;
   color: #f5c518;
   font-size: 1.2rem;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #0d6efd;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  margin: 0 auto 15px;
+  font-size: 1rem;
+}
+
+.foto-blur {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  filter: blur(4px);
+  margin: 0 auto 15px;
 }
 
 /* Carrossel com 9 comentários (3 por vez) */
@@ -258,8 +282,7 @@ body {
   }
 
   .carousel-track {
-    animation: none; /* em mobile, mostrar todos empilhados */
+    animation: none;
     flex-direction: column;
   }
 }
-
