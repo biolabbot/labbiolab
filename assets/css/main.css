@@ -43,7 +43,7 @@ body {
   gap: 40px;
   margin: 0;
   padding: 0;
-  font-size: 16px; /* atualizado para 16px */
+  font-size: 16px;
 }
 
 .nav a {
@@ -141,6 +141,58 @@ body {
   background: #f1f1f1;
 }
 
+/* Depoimentos */
+.depoimentos {
+  padding: 60px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+.depoimentos h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.carousel {
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 20px;
+  animation: slide 36s infinite; /* tempo maior para 9 comentários */
+}
+
+.comentario {
+  flex: 0 0 33%;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.comentario span {
+  display: block;
+  margin-top: 10px;
+  color: #f5c518;
+  font-size: 1.2rem;
+}
+
+/* Carrossel com 9 comentários (3 por vez) */
+@keyframes slide {
+  0% { transform: translateX(0); }
+  11% { transform: translateX(-33.33%); }
+  22% { transform: translateX(-66.66%); }
+  33% { transform: translateX(-100%); }
+  44% { transform: translateX(-133.33%); }
+  55% { transform: translateX(-166.66%); }
+  66% { transform: translateX(-200%); }
+  77% { transform: translateX(-233.33%); }
+  88% { transform: translateX(-266.66%); }
+  100% { transform: translateX(0); }
+}
+
 .footer {
   background: #0d6efd;
   color: #fff;
@@ -158,4 +210,56 @@ body {
 .whatsapp-float {
   position: fixed;
   bottom: 20px;
-  right: 20px
+  right: 20px;
+  background: #25D366;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  z-index: 999;
+  transition: transform 0.3s;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-float img {
+  width: 35px;
+  height: 35px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .logo {
+    height: 70px;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    font-size: 18px;
+  }
+
+  .nav {
+    justify-content: center;
+  }
+
+  .header {
+    padding: 10px 0;
+  }
+
+  .comentario {
+    flex: 0 0 100%;
+  }
+
+  .carousel-track {
+    animation: none; /* em mobile, mostrar todos empilhados */
+    flex-direction: column;
+  }
+}
+
