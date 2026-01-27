@@ -1,10 +1,16 @@
-body {
-  font-family: 'Inter', sans-serif;
+* {
+  box-sizing: border-box;
+}
+
+html, body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+  font-family: 'Inter', sans-serif;
   color: #333;
 }
 
+/* Layout */
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -17,39 +23,39 @@ body {
   align-items: center;
 }
 
-/* HEADER */
+/* Header */
 .header {
   position: fixed;
   top: 0;
   width: 100%;
   background: #fff;
   border-bottom: 1px solid #eee;
-  padding: 25px 0; /* MAIS RESPIRO */
+  padding: 22px 0;
   z-index: 1000;
 }
 
 .logo {
-  height: 90px; /* AJUSTE PREMIUM */
+  height: 90px;
 }
 
 .nav ul {
-  list-style: none;
   display: flex;
   gap: 40px;
+  list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .nav a {
   text-decoration: none;
-  color: #333;
   font-weight: 600;
+  color: #333;
 }
 
-/* HERO */
+/* Hero */
 .hero {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   overflow: hidden;
 }
 
@@ -59,7 +65,7 @@ body {
   background-size: cover;
   background-position: center;
   opacity: 0;
-  transition: opacity 1s;
+  transition: opacity 1s ease;
 }
 
 .hero-slide.active {
@@ -67,46 +73,51 @@ body {
 }
 
 .hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,.4);
+  position: relative;
+  z-index: 2;
+  min-height: 100vh;
+  background: rgba(0,0,0,.45);
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  padding-top: 180px;
+  align-items: center;
   text-align: center;
   color: #fff;
 }
 
 .hero-overlay h1 {
-  font-size: 2.5rem;
+  font-size: 2.6rem;
+  margin-bottom: 15px;
 }
 
 .hero-overlay p {
   font-size: 1.2rem;
+  margin-bottom: 25px;
 }
 
-/* BOTÃO */
+/* Botões */
 .btn {
-  display: inline-block;
   background: #0d6efd;
   color: #fff;
-  padding: 12px 25px;
-  border-radius: 5px;
+  padding: 12px 28px;
+  border-radius: 6px;
   text-decoration: none;
   font-weight: 600;
 }
 
-/* SERVIÇOS */
+.btn:hover {
+  background: #084298;
+}
+
+/* Serviços */
 .services {
-  padding: 80px 20px;
+  padding: 90px 0;
   background: #f9f9f9;
 }
 
 .grid {
   display: grid;
+  gap: 25px;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
 }
 
 .card {
@@ -114,65 +125,79 @@ body {
   border-radius: 8px;
   padding: 20px;
   text-align: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,.1);
+  box-shadow: 0 4px 10px rgba(0,0,0,.08);
 }
 
-/* DEPOIMENTOS */
+.card img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+/* Depoimentos */
 .depoimentos {
-  padding: 60px 20px;
+  padding: 80px 0;
   text-align: center;
+}
+
+.carousel {
+  overflow: hidden;
 }
 
 .carousel-track {
   display: flex;
   gap: 20px;
+  animation: slide 36s infinite linear;
 }
 
 .comentario {
-  flex: 0 0 33%;
+  flex: 0 0 33.333%;
   background: #f9f9f9;
   padding: 20px;
   border-radius: 8px;
 }
 
-/* FOOTER */
+@keyframes slide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-200%); }
+}
+
+/* Contato / Resultados */
+.contact, .results {
+  padding: 70px 0;
+  text-align: center;
+}
+
+/* Footer */
 .footer {
   background: #0d6efd;
   color: #fff;
-  padding: 20px;
+  padding: 20px 0;
 }
 
-/* WHATSAPP */
+/* WhatsApp */
 .whatsapp-float {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: #25D366;
   width: 60px;
   height: 60px;
+  background: #25D366;
   border-radius: 50%;
   display: flex;
-  justify-content: center;
   align-items: center;
-  z-index: 999;
+  justify-content: center;
 }
 
-/* SLIDES ESPECÍFICOS */
+/* Slides específicos */
 .hero-slide.biopsia {
-  background-image: url('../images/biopsia.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+  background: #f0f0f0 url('../images/biopsia.png') center/contain no-repeat;
 }
 
 .hero-slide.sexagem {
-  background-image: url('../images/sexagem2.jpg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+  background: #eaeaea url('../images/sexagem2.jpg') center/contain no-repeat;
 }
 
-/* MOBILE */
+/* Mobile */
 @media (max-width: 768px) {
   .header {
     padding: 18px 0;
@@ -182,18 +207,16 @@ body {
     height: 70px;
   }
 
-  .nav ul {
+  .hero-slide {
+    background-size: contain;
+  }
+
+  .carousel-track {
+    animation: none;
     flex-direction: column;
-    gap: 15px;
   }
 
-  .hero {
-    height: 60vh;
+  .comentario {
+    flex: 1;
   }
 }
-
-  .comentario{flex:0 0 100%}
-  .carousel-track{animation:none;flex-direction:column}
-  .hero{height:65vh}
-}
-
