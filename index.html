@@ -1,145 +1,218 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  color: #333;
+}
 
-  <title>Laboratório Biolab | Itabuna</title>
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 
-  <meta name="description" content="Exames laboratoriais com rapidez, confiança e atendimento humanizado em Itabuna." />
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  <link rel="icon" href="assets/images/logo_biolab.png" />
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  padding: 15px 0;
+  z-index: 1000;
+}
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+.logo {
+  height: 100px;
+}
 
-  <link rel="stylesheet" href="assets/css/main.css" />
-</head>
-<body>
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
 
-  <!-- Header -->
-  <header class="header">
-    <div class="container flex-between">
-      <img src="assets/images/logo_biolab.png" alt="Logo do Laboratório Biolab" class="logo">
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+}
 
-      <nav class="nav">
-        <ul>
-          <li><a href="#inicio">Início</a></li>
-          <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#contato">Contato</a></li>
-          <li><a href="#resultados">Resultados</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
 
-  <!-- Hero -->
-  <section class="hero" id="inicio">
-    <div class="hero-slide active" style="background-image: url('assets/images/banner_exame_paternidade.jpg');"></div>
-    <div class="hero-slide biopsia"></div>
-    <div class="hero-slide sexagem"></div>
-    <div class="hero-slide" style="background-image: url('assets/images/banner_resultado_no_celular.jpg');"></div>
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1s;
+}
 
-    <div class="hero-overlay">
-      <div>
-        <h1>Exames laboratoriais com confiança</h1>
-        <p>Atendimento humanizado e resultados rápidos para você e sua família.</p>
-        <a href="https://wa.me/5573981438577" target="_blank" class="btn">Agende seu exame</a>
-      </div>
-    </div>
-  </section>
+.hero-slide.active {
+  opacity: 1;
+}
 
-  <!-- Serviços -->
-  <main>
-    <section id="servicos" class="services">
-      <div class="container grid">
-        <article class="card">
-          <img src="assets/images/banner_exame_paternidade.jpg" alt="Exames laboratoriais">
-          <h2>Exames Clínicos</h2>
-          <p>Ampla variedade de exames laboratoriais com precisão e confiabilidade.</p>
-        </article>
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.45);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 160px;
+  text-align: center;
+  color: #fff;
+}
 
-        <article class="card">
-          <img src="assets/images/recepcao_biolab.jpg" alt="Coleta domiciliar">
-          <h2>Coleta Domiciliar</h2>
-          <p>Mais conforto e praticidade com coleta no seu domicílio.</p>
-        </article>
+.hero-overlay h1 {
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+}
 
-        <article class="card">
-          <img src="assets/images/fundo_atendimento.jpg" alt="Atendimento humanizado">
-          <h2>Atendimento Humanizado</h2>
-          <p>Equipe preparada para cuidar de você com atenção e respeito.</p>
-        </article>
-      </div>
-    </section>
+.hero-overlay p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
 
-    <!-- Depoimentos -->
-    <section class="depoimentos">
-      <div class="container">
-        <h2>O que dizem nossos clientes</h2>
+.btn {
+  background: #0d6efd;
+  color: #fff;
+  padding: 12px 26px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+}
 
-        <div class="carousel">
-          <div class="carousel-track">
-            <div class="comentario"><p>“Para mim a experiência foi maravilhosa...”<br><strong>- Chauana Silva</strong></p><span>★★★★★</span></div>
-            <div class="comentario"><p>“Resultado saiu rápido e tudo organizado.”<br><strong>- João Silva</strong></p><span>★★★★★</span></div>
-            <div class="comentario"><p>“Laboratório confiável.”<br><strong>- Maria Oliveira</strong></p><span>★★★★★</span></div>
-            <div class="comentario"><p>“Equipe muito atenciosa.”<br><strong>- Carlos Souza</strong></p><span>★★★★★</span></div>
-            <div class="comentario"><p>“Ambiente limpo e confortável.”<br><strong>- Fernanda Costa</strong></p><span>★★★★★</span></div>
-            <div class="comentario"><p>“Resultados precisos.”<br><strong>- Rafael Santos</strong></p><span>★★★★★</span></div>
-            <div class="comentario"><p>“Atendimento humanizado.”<br><strong>- Juliana Almeida</strong></p><span>★★★★★</span></div>
-            <div class="comentario"><p>“Confiança total.”<br><strong>- Pedro Lima</strong></p><span>★★★★★</span></div>
-            <div class="comentario"><p>“Excelente experiência.”<br><strong>- Ana Beatriz</strong></p><span>★★★★★</span></div>
-          </div>
-        </div>
-      </div>
-    </section>
+.services {
+  padding: 80px 20px;
+  background: #f9f9f9;
+}
 
-    <!-- Contato -->
-    <section id="contato" class="contact">
-      <div class="container">
-        <h2>Entre em contato</h2>
-        <p>Agende seus exames ou tire suas dúvidas.</p>
-        <a href="https://wa.me/5573981438577" target="_blank" class="btn">Falar no WhatsApp</a>
-      </div>
-    </section>
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
 
-    <!-- Resultados -->
-    <section id="resultados" class="results">
-      <div class="container">
-        <h2>Resultados de Exames</h2>
-        <p>Acesse seus resultados com segurança.</p>
-        <a href="https://biolab.sisvida.com.br/resultados/login" target="_blank" class="btn">Ver Resultados</a>
-      </div>
-    </section>
-  </main>
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,.1);
+}
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container flex-between">
-      <p>&copy; 2026 Laboratório Biolab</p>
-      <nav>
-        <a href="#inicio">Início</a> |
-        <a href="#servicos">Serviços</a> |
-        <a href="#contato">Contato</a>
-      </nav>
-    </div>
-  </footer>
+.card img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
 
-  <!-- WhatsApp flutuante -->
-  <a href="https://wa.me/5573981438577" target="_blank" class="whatsapp-float">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-  </a>
+/* Depoimentos */
+.depoimentos {
+  padding: 60px 20px;
+}
 
-  <!-- Script Hero -->
-  <script>
-    const slides = document.querySelectorAll('.hero-slide');
-    let current = 0;
+.carousel {
+  overflow: hidden;
+}
 
-    setInterval(() => {
-      slides[current].classList.remove('active');
-      current = (current + 1) % slides.length;
-      slides[current].classList.add('active');
-    }, 6000);
-  </script>
+.carousel-track {
+  display: flex;
+  gap: 20px;
+  animation: slide 36s infinite;
+}
 
-</body>
-</html>
+.comentario {
+  flex: 0 0 33%;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+@keyframes slide {
+  0% {transform: translateX(0);}
+  33% {transform: translateX(-100%);}
+  66% {transform: translateX(-200%);}
+  100% {transform: translateX(0);}
+}
+
+.contact, .results {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.footer {
+  background: #0d6efd;
+  color: #fff;
+  padding: 20px;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* WhatsApp */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whatsapp-float img {
+  width: 35px;
+}
+
+/* HERO ESPECÍFICOS — CORREÇÃO DEFINITIVA */
+.hero-slide.biopsia {
+  background-image: url('../images/biopsia.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.hero-slide.sexagem {
+  background-image: url('../images/sexagem2.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .hero {
+    height: 60vh;
+  }
+
+  .hero-overlay h1 {
+    font-size: 2rem;
+  }
+
+  .carousel-track {
+    animation: none;
+    flex-direction: column;
+  }
+
+  .comentario {
+    flex: 1;
+  }
+}
