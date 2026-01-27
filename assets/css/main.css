@@ -72,17 +72,18 @@ body {
   opacity: 1;
 }
 
+/* Ajuste para subir o texto */
 .hero-overlay {
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
   background: rgba(0,0,0,0.4);
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start; /* topo */
+  align-items: flex-start;     /* topo */
   text-align: center;
   color: #fff;
-  padding: 20px;
+  padding: 40px 20px;          /* espaço do topo */
 }
 
 .hero-overlay h1 {
@@ -239,6 +240,23 @@ body {
   height: 35px;
 }
 
+/* Ajustes específicos para biopsia e sexagem */
+.hero-slide.biopsia {
+  background-color: #f0f0f0; /* cor lateral */
+  background-image: url('assets/images/biopsia.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.hero-slide.sexagem {
+  background-color: #eaeaea; /* cor lateral */
+  background-image: url('assets/images/sexagem2.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
 /* Responsivo */
 @media (max-width: 768px) {
   .logo {
@@ -269,5 +287,23 @@ body {
   .carousel-track {
     animation: none;
     flex-direction: column;
+  }
+
+  .hero {
+    height: 60vh; /* altura menor em mobile */
+  }
+
+  .hero-slide {
+    background-size: contain; /* mostra imagem inteira */
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .hero-overlay h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-overlay p {
+    font-size: 1rem;
   }
 }
