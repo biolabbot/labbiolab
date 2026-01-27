@@ -3,160 +3,143 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <title>Laboratório Biolab | Itabuna</title>
 
-  <meta name="description" content="Laboratório Biolab em Itabuna. Exames laboratoriais com atendimento humanizado, confiança e resultados rápidos." />
+  <meta name="description" content="Exames laboratoriais com rapidez, confiança e atendimento humanizado em Itabuna." />
 
   <link rel="icon" href="assets/images/logo_biolab.png" />
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 <body>
 
-<header class="header">
-  <div class="container flex-between">
-    <img src="assets/images/logo_biolab.png" class="logo" alt="Biolab">
-    <nav class="nav">
-      <ul>
-        <li><a href="#inicio">Biolab</a></li>
-        <li><a href="#servicos">Serviços</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+  <!-- Header -->
+  <header class="header">
+    <div class="container flex-between">
+      <img src="assets/images/logo_biolab.png" alt="Logo do Laboratório Biolab" class="logo">
 
-<section class="hero" id="inicio">
-  <div class="hero-slide active" style="background-image:url('assets/images/banner_exame_paternidade.jpg')"></div>
-  <div class="hero-slide biopsia"></div>
-  <div class="hero-slide sexagem"></div>
-  <div class="hero-slide" style="background-image:url('assets/images/banner_resultado_no_celular.jpg')"></div>
-
-  <div class="hero-overlay">
-    <div>
-      <h1>Exames laboratoriais com confiança</h1>
-      <p>Atendimento humanizado e resultados rápidos para você e sua família.</p>
-      <a href="https://wa.me/5573981438577" target="_blank" class="btn">Agende seu exame</a>
+      <nav class="nav">
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li><a href="#resultados">Resultados</a></li>
+        </ul>
+      </nav>
     </div>
-  </div>
-</section>
+  </header>
 
-<main>
+  <!-- Hero -->
+  <section class="hero" id="inicio">
+    <div class="hero-slide active" style="background-image: url('assets/images/banner_exame_paternidade.jpg');"></div>
+    <div class="hero-slide biopsia"></div>
+    <div class="hero-slide sexagem"></div>
+    <div class="hero-slide" style="background-image: url('assets/images/banner_resultado_no_celular.jpg');"></div>
 
-<section id="servicos" class="services">
-  <div class="container grid">
-    <article class="card">
-      <img src="assets/images/biopsia.png" alt="Biópsia">
-      <h3>Biópsia</h3>
-      <p>Precisão diagnóstica com segurança e confiabilidade.</p>
-    </article>
-
-    <article class="card">
-      <img src="assets/images/sexagem2.jpg" alt="Sexagem fetal">
-      <h3>Sexagem Fetal</h3>
-      <p>Resultado rápido e confiável desde as primeiras semanas.</p>
-    </article>
-
-    <article class="card">
-      <img src="assets/images/fundo_atendimento.jpg" alt="Exames laboratoriais">
-      <h3>Exames Laboratoriais</h3>
-      <p>Ampla variedade de exames com tecnologia e cuidado.</p>
-    </article>
-  </div>
-</section>
-
-<section class="stats">
-  <div class="container grid">
-    <div class="stat">
-      <span class="icon">🧪</span>
-      <span class="number" data-target="20">0</span>
-      <p>Anos de experiência</p>
-    </div>
-    <div class="stat">
-      <span class="icon">📊</span>
-      <span class="number" data-target="150000">0</span>
-      <p>Exames realizados</p>
-    </div>
-    <div class="stat">
-      <span class="icon">👨‍👩‍👧‍👦</span>
-      <span class="number" data-target="100000">0</span>
-      <p>Pacientes atendidos</p>
-    </div>
-    <div class="stat">
-      <span class="icon">⭐</span>
-      <span class="number" data-target="100">0</span>
-      <p>Satisfação dos pacientes</p>
-    </div>
-  </div>
-</section>
-
-<section class="depoimentos">
-  <div class="container">
-    <h2>O que dizem nossos pacientes</h2>
-
-    <div class="carousel">
-      <div class="carousel-track">
-        <!-- 9 depoimentos -->
-        <div class="comentario">“Atendimento excelente, recomendo muito.”<br><strong>— Maria S.</strong><span>★★★★★</span></div>
-        <div class="comentario">“Resultados rápidos e equipe atenciosa.”<br><strong>— João P.</strong><span>★★★★★</span></div>
-        <div class="comentario">“Sempre faço meus exames no Biolab.”<br><strong>— Ana C.</strong><span>★★★★★</span></div>
-        <div class="comentario">“Ambiente limpo e organizado.”<br><strong>— Carlos M.</strong><span>★★★★★</span></div>
-        <div class="comentario">“Confiança total no laboratório.”<br><strong>— Fernanda L.</strong><span>★★★★★</span></div>
-        <div class="comentario">“Profissionais muito educados.”<br><strong>— Rafael G.</strong><span>★★★★★</span></div>
-        <div class="comentario">“Atendimento humanizado de verdade.”<br><strong>— Juliana A.</strong><span>★★★★★</span></div>
-        <div class="comentario">“Tudo perfeito do início ao fim.”<br><strong>— Pedro R.</strong><span>★★★★★</span></div>
-        <div class="comentario">“Melhor laboratório da região.”<br><strong>— Beatriz F.</strong><span>★★★★★</span></div>
+    <div class="hero-overlay">
+      <div>
+        <h1>Exames laboratoriais com confiança</h1>
+        <p>Atendimento humanizado e resultados rápidos para você e sua família.</p>
+        <a href="https://wa.me/5573981438577" target="_blank" class="btn">Agende seu exame</a>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="contato" class="contact">
-  <div class="container">
-    <h2>Fale com o Biolab</h2>
-    <p>Estamos prontos para atender você.</p>
-    <a href="https://wa.me/5573981438577" target="_blank" class="btn whatsapp">WhatsApp</a>
-  </div>
-</section>
+  <!-- Serviços -->
+  <main>
+    <section id="servicos" class="services">
+      <div class="container grid">
+        <article class="card">
+          <img src="assets/images/banner_exame_paternidade.jpg" alt="Exames laboratoriais">
+          <h2>Exames Clínicos</h2>
+          <p>Ampla variedade de exames laboratoriais com precisão e confiabilidade.</p>
+        </article>
 
-</main>
+        <article class="card">
+          <img src="assets/images/recepcao_biolab.jpg" alt="Coleta domiciliar">
+          <h2>Coleta Domiciliar</h2>
+          <p>Mais conforto e praticidade com coleta no seu domicílio.</p>
+        </article>
 
-<footer class="footer">
-  <p>© Biolab Análises Clínicas</p>
-</footer>
+        <article class="card">
+          <img src="assets/images/fundo_atendimento.jpg" alt="Atendimento humanizado">
+          <h2>Atendimento Humanizado</h2>
+          <p>Equipe preparada para cuidar de você com atenção e respeito.</p>
+        </article>
+      </div>
+    </section>
 
-<a href="https://wa.me/5573981438577" target="_blank" class="whatsapp-float">
-  <img src="assets/images/whatsapp.png" alt="WhatsApp">
-</a>
+    <!-- Depoimentos -->
+    <section class="depoimentos">
+      <div class="container">
+        <h2>O que dizem nossos clientes</h2>
 
-<script>
-/* HERO */
-const slides = document.querySelectorAll('.hero-slide');
-let i = 0;
-setInterval(() => {
-  slides[i].classList.remove('active');
-  i = (i + 1) % slides.length;
-  slides[i].classList.add('active');
-}, 6000);
+        <div class="carousel">
+          <div class="carousel-track">
+            <div class="comentario"><p>“Para mim a experiência foi maravilhosa...”<br><strong>- Chauana Silva</strong></p><span>★★★★★</span></div>
+            <div class="comentario"><p>“Resultado saiu rápido e tudo organizado.”<br><strong>- João Silva</strong></p><span>★★★★★</span></div>
+            <div class="comentario"><p>“Laboratório confiável.”<br><strong>- Maria Oliveira</strong></p><span>★★★★★</span></div>
+            <div class="comentario"><p>“Equipe muito atenciosa.”<br><strong>- Carlos Souza</strong></p><span>★★★★★</span></div>
+            <div class="comentario"><p>“Ambiente limpo e confortável.”<br><strong>- Fernanda Costa</strong></p><span>★★★★★</span></div>
+            <div class="comentario"><p>“Resultados precisos.”<br><strong>- Rafael Santos</strong></p><span>★★★★★</span></div>
+            <div class="comentario"><p>“Atendimento humanizado.”<br><strong>- Juliana Almeida</strong></p><span>★★★★★</span></div>
+            <div class="comentario"><p>“Confiança total.”<br><strong>- Pedro Lima</strong></p><span>★★★★★</span></div>
+            <div class="comentario"><p>“Excelente experiência.”<br><strong>- Ana Beatriz</strong></p><span>★★★★★</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-/* NUMBERS */
-document.querySelectorAll('.number').forEach(el => {
-  const target = +el.dataset.target;
-  let count = 0;
-  const inc = target / 100;
-  const timer = setInterval(() => {
-    count += inc;
-    if (count >= target) {
-      el.innerText = target.toLocaleString('pt-BR');
-      clearInterval(timer);
-    } else {
-      el.innerText = Math.floor(count).toLocaleString('pt-BR');
-    }
-  }, 20);
-});
-</script>
+    <!-- Contato -->
+    <section id="contato" class="contact">
+      <div class="container">
+        <h2>Entre em contato</h2>
+        <p>Agende seus exames ou tire suas dúvidas.</p>
+        <a href="https://wa.me/5573981438577" target="_blank" class="btn">Falar no WhatsApp</a>
+      </div>
+    </section>
+
+    <!-- Resultados -->
+    <section id="resultados" class="results">
+      <div class="container">
+        <h2>Resultados de Exames</h2>
+        <p>Acesse seus resultados com segurança.</p>
+        <a href="https://biolab.sisvida.com.br/resultados/login" target="_blank" class="btn">Ver Resultados</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container flex-between">
+      <p>&copy; 2026 Laboratório Biolab</p>
+      <nav>
+        <a href="#inicio">Início</a> |
+        <a href="#servicos">Serviços</a> |
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- WhatsApp flutuante -->
+  <a href="https://wa.me/5573981438577" target="_blank" class="whatsapp-float">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+  </a>
+
+  <!-- Script Hero -->
+  <script>
+    const slides = document.querySelectorAll('.hero-slide');
+    let current = 0;
+
+    setInterval(() => {
+      slides[current].classList.remove('active');
+      current = (current + 1) % slides.length;
+      slides[current].classList.add('active');
+    }, 6000);
+  </script>
 
 </body>
 </html>
