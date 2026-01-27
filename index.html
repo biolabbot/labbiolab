@@ -3,141 +3,138 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <title>Laboratório Biolab | Itabuna</title>
   <meta name="description" content="Exames laboratoriais com rapidez, confiança e atendimento humanizado em Itabuna." />
+
   <link rel="icon" href="assets/images/logo_biolab.png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 <body>
 
-  <!-- Header fixo -->
-  <header class="header">
-    <div class="container flex-between">
-      <img src="assets/images/logo_biolab.png" alt="Logo do Laboratório Biolab" class="logo">
-      <nav class="nav">
-        <ul>
-          <li><a href="#inicio">Início</a></li>
-          <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#contato">Contato</a></li>
-          <li><a href="#resultados">Resultados</a></li>
-        </ul>
-      </nav>
+<header class="header">
+  <div class="container flex-between">
+    <img src="assets/images/logo_biolab.png" alt="Laboratório Biolab" class="logo">
+
+    <nav class="nav">
+      <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a href="#resultados">Resultados</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="hero-slide active" style="background-image: url('assets/images/banner_exame_paternidade.jpg');"></div>
+  <div class="hero-slide biopsia"></div>
+  <div class="hero-slide sexagem"></div>
+  <div class="hero-slide" style="background-image: url('assets/images/banner_resultado_no_celular.jpg');"></div>
+
+  <div class="hero-overlay">
+    <div class="hero-content">
+      <h1>Exames laboratoriais com confiança</h1>
+      <p>Atendimento humanizado e resultados rápidos para você e sua família.</p>
+
+      <a
+        href="https://wa.me/5573981438577?text=Olá,%20gostaria%20de%20agendar%20um%20exame"
+        class="btn"
+        target="_blank"
+      >
+        Agende seu exame
+      </a>
     </div>
-  </header>
+  </div>
+</section>
 
-  <!-- Hero rotativo -->
-  <section class="hero" id="inicio">
-    <div class="hero-slide active" style="background-image: url('assets/images/banner_exame_paternidade.jpg');"></div>
-    <div class="hero-slide biopsia"></div>
-    <div class="hero-slide sexagem"></div>
-    <div class="hero-slide" style="background-image: url('assets/images/banner_resultado_no_celular.jpg');"></div>
-    <div class="hero-overlay">
-      <div>
-        <h1>Exames laboratoriais com confiança</h1>
-        <p>Atendimento humanizado e resultados rápidos para você e sua família.</p>
-        <a href="#contato" class="btn">Agende seu exame</a>
-      </div>
-    </div>
-  </section>
+<main>
 
-  <!-- Serviços -->
-  <main>
-    <section id="servicos" class="services">
-      <div class="container grid">
-        <article class="card">
-          <img src="assets/images/banner_exame_paternidade.jpg" alt="Exame de Paternidade">
-          <h2>Exames Clínicos</h2>
-          <p>Realizamos uma ampla gama de exames laboratoriais com precisão.</p>
-        </article>
-        <article class="card">
-          <img src="assets/images/recepcao_biolab.jpg" alt="Recepção do Laboratório Biolab">
-          <h2>Coleta Domiciliar</h2>
-          <p>Conforto e praticidade com coleta de exames na sua casa.</p>
-        </article>
-        <article class="card">
-          <img src="assets/images/fundo_atendimento.jpg" alt="Atendimento humanizado">
-          <h2>Atendimento Humanizado</h2>
-          <p>Equipe preparada para cuidar de você com atenção e respeito.</p>
-        </article>
-      </div>
-    </section>
+<section id="servicos" class="services">
+  <div class="container grid">
+    <article class="card">
+      <img src="assets/images/banner_exame_paternidade.jpg" alt="Exames clínicos">
+      <h2>Exames Clínicos</h2>
+      <p>Ampla variedade de exames com precisão e confiança.</p>
+    </article>
 
-    <!-- Depoimentos -->
-    <section class="depoimentos">
-      <div class="container">
-        <h2>O que dizem nossos clientes</h2>
-        <div class="carousel">
-          <div class="carousel-track">
-            <div class="comentario"><p>“Para mim a experiência foi maravilhosa, em Itabuna nunca vi um atendimento tão perfeito, atenção, respeito, carisma e muita responsabilidade com o ser humano. Muito satisfeita e recomendo e indico a qualquer pessoa. Só gratidão.”<br><strong>- Chauana Silva</strong></p><span>★★★★★</span></div>
-            <div class="comentario"><p>“Fui muito bem atendido, resultado saiu rápido e tudo muito organizado.”<br><strong>- João Silva</strong></p><span>★★★★★</span></div>
-            <div class="comentario"><p>“Laboratório confiável, sempre faço meus exames lá. Recomendo!”<br><strong>- Maria Oliveira</strong></p><span>★★★★★</span></div>
-            <div class="comentario"><p>“Equipe muito atenciosa, me senti bem cuidado em todo o processo.”<br><strong>- Carlos Souza</strong></p><span>★★★★★</span></div>
-            <div class="comentario"><p>“Ótima estrutura, ambiente limpo e confortável. Nota máxima!”<br><strong>- Fernanda Costa</strong></p><span>★★★★★</span></div>
-            <div class="comentario"><p>“Resultados rápidos e precisos, fiquei muito satisfeito.”<br><strong>- Rafael Santos</strong></p><span>★★★★★</span></div>
-            <div class="comentario"><p>“Profissionais educados e simpáticos, atendimento humanizado.”<br><strong>- Juliana Almeida</strong></p><span>★★★★★</span></div>
-            <div class="comentario"><p>“Sempre recomendo aos amigos, confiança total no laboratório.”<br><strong>- Pedro Lima</strong></p><span>★★★★★</span></div>
-            <div class="comentario"><p>“Excelente experiência, desde o agendamento até a entrega dos resultados.”<br><strong>- Ana Beatriz</strong></p><span>★★★★★</span></div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <article class="card">
+      <img src="assets/images/recepcao_biolab.jpg" alt="Coleta domiciliar">
+      <h2>Coleta Domiciliar</h2>
+      <p>Mais conforto e praticidade para você.</p>
+    </article>
 
-    <!-- Contato -->
-    <section id="contato" class="contact">
-      <div class="container">
-        <h2>Entre em contato</h2>
-        <p>Agende seus exames ou tire suas dúvidas.</p>
-        <a href="https://wa.me/5573981438577" target="_blank" class="btn whatsapp">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"> Fale conosco
-        </a>
-      </div>
-    </section>
+    <article class="card">
+      <img src="assets/images/fundo_atendimento.jpg" alt="Atendimento humanizado">
+      <h2>Atendimento Humanizado</h2>
+      <p>Cuidamos de você em cada etapa.</p>
+    </article>
+  </div>
+</section>
 
-    <!-- Resultados -->
-    <section id="resultados" class="results">
-      <div class="container">
-        <h2>Resultados de Exames</h2>
-        <p>Acesse seus resultados com segurança e praticidade.</p>
-        <a href="https://biolab.sisvida.com.br/resultados/login" target="_blank" class="btn">Ver Resultados</a>
-      </div>
-    </section>
-  </main>
+<section id="contato" class="contact">
+  <div class="container">
+    <h2>Entre em contato</h2>
+    <p>Agende seus exames ou tire suas dúvidas.</p>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container flex-between">
-      <p>&copy; 2026 Laboratório Biolab - Todos os direitos reservados.</p>
-      <nav>
-        <a href="#inicio">Início</a> | <a href="#servicos">Serviços</a> | <a href="#contato">Contato</a> | <a href="#resultados">Resultados</a>
-      </nav>
-    </div>
-  </footer>
+    <a
+      href="https://wa.me/5573981438577"
+      target="_blank"
+      class="btn whatsapp"
+    >
+      Falar no WhatsApp
+    </a>
+  </div>
+</section>
 
-  <!-- Botão WhatsApp Flutuante -->
-  <a href="https://wa.me/5573981438577" target="_blank" class="whatsapp-float">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-  </a>
+<section id="resultados" class="results">
+  <div class="container">
+    <h2>Resultados de Exames</h2>
+    <p>Acesse seus resultados com segurança.</p>
 
-  <!-- Script Hero Rotativo -->
-  <script>
-    const slides = document.querySelectorAll('.hero-slide');
-    let currentSlide = 0;
+    <a
+      href="https://biolab.sisvida.com.br/resultados/login"
+      target="_blank"
+      class="btn"
+    >
+      Ver Resultados
+    </a>
+  </div>
+</section>
 
-    function showSlide(index) {
-      slides.forEach((slide, i) => {
-        slide.classList.remove('active');
-        if (i === index) slide.classList.add('active');
-      });
-    }
+</main>
 
-    function nextSlide() {
-      currentSlide = (currentSlide + 1) % slides.length;
-      showSlide(currentSlide);
-    }
+<footer class="footer">
+  <div class="container flex-between">
+    <p>&copy; 2026 Laboratório Biolab</p>
+  </div>
+</footer>
 
-    setInterval(nextSlide, 6000);
-  </script>
+<!-- WhatsApp flutuante -->
+<a href="https://wa.me/5573981438577" target="_blank" class="whatsapp-float">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+</a>
+
+<!-- HERO SCRIPT -->
+<script>
+  const slides = document.querySelectorAll('.hero-slide');
+  let current = 0;
+
+  setInterval(() => {
+    slides[current].classList.remove('active');
+    current = (current + 1) % slides.length;
+    slides[current].classList.add('active');
+  }, 6000);
+</script>
 
 </body>
 </html>
