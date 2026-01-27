@@ -2,155 +2,160 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Biolab - Análises Clínicas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Laboratório Biolab | Itabuna</title>
 
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta name="description" content="Laboratório Biolab em Itabuna. Exames laboratoriais com atendimento humanizado, confiança e resultados rápidos." />
+
+  <link rel="icon" href="assets/images/logo_biolab.png" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/main.css" />
 </head>
-
 <body>
 
-<!-- HEADER -->
 <header class="header">
   <div class="container flex-between">
-    <img src="assets/images/logo.png" alt="Biolab" class="logo">
-
+    <img src="assets/images/logo_biolab.png" class="logo" alt="Biolab">
     <nav class="nav">
       <ul>
+        <li><a href="#inicio">Biolab</a></li>
         <li><a href="#servicos">Serviços</a></li>
-        <li><a href="#numeros">Biolab</a></li>
         <li><a href="#contato">Contato</a></li>
       </ul>
     </nav>
   </div>
 </header>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-slide biopsia active"></div>
+<section class="hero" id="inicio">
+  <div class="hero-slide active" style="background-image:url('assets/images/banner_exame_paternidade.jpg')"></div>
+  <div class="hero-slide biopsia"></div>
+  <div class="hero-slide sexagem"></div>
+  <div class="hero-slide" style="background-image:url('assets/images/banner_resultado_no_celular.jpg')"></div>
 
   <div class="hero-overlay">
-    <h1>Exames laboratoriais com confiança</h1>
-    <p>Atendimento humanizado e resultados rápidos para você e sua família.</p>
-    <a href="https://wa.me/55SEUNUMEROAQUI" class="btn">Agende seu exame</a>
+    <div>
+      <h1>Exames laboratoriais com confiança</h1>
+      <p>Atendimento humanizado e resultados rápidos para você e sua família.</p>
+      <a href="https://wa.me/5573981438577" target="_blank" class="btn">Agende seu exame</a>
+    </div>
   </div>
 </section>
 
-<!-- SERVIÇOS -->
+<main>
+
 <section id="servicos" class="services">
   <div class="container grid">
-
-    <div class="card">
+    <article class="card">
       <img src="assets/images/biopsia.png" alt="Biópsia">
       <h3>Biópsia</h3>
       <p>Precisão diagnóstica com segurança e confiabilidade.</p>
-    </div>
+    </article>
 
-    <div class="card">
-      <img src="assets/images/sexagem2.jpg" alt="Sexagem Fetal">
+    <article class="card">
+      <img src="assets/images/sexagem2.jpg" alt="Sexagem fetal">
       <h3>Sexagem Fetal</h3>
-      <p>Resultado rápido e confiável a partir das primeiras semanas.</p>
-    </div>
+      <p>Resultado rápido e confiável desde as primeiras semanas.</p>
+    </article>
 
-    <div class="card">
-      <img src="assets/images/exames.png" alt="Exames laboratoriais">
+    <article class="card">
+      <img src="assets/images/fundo_atendimento.jpg" alt="Exames laboratoriais">
       <h3>Exames Laboratoriais</h3>
       <p>Ampla variedade de exames com tecnologia e cuidado.</p>
-    </div>
-
+    </article>
   </div>
 </section>
 
-<!-- NÚMEROS -->
-<section id="numeros" class="stats">
-  <div class="container stats-grid">
-
+<section class="stats">
+  <div class="container grid">
     <div class="stat">
-      <div class="stat-icon">🧪</div>
+      <span class="icon">🧪</span>
       <span class="number" data-target="20">0</span>
-      <p>Anos de experiência em análises clínicas</p>
+      <p>Anos de experiência</p>
     </div>
-
     <div class="stat">
-      <div class="stat-icon">📊</div>
+      <span class="icon">📊</span>
       <span class="number" data-target="150000">0</span>
-      <p>Exames realizados com precisão</p>
+      <p>Exames realizados</p>
     </div>
-
     <div class="stat">
-      <div class="stat-icon">👨‍👩‍👧‍👦</div>
+      <span class="icon">👨‍👩‍👧‍👦</span>
       <span class="number" data-target="100000">0</span>
-      <p>Pacientes atendidos com confiança</p>
+      <p>Pacientes atendidos</p>
     </div>
-
     <div class="stat">
-      <div class="stat-icon">⭐</div>
+      <span class="icon">⭐</span>
       <span class="number" data-target="100">0</span>
-      <p>Satisfação dos nossos pacientes</p>
+      <p>Satisfação dos pacientes</p>
     </div>
-
   </div>
 </section>
 
-<!-- CONTATO -->
-<section id="contato" class="contact">
-  <h2>Fale com o Biolab</h2>
-  <p>Estamos prontos para atender você.</p>
-  <a href="https://wa.me/55SEUNUMEROAQUI" class="btn">WhatsApp</a>
+<section class="depoimentos">
+  <div class="container">
+    <h2>O que dizem nossos pacientes</h2>
+
+    <div class="carousel">
+      <div class="carousel-track">
+        <!-- 9 depoimentos -->
+        <div class="comentario">“Atendimento excelente, recomendo muito.”<br><strong>— Maria S.</strong><span>★★★★★</span></div>
+        <div class="comentario">“Resultados rápidos e equipe atenciosa.”<br><strong>— João P.</strong><span>★★★★★</span></div>
+        <div class="comentario">“Sempre faço meus exames no Biolab.”<br><strong>— Ana C.</strong><span>★★★★★</span></div>
+        <div class="comentario">“Ambiente limpo e organizado.”<br><strong>— Carlos M.</strong><span>★★★★★</span></div>
+        <div class="comentario">“Confiança total no laboratório.”<br><strong>— Fernanda L.</strong><span>★★★★★</span></div>
+        <div class="comentario">“Profissionais muito educados.”<br><strong>— Rafael G.</strong><span>★★★★★</span></div>
+        <div class="comentario">“Atendimento humanizado de verdade.”<br><strong>— Juliana A.</strong><span>★★★★★</span></div>
+        <div class="comentario">“Tudo perfeito do início ao fim.”<br><strong>— Pedro R.</strong><span>★★★★★</span></div>
+        <div class="comentario">“Melhor laboratório da região.”<br><strong>— Beatriz F.</strong><span>★★★★★</span></div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<!-- FOOTER -->
+<section id="contato" class="contact">
+  <div class="container">
+    <h2>Fale com o Biolab</h2>
+    <p>Estamos prontos para atender você.</p>
+    <a href="https://wa.me/5573981438577" target="_blank" class="btn whatsapp">WhatsApp</a>
+  </div>
+</section>
+
+</main>
+
 <footer class="footer">
   <p>© Biolab Análises Clínicas</p>
 </footer>
 
-<!-- WHATSAPP FLOAT -->
-<a href="https://wa.me/55SEUNUMEROAQUI" class="whatsapp-float">
+<a href="https://wa.me/5573981438577" target="_blank" class="whatsapp-float">
   <img src="assets/images/whatsapp.png" alt="WhatsApp">
 </a>
 
-<!-- JS -->
 <script>
-  const numbers = document.querySelectorAll('.number');
-  const stats = document.querySelector('.stats');
-  const statItems = document.querySelectorAll('.stat');
-  let animated = false;
+/* HERO */
+const slides = document.querySelectorAll('.hero-slide');
+let i = 0;
+setInterval(() => {
+  slides[i].classList.remove('active');
+  i = (i + 1) % slides.length;
+  slides[i].classList.add('active');
+}, 6000);
 
-  function animateNumbers() {
-    if (animated) return;
-
-    numbers.forEach(number => {
-      const target = +number.getAttribute('data-target');
-      let current = 0;
-      const increment = target / 120;
-
-      const update = () => {
-        current += increment;
-        if (current < target) {
-          number.innerText = Math.floor(current).toLocaleString('pt-BR');
-          requestAnimationFrame(update);
-        } else {
-          number.innerText = target.toLocaleString('pt-BR');
-        }
-      };
-      update();
-    });
-
-    statItems.forEach((item, i) => {
-      setTimeout(() => item.classList.add('visible'), i * 150);
-    });
-
-    animated = true;
-  }
-
-  const observer = new IntersectionObserver(entries => {
-    if (entries[0].isIntersecting) animateNumbers();
-  }, { threshold: 0.4 });
-
-  observer.observe(stats);
+/* NUMBERS */
+document.querySelectorAll('.number').forEach(el => {
+  const target = +el.dataset.target;
+  let count = 0;
+  const inc = target / 100;
+  const timer = setInterval(() => {
+    count += inc;
+    if (count >= target) {
+      el.innerText = target.toLocaleString('pt-BR');
+      clearInterval(timer);
+    } else {
+      el.innerText = Math.floor(count).toLocaleString('pt-BR');
+    }
+  }, 20);
+});
 </script>
 
 </body>
