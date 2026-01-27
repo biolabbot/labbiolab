@@ -1,14 +1,13 @@
-* { box-sizing: border-box; }
-
 body {
-  margin: 0;
   font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
   color: #333;
 }
 
 .container {
   max-width: 1200px;
-  margin: auto;
+  margin: 0 auto;
   padding: 0 20px;
 }
 
@@ -18,20 +17,25 @@ body {
   align-items: center;
 }
 
+/* HEADER */
 .header {
   position: fixed;
+  top: 0;
   width: 100%;
   background: #fff;
-  z-index: 1000;
   border-bottom: 1px solid #eee;
+  padding: 25px 0; /* MAIS RESPIRO */
+  z-index: 1000;
 }
 
-.logo { height: 90px; }
+.logo {
+  height: 90px; /* AJUSTE PREMIUM */
+}
 
 .nav ul {
-  display: flex;
-  gap: 30px;
   list-style: none;
+  display: flex;
+  gap: 40px;
   margin: 0;
   padding: 0;
 }
@@ -42,152 +46,152 @@ body {
   font-weight: 600;
 }
 
+/* HERO */
 .hero {
-  height: 100vh;
   position: relative;
+  height: 100vh;
   overflow: hidden;
 }
 
 .hero-slide {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   background-size: cover;
   background-position: center;
   opacity: 0;
   transition: opacity 1s;
 }
 
-.hero-slide.active { opacity: 1; }
-
-.hero-slide.biopsia {
-  background: #f2f2f2 url('../assets/images/biopsia.png') center/contain no-repeat;
-}
-
-.hero-slide.sexagem {
-  background: #eee url('../assets/images/sexagem2.jpg') center/contain no-repeat;
+.hero-slide.active {
+  opacity: 1;
 }
 
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,.45);
+  background: rgba(0,0,0,.4);
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  padding-top: 180px;
   text-align: center;
   color: #fff;
-  padding-top: 80px;
 }
 
-.hero-overlay h1 { font-size: 2.3rem; margin-bottom: 10px; }
-.hero-overlay p { font-size: 1.1rem; margin-bottom: 25px; }
+.hero-overlay h1 {
+  font-size: 2.5rem;
+}
 
+.hero-overlay p {
+  font-size: 1.2rem;
+}
+
+/* BOTÃO */
 .btn {
+  display: inline-block;
   background: #0d6efd;
   color: #fff;
-  padding: 12px 26px;
-  border-radius: 6px;
+  padding: 12px 25px;
+  border-radius: 5px;
   text-decoration: none;
   font-weight: 600;
 }
 
-.services { padding: 80px 0; background: #f9f9f9; }
+/* SERVIÇOS */
+.services {
+  padding: 80px 20px;
+  background: #f9f9f9;
+}
 
 .grid {
   display: grid;
-  gap: 25px;
-  grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
 }
 
 .card {
   background: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-  box-shadow: 0 8px 20px rgba(0,0,0,.08);
-  transition: transform .3s, box-shadow .3s;
-}
-
-.card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 15px 30px rgba(0,0,0,.15);
-}
-
-.card img {
-  width: 100%;
   border-radius: 8px;
-}
-
-.stats {
-  padding: 70px 0;
-  background: linear-gradient(135deg,#0d6efd,#084298);
-  color: #fff;
+  padding: 20px;
   text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,.1);
 }
 
-.stat .icon { font-size: 2rem; }
-.stat .number { font-size: 2.2rem; font-weight: 700; }
-
+/* DEPOIMENTOS */
 .depoimentos {
-  padding: 80px 0;
+  padding: 60px 20px;
   text-align: center;
-}
-
-.carousel {
-  overflow: hidden;
 }
 
 .carousel-track {
   display: flex;
   gap: 20px;
-  animation: slide 36s infinite;
 }
 
 .comentario {
   flex: 0 0 33%;
-  background: #fff;
+  background: #f9f9f9;
   padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,.1);
+  border-radius: 8px;
 }
 
-@keyframes slide {
-  0%{transform:translateX(0)}
-  33%{transform:translateX(-33%)}
-  66%{transform:translateX(-66%)}
-  100%{transform:translateX(0)}
-}
-
-.contact {
-  padding: 70px 0;
-  text-align: center;
-  background: #f1f1f1;
-}
-
+/* FOOTER */
 .footer {
   background: #0d6efd;
   color: #fff;
-  text-align: center;
   padding: 20px;
 }
 
+/* WHATSAPP */
 .whatsapp-float {
   position: fixed;
   bottom: 20px;
   right: 20px;
+  background: #25D366;
   width: 60px;
   height: 60px;
-  background: #25D366;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 999;
 }
 
-.whatsapp-float img { width: 34px; }
+/* SLIDES ESPECÍFICOS */
+.hero-slide.biopsia {
+  background-image: url('../images/biopsia.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
-@media(max-width:768px){
+.hero-slide.sexagem {
+  background-image: url('../images/sexagem2.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .header {
+    padding: 18px 0;
+  }
+
+  .logo {
+    height: 70px;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hero {
+    height: 60vh;
+  }
+}
+
   .comentario{flex:0 0 100%}
   .carousel-track{animation:none;flex-direction:column}
   .hero{height:65vh}
