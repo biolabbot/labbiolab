@@ -60,8 +60,10 @@ body {
 
 .hero-slide {
   position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-size: cover;
   background-position: center;
   opacity: 0;
@@ -72,22 +74,24 @@ body {
   opacity: 1;
 }
 
-/* Hero overlay corrigido */
+/* Hero overlay */
 .hero-overlay {
   position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background: rgba(0,0,0,0.4);
   display: flex;
-  justify-content: center;   /* centraliza horizontal */
-  align-items: flex-start;   /* alinha no topo */
+  justify-content: center;
+  align-items: flex-start;
   text-align: center;
   color: #fff;
-  padding-top: 150px;        /* controla a distância do topo */
+  padding-top: 150px;
 }
 
 .hero-overlay h1 {
-  font-size: 2.5rem;         /* mantém o mesmo tamanho */
+  font-size: 2.5rem;
   margin-bottom: 20px;
 }
 
@@ -175,8 +179,8 @@ body {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  max-height: 220px;       /* limite de altura */
-  overflow-y: auto;        /* rolagem interna se passar do limite */
+  max-height: 220px;
+  overflow-y: auto;
 }
 
 .comentario p {
@@ -191,7 +195,6 @@ body {
   font-size: 1.2rem;
 }
 
-/* Carrossel com 9 comentários (3 por vez) */
 @keyframes slide {
   0% { transform: translateX(0); }
   11% { transform: translateX(-33.33%); }
@@ -244,18 +247,19 @@ body {
   height: 35px;
 }
 
-/* Ajustes específicos para biopsia e sexagem */
+/* Biopsia */
 .hero-slide.biopsia {
-  background-color: #f0f0f0; /* cor lateral */
-  background-image: url('assets/images/biopsia.png');
+  background-color: #f0f0f0;
+  background-image: url('../images/biopsia.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
 
+/* Sexagem */
 .hero-slide.sexagem {
-  background-color: #eaeaea; /* cor lateral */
-  background-image: url('assets/images/sexagem2.jpg');
+  background-color: #eaeaea;
+  background-image: url('../images/sexagem2.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -274,17 +278,13 @@ body {
     font-size: 18px;
   }
 
-  .nav {
-    justify-content: center;
-  }
-
   .header {
     padding: 10px 0;
   }
 
   .comentario {
     flex: 0 0 100%;
-    max-height: none;   /* em mobile, deixa crescer sem limite */
+    max-height: none;
     overflow-y: visible;
   }
 
@@ -294,21 +294,20 @@ body {
   }
 
   .hero {
-    height: 60vh; /* altura menor em mobile */
+    height: 60vh;
   }
 
   .hero-slide {
-    background-size: contain; /* mostra imagem inteira */
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
   }
 
   .hero-overlay h1 {
-    font-size: 2rem; /* um pouco menor em mobile */
+    font-size: 2rem;
   }
 
   .hero-overlay p {
     font-size: 1rem;
   }
 }
-
