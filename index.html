@@ -81,19 +81,22 @@
         <div class="carousel">
           <div class="carousel-track">
             <div class="comentario">
-              <p>“Atendimento perfeito, atenção e respeito.”<br><strong>- Chauana Silva</strong></p>
+              <p>
+                “Atendimento perfeito, atenção e respeito. Desde a recepção até a entrega dos resultados,
+                fui tratada com muito carinho e profissionalismo. Recomendo a todos que buscam confiança
+                e qualidade nos exames.”
+                <br><strong>- Chauana Silva</strong>
+              </p>
               <span>★★★★★</span>
             </div>
-
-            <div class="comentario">
-              <p>“Resultados rápidos e organização excelente.”<br><strong>- João Silva</strong></p>
-              <span>★★★★★</span>
-            </div>
-
-            <div class="comentario">
-              <p>“Laboratório confiável, recomendo.”<br><strong>- Maria Oliveira</strong></p>
-              <span>★★★★★</span>
-            </div>
+            <div class="comentario"><p>“Resultados rápidos e organização excelente.”<br><strong>- João Silva</strong></p><span>★★★★★</span></div>
+            <div class="comentario"><p>“Laboratório confiável, recomendo.”<br><strong>- Maria Oliveira</strong></p><span>★★★★★</span></div>
+            <div class="comentario"><p>“Equipe muito atenciosa e dedicada.”<br><strong>- Carlos Mendes</strong></p><span>★★★★★</span></div>
+            <div class="comentario"><p>“Ambiente limpo e organizado.”<br><strong>- Fernanda Costa</strong></p><span>★★★★★</span></div>
+            <div class="comentario"><p>“Preço justo e qualidade excelente.”<br><strong>- Ricardo Lima</strong></p><span>★★★★★</span></div>
+            <div class="comentario"><p>“Sempre recomendo aos amigos.”<br><strong>- Patrícia Souza</strong></p><span>★★★★★</span></div>
+            <div class="comentario"><p>“Profissionais muito competentes.”<br><strong>- André Santos</strong></p><span>★★★★★</span></div>
+            <div class="comentario"><p>“Experiência incrível, voltarei sempre.”<br><strong>- Juliana Rocha</strong></p><span>★★★★★</span></div>
           </div>
         </div>
       </div>
@@ -143,17 +146,16 @@
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
   </a>
 
-  <!-- Slider -->
+  <!-- Scripts -->
   <script>
+    // Hero slides
     const slides = document.querySelectorAll('.hero-slide');
     let currentSlide = 0;
-
     function showSlide(index) {
       slides.forEach((slide, i) => {
         slide.classList.toggle('active', i === index);
       });
     }
-
     setInterval(() => {
       currentSlide = (currentSlide + 1) % slides.length;
       showSlide(currentSlide);
@@ -162,10 +164,25 @@
     // Menu mobile
     const menuToggle = document.getElementById('menu-toggle');
     const nav = document.getElementById('nav');
-
     menuToggle.addEventListener('click', () => {
       nav.classList.toggle('active');
     });
+
+    // Carrossel depoimentos
+    const track = document.querySelector('.carousel-track');
+    const comentarios = document.querySelectorAll('.comentario');
+    let currentIndex = 0;
+    const itemsPerPage = 3;
+
+    function showComentarios(index) {
+      const offset = -(index * 100);
+      track.style.transform = `translateX(${offset}%)`;
+    }
+
+    setInterval(() => {
+      currentIndex = (currentIndex + 1) % Math.ceil(comentarios.length / itemsPerPage);
+      showComentarios(currentIndex);
+    }, 5000);
   </script>
 
 </body>
