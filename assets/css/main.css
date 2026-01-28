@@ -24,18 +24,22 @@ body {
   width: 100%;
   background: #fff;
   border-bottom: 1px solid #eee;
-  padding: 25px 0; /* MAIS RESPIRO */
+  padding: 20px 0;
   z-index: 1000;
 }
 
 .logo {
-  height: 90px; /* AJUSTE PREMIUM */
+  height: 80px;
+}
+
+.nav {
+  display: flex;
 }
 
 .nav ul {
   list-style: none;
   display: flex;
-  gap: 40px;
+  gap: 30px;
   margin: 0;
   padding: 0;
 }
@@ -46,10 +50,46 @@ body {
   font-weight: 600;
 }
 
+/* MENU MOBILE */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background: #333;
+  border-radius: 2px;
+}
+
+.nav.active {
+  display: block;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: #fff;
+  width: 200px;
+  border: 1px solid #eee;
+}
+
+.nav.active ul {
+  flex-direction: column;
+  gap: 15px;
+  padding: 15px;
+}
+
+/* MAIN ajustado para header fixo */
+main {
+  padding-top: 100px;
+}
+
 /* HERO */
 .hero {
   position: relative;
-  height: 100vh;
+  height: 85vh;
   overflow: hidden;
 }
 
@@ -72,18 +112,20 @@ body {
   background: rgba(0,0,0,.4);
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  padding-top: 180px;
+  align-items: center;
   text-align: center;
   color: #fff;
+  padding: 20px;
 }
 
 .hero-overlay h1 {
   font-size: 2.5rem;
+  margin-bottom: 15px;
 }
 
 .hero-overlay p {
   font-size: 1.2rem;
+  margin-bottom: 20px;
 }
 
 /* BOTÃO */
@@ -117,6 +159,12 @@ body {
   box-shadow: 0 2px 6px rgba(0,0,0,.1);
 }
 
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
 /* DEPOIMENTOS */
 .depoimentos {
   padding: 60px 20px;
@@ -125,11 +173,13 @@ body {
 
 .carousel-track {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
 }
 
 .comentario {
-  flex: 0 0 33%;
+  flex: 1 1 280px;
   background: #f9f9f9;
   padding: 20px;
   border-radius: 8px;
@@ -140,6 +190,7 @@ body {
   background: #0d6efd;
   color: #fff;
   padding: 20px;
+  text-align: center;
 }
 
 /* WHATSAPP */
@@ -154,7 +205,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 999;
+  z-index: 1100;
 }
 
 /* SLIDES ESPECÍFICOS */
@@ -174,20 +225,27 @@ body {
 
 /* MOBILE */
 @media (max-width: 768px) {
-  .header {
-    padding: 18px 0;
-  }
-
   .logo {
-    height: 70px;
+    height: 60px;
   }
 
-  .nav ul {
-    flex-direction: column;
-    gap: 15px;
+  .nav {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: flex;
   }
 
   .hero {
     height: 60vh;
+  }
+
+  .hero-overlay h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-overlay p {
+    font-size: 1rem;
   }
 }
