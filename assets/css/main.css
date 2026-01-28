@@ -171,17 +171,22 @@ main {
   text-align: center;
 }
 
+.carousel {
+  overflow: hidden;
+  position: relative;
+}
+
 .carousel-track {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
+  transition: transform 0.5s ease;
 }
 
 .comentario {
-  flex: 1 1 280px;
-  background: #f9f9f9;
+  flex: 0 0 33.33%; /* mostra 3 por vez */
+  box-sizing: border-box;
   padding: 20px;
+  background: #f9f9f9;
+  margin: 10px;
   border-radius: 8px;
 }
 
@@ -247,5 +252,9 @@ main {
 
   .hero-overlay p {
     font-size: 1rem;
+  }
+
+  .comentario {
+    flex: 0 0 100%; /* no mobile mostra 1 por vez */
   }
 }
