@@ -201,17 +201,26 @@ main {
 
 .carousel-track {
   display: flex;
-  transition: transform 0.8s ease;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .comentario {
   flex: 0 0 33.33%; /* 3 por linha */
   box-sizing: border-box;
   padding: 20px;
-  background: linear-gradient(135deg, #f9fafb, #eef2ff); /* degradê leve */
+  background: linear-gradient(135deg, #f9fafb, #eef2ff);
   margin: 10px;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,.1);
+  opacity: 0;
+  transform: rotateY(90deg); /* começa virado */
+  transition: all 0.8s ease;
+}
+
+.comentario.active {
+  opacity: 1;
+  transform: rotateY(0deg); /* vira para frente */
 }
 
 .stars {
@@ -244,8 +253,8 @@ main {
   bottom: 20px;
   right: 20px;
   background: #25D366;
-  width: 50px;       /* menor */
-  height: 50px;      /* menor */
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
