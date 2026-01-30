@@ -48,6 +48,11 @@ body {
   text-decoration: none;
   color: #333;
   font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.nav a:hover {
+  color: #0d6efd;
 }
 
 /* MENU MOBILE */
@@ -121,140 +126,16 @@ main {
 .hero-overlay h1 {
   font-size: 2.5rem;
   margin-bottom: 15px;
+  line-height: 1.2;
 }
 
 .hero-overlay p {
   font-size: 1.2rem;
   margin-bottom: 20px;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 /* BOTÃO */
 .btn {
   display: inline-block;
-  background: #0d6efd;
-  color: #fff;
-  padding: 12px 25px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-/* SERVIÇOS */
-.services {
-  padding: 80px 20px;
-  background: #f9f9f9;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-}
-
-.card {
-  background: #fff;
-  border-radius: 8px;
-  padding: 20px;
-  text-align: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,.1);
-}
-
-.card img {
-  width: 100%;
-  height: auto;
-  border-radius: 6px;
-}
-
-/* DEPOIMENTOS */
-.depoimentos {
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.carousel {
-  overflow: hidden;
-  position: relative;
-}
-
-.carousel-track {
-  display: flex;
-  transition: transform 0.5s ease;
-}
-
-.comentario {
-  flex: 0 0 33.33%; /* mostra 3 por vez */
-  box-sizing: border-box;
-  padding: 20px;
-  background: #f9f9f9;
-  margin: 10px;
-  border-radius: 8px;
-}
-
-/* FOOTER */
-.footer {
-  background: #0d6efd;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-}
-
-/* WHATSAPP */
-.whatsapp-float {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #25D366;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1100;
-}
-
-/* SLIDES ESPECÍFICOS */
-.hero-slide.biopsia {
-  background-image: url('../images/biopsia.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.hero-slide.sexagem {
-  background-image: url('../images/sexagem2.jpg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
-  .logo {
-    height: 60px;
-  }
-
-  .nav {
-    display: none;
-  }
-
-  .menu-toggle {
-    display: flex;
-  }
-
-  .hero {
-    height: 60vh;
-  }
-
-  .hero-overlay h1 {
-    font-size: 1.8rem;
-  }
-
-  .hero-overlay p {
-    font-size: 1rem;
-  }
-
-  .comentario {
-    flex: 0 0 100%; /* no mobile mostra 1 por vez */
-  }
-}
