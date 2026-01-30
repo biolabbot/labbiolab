@@ -1,132 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Laboratório Biolab | Itabuna</title>
-  <meta name="description" content="Exames laboratoriais com rapidez, confiança e atendimento humanizado em Itabuna." />
-  <link rel="icon" href="assets/images/logo_biolab.png" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/main.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Meta Tags -->
+  <title>Biolab - Exames Laboratoriais em Itabuna</title>
+  <meta name="description" content="Laboratório Biolab em Itabuna - exames laboratoriais com confiança, rapidez e precisão. Sexagem, biópsia e muito mais.">
+  <meta name="keywords" content="laboratório, exames, sexagem, biópsia, Itabuna, Bahia, Biolab">
+  <meta name="author" content="Laboratório Biolab">
+
+  <!-- Schema Markup JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalLaboratory",
+    "name": "Laboratório Biolab",
+    "image": "https://biolabbot.github.io/labbiolab/images/logo.png",
+    "url": "https://biolabbot.github.io/labbiolab/",
+    "telephone": "+55 73 98143-8577",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua Lafayete Borborema, 31 - Centro",
+      "addressLocality": "Itabuna",
+      "addressRegion": "BA",
+      "postalCode": "45600-090",
+      "addressCountry": "BR"
+    },
+    "openingHours": "Mo-Fr 08:00-18:00",
+    "priceRange": "$"
+  }
+  </script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
-
-  <!-- Header -->
-  <header class="header">
-    <div class="container flex-between">
-      <img src="assets/images/logo_biolab.png" alt="Logo do Laboratório Biolab" class="logo">
-
-      <div class="menu-toggle" id="menu-toggle" aria-label="Abrir menu de navegação">
-        <span></span><span></span><span></span>
-      </div>
-
-      <nav class="nav" id="nav" aria-label="Menu principal">
-        <ul>
-          <li><a href="#inicio">Início</a></li>
-          <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#contato">Contato</a></li>
-          <li><a href="https://biolab.sisvida.com.br/resultados/login" target="_blank">Resultados</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Hero -->
-  <section class="hero" id="inicio">
-    <div class="hero-slide active" style="background-image: url('assets/images/banner_exame_paternidade.jpg');"></div>
-    <div class="hero-slide biopsia"></div>
-    <div class="hero-slide sexagem"></div>
-    <div class="hero-slide" style="background-image: url('assets/images/banner_resultado_no_celular.jpg');"></div>
-
-    <div class="hero-overlay">
-      <div>
-        <h1>Exames laboratoriais com confiança</h1>
-        <p>Atendimento humanizado e resultados rápidos para você e sua família.</p>
-        <a href="#contato" class="btn">Agende seu exame</a>
-      </div>
-    </div>
-  </section>
-
-  <main>
-    <!-- Serviços -->
-    <section id="servicos" class="services">
-      <div class="container grid">
-        <article class="card">
-          <img src="assets/images/banner_exame_paternidade.jpg" alt="Exames Clínicos">
-          <h2>Exames Clínicos</h2>
-          <p>Ampla gama de exames laboratoriais com precisão e confiança.</p>
-        </article>
-
-        <article class="card">
-          <img src="assets/images/recepcao_biolab.jpg" alt="Coleta Domiciliar">
-          <h2>Coleta Domiciliar</h2>
-          <p>Conforto e praticidade com atendimento na sua casa.</p>
-        </article>
-
-        <article class="card">
-          <img src="assets/images/fundo_atendimento.jpg" alt="Atendimento Humanizado">
-          <h2>Atendimento Humanizado</h2>
-          <p>Cuidado, respeito e atenção em cada etapa.</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- Depoimentos -->
-    <section class="depoimentos">
-      <div class="container">
-        <h2>O que dizem nossos clientes</h2>
-        <div class="carousel">
-          <div class="carousel-track">
-            <figure class="comentario"><p>“O atendimento foi excelente, rápido e muito atencioso. Recomendo a todos que precisam de exames confiáveis.”<br><strong>- Chauana Silva</strong></p><span class="stars">★★★★★</span></figure>
-            <figure class="comentario"><p>“Resultados rápidos e organização excelente.”<br><strong>- João Silva</strong></p><span class="stars">★★★★★</span></figure>
-            <figure class="comentario"><p>“Laboratório confiável, recomendo.”<br><strong>- Maria Oliveira</strong></p><span class="stars">★★★★★</span></figure>
-            <figure class="comentario"><p>“Equipe muito atenciosa e dedicada.”<br><strong>- Carlos Mendes</strong></p><span class="stars">★★★★★</span></figure>
-            <figure class="comentario"><p>“Ambiente limpo e organizado.”<br><strong>- Fernanda Costa</strong></p><span class="stars">★★★★★</span></figure>
-            <figure class="comentario"><p>“Sempre faço meus exames aqui.”<br><strong>- Paulo Rocha</strong></p><span class="stars">★★★★★</span></figure>
-            <figure class="comentario"><p>“Recomendo para toda família.”<br><strong>- Ana Souza</strong></p><span class="stars">★★★★★</span></figure>
-            <figure class="comentario"><p>“Resultados confiáveis e rápidos.”<br><strong>- Ricardo Lima</strong></p><span class="stars">★★★★★</span></figure>
-            <figure class="comentario"><p>“Melhor laboratório da região.”<br><strong>- Beatriz Santos</strong></p><span class="stars">★★★★★</span></figure>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contato -->
-    <section id="contato" class="contact">
-      <div class="container">
-        <h2>Entre em contato</h2>
-        <p>Agende seus exames ou tire suas dúvidas.</p>
-
-        <a href="https://wa.me/5573981438577" target="_blank" class="btn whatsapp">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-          Fale conosco
-        </a>
-      </div>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container flex-between">
-      <p>&copy; 2026 Laboratório Biolab</p>
-      <nav aria-label="Rodapé">
-        <a href="#inicio">Início</a> |
-        <a href="#servicos">Serviços</a> |
-        <a href="#contato">Contato</a> |
-        <a href="https://biolab.sisvida.com.br/resultados/login" target="_blank">Resultados</a>
-      </nav>
-    </div>
-  </footer>
-
-  <!-- WhatsApp flutuante -->
-  <a href="https://wa.me/5573981438577" target="_blank" class="whatsapp-float" aria-label="Abrir WhatsApp">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-  </a>
-
-  <!-- Scripts -->
-  <script src="assets/js/main.js"></script>
-</body>
-</html></head>
 <body>
   <!-- HEADER -->
   <header class="header">
