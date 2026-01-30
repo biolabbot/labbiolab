@@ -9,6 +9,7 @@ body {
   font-family: 'Inter', sans-serif;
   color: #333;
   overflow-x: hidden; /* evita rolagem horizontal */
+  background: #fff;
 }
 
 img {
@@ -37,7 +38,7 @@ img {
   width: 100%;
   background: #fff;
   border-bottom: 1px solid #eee;
-  padding: 20px 0;
+  padding: 15px 0;
   z-index: 1000;
 }
 
@@ -121,3 +122,172 @@ main {
 .hero-overlay {
   position: absolute;
   inset: 0;
+  background: rgba(0,0,0,.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+}
+
+.hero-overlay h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+
+.hero-overlay p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* BOTÃO */
+.btn {
+  display: inline-block;
+  background: #2563EB;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #1E40AF;
+}
+
+/* SERVIÇOS */
+.services {
+  padding: 80px 20px;
+  background: #f9f9f9;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,.1);
+}
+
+.card img {
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* DEPOIMENTOS */
+.depoimentos {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.carousel {
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.comentario {
+  flex: 0 0 33.33%;
+  box-sizing: border-box;
+  padding: 20px;
+  background: #fff;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,.1);
+}
+
+.stars {
+  color: #FFD700; /* estrelas douradas */
+  font-size: 1.2rem;
+}
+
+/* FOOTER */
+.footer {
+  background: #2563EB;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer nav a {
+  color: #fff;
+  margin: 0 8px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer nav a:hover {
+  color: #dbeafe;
+}
+
+/* WHATSAPP */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1100;
+}
+
+/* SLIDES ESPECÍFICOS */
+.hero-slide.biopsia {
+  background-image: url('../images/biopsia.png');
+}
+
+.hero-slide.sexagem {
+  background-image: url('../images/sexagem2.jpg');
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .logo {
+    height: 60px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .hero {
+    height: 60vh;
+  }
+
+  .hero-overlay h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-overlay p {
+    font-size: 1rem;
+  }
+
+  .comentario {
+    flex: 0 0 100%; /* no mobile mostra 1 por vez */
+  }
+}
