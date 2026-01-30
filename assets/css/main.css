@@ -201,32 +201,37 @@ main {
 
 .carousel-track {
   display: flex;
-  flex-wrap: nowrap; /* 🔑 impede quebra de linha */
+  flex-wrap: nowrap; /* impede quebra de linha */
   justify-content: center;
-  position: relative; /* 🔑 permite sobreposição */
-  min-height: 350px; /* garante altura fixa */
+  position: relative;
+  min-height: 350px; /* altura fixa */
 }
 
 .comentario {
   flex: 0 0 33.33%;
   box-sizing: border-box;
-  padding: 20px;
-  background: linear-gradient(135deg, #f9fafb, #eef2ff);
+  padding: 15px;
+  background: #f0f4f8; /* 🔑 cinza claro azulado */
   margin: 10px;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,.1);
   opacity: 0;
   transform: rotateY(90deg);
-  transition: transform 0.8s ease, opacity 0.8s ease;
+  transition: transform 1.5s ease, opacity 1.5s ease; /* 🔑 mais suave */
   pointer-events: none;
-  position: absolute; /* 🔑 todos ocupam o mesmo espaço */
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .comentario.active {
   opacity: 1;
   transform: rotateY(0deg);
   pointer-events: auto;
-  position: relative; /* 🔑 só os ativos entram na linha */
+  position: relative;
 }
 
 .stars {
