@@ -201,13 +201,14 @@ main {
 
 .carousel-track {
   display: flex;
-  flex-wrap: wrap; /* permite que os grupos apareçam */
+  flex-wrap: nowrap; /* 🔑 impede quebra de linha */
   justify-content: center;
-  min-height: 350px; /* garante espaço para os grupos seguintes */
+  position: relative; /* 🔑 permite sobreposição */
+  min-height: 350px; /* garante altura fixa */
 }
 
 .comentario {
-  flex: 0 0 30%; /* ligeiramente menor para caber 3 lado a lado */
+  flex: 0 0 33.33%;
   box-sizing: border-box;
   padding: 20px;
   background: linear-gradient(135deg, #f9fafb, #eef2ff);
@@ -218,12 +219,14 @@ main {
   transform: rotateY(90deg);
   transition: transform 0.8s ease, opacity 0.8s ease;
   pointer-events: none;
+  position: absolute; /* 🔑 todos ocupam o mesmo espaço */
 }
 
 .comentario.active {
   opacity: 1;
   transform: rotateY(0deg);
   pointer-events: auto;
+  position: relative; /* 🔑 só os ativos entram na linha */
 }
 
 .stars {
@@ -313,5 +316,6 @@ main {
 
   .comentario {
     flex: 0 0 100%; /* no mobile, 1 por linha */
+    position: relative; /* no mobile não sobrepõe */
   }
 }
