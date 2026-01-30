@@ -21,19 +21,28 @@ menuToggle.addEventListener('click', () => {
   nav.classList.toggle('active');
 });
 
-// CARROSSEL DEPOIMENTOS
-const track = document.querySelector('.carousel-track');
+// DEPOIMENTOS (mostrar 3 por vez, trocar a cada 8s)
 const comentarios = document.querySelectorAll('.comentario');
-let currentIndex = 0;
-const itemsPerPage = 3;
+let currentGroup = 0;
+const itemsPerGroup = 3;
+const totalGroups = Math.ceil(comentarios.length / itemsPerGroup);
 
-function showComentarios(index) {
-  const offset = -(index * 100);
-  track.style.transform = `translateX(${offset}%)`;
+function showGroup(index) {
+  comentarios.forEach((comentario, i) => {
+    comentario.classList.remove('active');
+    const groupStart = index * itemsPerGroup;
+    const groupEnd = groupStart + itemsPerGroup;
+    if (i >= groupStart && i < groupEnd) {
+      comentario.classList.add('active');
+    }
+  });
 }
 
-setInterval(() => {
-  currentIndex = (currentIndex + 1) % Math.ceil(comentarios.length / itemsPerPage);
-  showComentarios(currentIndex);
-}, 5000);
+// Inicializa
+showGroup(currentGroup);
 
+// Troca a cada 8 segundos
+setInterval(() => {
+  currentGroup = (currentGroup + 1) % totalGroups;
+  showGroup(currentGroup);
+}, 8000);
