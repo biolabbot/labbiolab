@@ -1,4 +1,4 @@
-/* Reset básico */
+/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -8,8 +8,8 @@
 body {
   font-family: 'Inter', sans-serif;
   color: #333;
-  overflow-x: hidden;
   background: #fff;
+  overflow-x: hidden;
 }
 
 img {
@@ -18,7 +18,7 @@ img {
   display: block;
 }
 
-/* Container */
+/* CONTAINER */
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -201,12 +201,12 @@ main {
 
 .carousel-track {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap; /* 🔑 impede quebra */
   justify-content: center;
 }
 
 .comentario {
-  flex: 0 0 33.33%; /* 3 por linha */
+  flex: 0 0 33.33%; /* 🔑 sempre 3 por linha */
   box-sizing: border-box;
   padding: 20px;
   background: linear-gradient(135deg, #f9fafb, #eef2ff);
@@ -215,14 +215,14 @@ main {
   box-shadow: 0 2px 6px rgba(0,0,0,.1);
   opacity: 0;
   transform: rotateY(90deg);
-  transition: all 0.8s ease;
-  display: none; /* 🔑 esconde por padrão */
+  transition: transform 0.8s ease, opacity 0.8s ease;
+  pointer-events: none;
 }
 
 .comentario.active {
-  display: block; /* 🔑 só mostra os ativos */
   opacity: 1;
   transform: rotateY(0deg);
+  pointer-events: auto;
 }
 
 .stars {
