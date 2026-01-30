@@ -22,20 +22,15 @@ menuToggle.addEventListener('click', () => {
 });
 
 // DEPOIMENTOS (mostrar 3 por vez, trocar a cada 8s)
+const track = document.querySelector('.carousel-track');
 const comentarios = document.querySelectorAll('.comentario');
 let currentGroup = 0;
 const itemsPerGroup = 3;
 const totalGroups = Math.ceil(comentarios.length / itemsPerGroup);
 
 function showGroup(index) {
-  comentarios.forEach((comentario, i) => {
-    comentario.classList.remove('active');
-    const groupStart = index * itemsPerGroup;
-    const groupEnd = groupStart + itemsPerGroup;
-    if (i >= groupStart && i < groupEnd) {
-      comentario.classList.add('active');
-    }
-  });
+  const offset = -(index * 100); // move 100% da largura por grupo
+  track.style.transform = `translateX(${offset}%)`;
 }
 
 // Inicializa
