@@ -21,7 +21,7 @@ menuToggle.addEventListener('click', () => {
   nav.classList.toggle('active');
 });
 
-// DEPOIMENTOS (virada de cartas, 3 por vez, trocar a cada 8s)
+// DEPOIMENTOS (virada de cartas, 3 por vez, trocar a cada 7s)
 const comentarios = document.querySelectorAll('.comentario');
 let currentGroup = 0;
 const itemsPerGroup = 3;
