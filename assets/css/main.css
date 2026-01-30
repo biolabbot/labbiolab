@@ -201,7 +201,7 @@ main {
 
 .carousel-track {
   display: flex;
-  flex-wrap: nowrap; /* 🔑 impede quebra */
+  flex-wrap: wrap; /* 🔑 permite que os grupos apareçam */
   justify-content: center;
 }
 
