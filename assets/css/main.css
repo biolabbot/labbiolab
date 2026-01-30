@@ -202,9 +202,9 @@ main {
 .carousel-track {
   display: flex;
   justify-content: center;
-  gap: 15px;        /* 🔑 espaço entre os cards */
+  gap: 15px;        /* espaço entre os cards */
   min-height: 200px;
-  padding: 0 15px;  /* 🔑 respiro nas laterais */
+  padding: 0 15px;  /* respiro nas laterais */
 }
 
 .comentario {
@@ -219,19 +219,23 @@ main {
   transition: transform 1.5s ease, opacity 1.5s ease;
   pointer-events: none;
   text-align: center;
-  height: 180px; /* 🔑 mais compacto */
-  border: 3px solid #c2c9d6; /* 🔑 borda mais escura */
-  display: none; /* 🔑 não ocupa espaço quando inativo */
+  height: 180px;
+  border: 3px solid #c2c9d6;
+
+  position: absolute;   /* mantém fora do fluxo */
+  visibility: hidden;   /* invisível mas animável */
 }
 
 .comentario.active {
-  display: flex; /* 🔑 só os ativos entram na linha */
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   opacity: 1;
   transform: rotateY(0deg);
   pointer-events: auto;
+  position: relative;   /* entra na linha */
+  visibility: visible;  /* aparece com animação */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .stars {
@@ -319,8 +323,18 @@ main {
     font-size: 1rem;
   }
 
+  .carousel-track {
+    flex-direction: column; /* 🔑 no mobile, empilha */
+    gap: 20px;
+    padding: 0;
+  }
+
   .comentario {
-    flex: 0 0 100%; /* no mobile, 1 por linha */
-    height: auto;   /* ajusta altura automaticamente */
+    flex: 0 0 100%; /* um por linha */
+    position: relative; /* não sobrepõe */
+    visibility: visible; /* sempre visível no mobile */
+    opacity: 1;
+    transform: none;
+    height: auto; /* ajusta altura automaticamente */
   }
 }
