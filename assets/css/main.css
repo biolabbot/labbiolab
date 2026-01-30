@@ -8,7 +8,7 @@
 body {
   font-family: 'Inter', sans-serif;
   color: #333;
-  overflow-x: hidden; /* evita rolagem horizontal */
+  overflow-x: hidden;
   background: #fff;
 }
 
@@ -200,21 +200,29 @@ main {
 
 .carousel-track {
   display: flex;
-  transition: transform 0.5s ease;
+  flex-wrap: wrap;
 }
 
 .comentario {
   flex: 0 0 33.33%;
   box-sizing: border-box;
   padding: 20px;
-  background: #fff;
+  background: linear-gradient(135deg, #f9fafb, #eef2ff); /* degradê leve */
   margin: 10px;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,.1);
+  opacity: 0;
+  transform: rotateY(90deg);
+  transition: all 0.8s ease;
+}
+
+.comentario.active {
+  opacity: 1;
+  transform: rotateY(0deg);
 }
 
 .stars {
-  color: #FFD700; /* estrelas douradas */
+  color: #FFD700;
   font-size: 1.2rem;
 }
 
@@ -243,26 +251,30 @@ main {
   bottom: 20px;
   right: 20px;
   background: #25D366;
-  width: 50px;       /* tamanho reduzido */
-  height: 50px;      /* tamanho reduzido */
+  width: 50px;       /* menor */
+  height: 50px;      /* menor */
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1100;
-  box-shadow: 0 2px 6px rgba(0,0,0,.2); /* sombra para destacar */
+  box-shadow: 0 2px 6px rgba(0,0,0,.2);
   transition: transform 0.3s ease;
 }
 
 .whatsapp-float img {
-  width: 28px;       /* ícone proporcional */
+  width: 28px;
   height: 28px;
 }
 
 .whatsapp-float:hover {
-  transform: scale(1.1); /* efeito ao passar o mouse */
+  transform: scale(1.1);
 }
 
+/* SLIDES ESPECÍFICOS */
+.hero-slide.biopsia {
+  background-image: url('../images/biopsia.png');
+}
 
 .hero-slide.sexagem {
   background-image: url('../images/sexagem2.jpg');
@@ -295,6 +307,6 @@ main {
   }
 
   .comentario {
-    flex: 0 0 100%; /* no mobile mostra 1 por vez */
+    flex: 0 0 100%;
   }
 }
