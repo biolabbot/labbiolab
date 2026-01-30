@@ -21,16 +21,21 @@ menuToggle.addEventListener('click', () => {
   nav.classList.toggle('active');
 });
 
-// DEPOIMENTOS (mostrar 3 por vez, trocar a cada 8s)
-const track = document.querySelector('.carousel-track');
+// DEPOIMENTOS (virada de cartas, 3 por vez, trocar a cada 8s)
 const comentarios = document.querySelectorAll('.comentario');
 let currentGroup = 0;
 const itemsPerGroup = 3;
 const totalGroups = Math.ceil(comentarios.length / itemsPerGroup);
 
 function showGroup(index) {
-  const offset = -(index * 100); // move 100% da largura por grupo
-  track.style.transform = `translateX(${offset}%)`;
+  comentarios.forEach((comentario, i) => {
+    comentario.classList.remove('active');
+    const groupStart = index * itemsPerGroup;
+    const groupEnd = groupStart + itemsPerGroup;
+    if (i >= groupStart && i < groupEnd) {
+      comentario.classList.add('active');
+    }
+  });
 }
 
 // Inicializa
