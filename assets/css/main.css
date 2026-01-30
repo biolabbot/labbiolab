@@ -201,12 +201,13 @@ main {
 
 .carousel-track {
   display: flex;
-  flex-wrap: wrap; /* 🔑 permite que os grupos apareçam */
+  flex-wrap: wrap; /* permite que os grupos apareçam */
   justify-content: center;
+  min-height: 350px; /* garante espaço para os grupos seguintes */
 }
 
 .comentario {
-  flex: 0 0 33.33%; /* 🔑 sempre 3 por linha */
+  flex: 0 0 30%; /* ligeiramente menor para caber 3 lado a lado */
   box-sizing: border-box;
   padding: 20px;
   background: linear-gradient(135deg, #f9fafb, #eef2ff);
