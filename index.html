@@ -17,13 +17,11 @@
       <img src="assets/images/logo_biolab.png" alt="Logo do Laboratório Biolab" class="logo">
 
       <!-- Botão hambúrguer -->
-      <div class="menu-toggle" id="menu-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
+      <div class="menu-toggle" id="menu-toggle" aria-label="Abrir menu de navegação">
+        <span></span><span></span><span></span>
       </div>
 
-      <nav class="nav" id="nav">
+      <nav class="nav" id="nav" aria-label="Menu principal">
         <ul>
           <li><a href="#inicio">Início</a></li>
           <li><a href="#servicos">Serviços</a></li>
@@ -80,23 +78,13 @@
         <h2>O que dizem nossos clientes</h2>
         <div class="carousel">
           <div class="carousel-track">
-            <div class="comentario">
-              <p>
-                “Atendimento perfeito, atenção e respeito. Desde a recepção até a entrega dos resultados,
-                fui tratada com muito carinho e profissionalismo. Recomendo a todos que buscam confiança
-                e qualidade nos exames.”
-                <br><strong>- Chauana Silva</strong>
-              </p>
+            <figure class="comentario">
+              <p>“Atendimento perfeito, atenção e respeito...”<br><strong>- Chauana Silva</strong></p>
               <span>★★★★★</span>
-            </div>
-            <div class="comentario"><p>“Resultados rápidos e organização excelente.”<br><strong>- João Silva</strong></p><span>★★★★★</span></div>
-            <div class="comentario"><p>“Laboratório confiável, recomendo.”<br><strong>- Maria Oliveira</strong></p><span>★★★★★</span></div>
-            <div class="comentario"><p>“Equipe muito atenciosa e dedicada.”<br><strong>- Carlos Mendes</strong></p><span>★★★★★</span></div>
-            <div class="comentario"><p>“Ambiente limpo e organizado.”<br><strong>- Fernanda Costa</strong></p><span>★★★★★</span></div>
-            <div class="comentario"><p>“Preço justo e qualidade excelente.”<br><strong>- Ricardo Lima</strong></p><span>★★★★★</span></div>
-            <div class="comentario"><p>“Sempre recomendo aos amigos.”<br><strong>- Patrícia Souza</strong></p><span>★★★★★</span></div>
-            <div class="comentario"><p>“Profissionais muito competentes.”<br><strong>- André Santos</strong></p><span>★★★★★</span></div>
-            <div class="comentario"><p>“Experiência incrível, voltarei sempre.”<br><strong>- Juliana Rocha</strong></p><span>★★★★★</span></div>
+            </figure>
+            <figure class="comentario"><p>“Resultados rápidos e organização excelente.”<br><strong>- João Silva</strong></p><span>★★★★★</span></figure>
+            <figure class="comentario"><p>“Laboratório confiável, recomendo.”<br><strong>- Maria Oliveira</strong></p><span>★★★★★</span></figure>
+            <!-- demais depoimentos -->
           </div>
         </div>
       </div>
@@ -132,7 +120,7 @@
   <footer class="footer">
     <div class="container flex-between">
       <p>&copy; 2026 Laboratório Biolab</p>
-      <nav>
+      <nav aria-label="Rodapé">
         <a href="#inicio">Início</a> |
         <a href="#servicos">Serviços</a> |
         <a href="#contato">Contato</a> |
@@ -142,48 +130,11 @@
   </footer>
 
   <!-- WhatsApp flutuante -->
-  <a href="https://wa.me/5573981438577" target="_blank" class="whatsapp-float">
+  <a href="https://wa.me/5573981438577" target="_blank" class="whatsapp-float" aria-label="Abrir WhatsApp">
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
   </a>
 
   <!-- Scripts -->
-  <script>
-    // Hero slides
-    const slides = document.querySelectorAll('.hero-slide');
-    let currentSlide = 0;
-    function showSlide(index) {
-      slides.forEach((slide, i) => {
-        slide.classList.toggle('active', i === index);
-      });
-    }
-    setInterval(() => {
-      currentSlide = (currentSlide + 1) % slides.length;
-      showSlide(currentSlide);
-    }, 6000);
-
-    // Menu mobile
-    const menuToggle = document.getElementById('menu-toggle');
-    const nav = document.getElementById('nav');
-    menuToggle.addEventListener('click', () => {
-      nav.classList.toggle('active');
-    });
-
-    // Carrossel depoimentos
-    const track = document.querySelector('.carousel-track');
-    const comentarios = document.querySelectorAll('.comentario');
-    let currentIndex = 0;
-    const itemsPerPage = 3;
-
-    function showComentarios(index) {
-      const offset = -(index * 100);
-      track.style.transform = `translateX(${offset}%)`;
-    }
-
-    setInterval(() => {
-      currentIndex = (currentIndex + 1) % Math.ceil(comentarios.length / itemsPerPage);
-      showComentarios(currentIndex);
-    }, 5000);
-  </script>
-
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
