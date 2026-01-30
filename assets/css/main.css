@@ -243,19 +243,26 @@ main {
   bottom: 20px;
   right: 20px;
   background: #25D366;
-  width: 60px;
-  height: 60px;
+  width: 50px;       /* tamanho reduzido */
+  height: 50px;      /* tamanho reduzido */
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1100;
+  box-shadow: 0 2px 6px rgba(0,0,0,.2); /* sombra para destacar */
+  transition: transform 0.3s ease;
 }
 
-/* SLIDES ESPECÍFICOS */
-.hero-slide.biopsia {
-  background-image: url('../images/biopsia.png');
+.whatsapp-float img {
+  width: 28px;       /* ícone proporcional */
+  height: 28px;
 }
+
+.whatsapp-float:hover {
+  transform: scale(1.1); /* efeito ao passar o mouse */
+}
+
 
 .hero-slide.sexagem {
   background-image: url('../images/sexagem2.jpg');
