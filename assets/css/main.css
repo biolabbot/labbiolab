@@ -338,3 +338,17 @@ main {
     height: auto; /* ajusta altura automaticamente */
   }
 }
+
+/* MAPA */
+.map-image {
+  width: 100%;
+  max-width: 600px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  margin-top: 15px;
+  transition: transform 0.3s;
+}
+
+.map-image:hover {
+  transform: scale(1.02);
+}
