@@ -339,16 +339,18 @@ main {
   }
 }
 
-/* MAPA */
+/* MAPA em círculo */
 .map-image {
-  width: 100%;
-  max-width: 600px;
-  border: 2px solid #ccc;
-  border-radius: 8px;
+  width: 200px;          /* tamanho fixo para manter o círculo */
+  height: 200px;         /* igual à largura */
+  object-fit: cover;     /* garante que a imagem se ajuste dentro do círculo */
+  border-radius: 50%;    /* transforma em círculo */
+  border: 3px solid #000; /* borda preta */
   margin-top: 15px;
   transition: transform 0.3s;
 }
 
 .map-image:hover {
-  transform: scale(1.02);
+  transform: scale(1.05);
 }
+
