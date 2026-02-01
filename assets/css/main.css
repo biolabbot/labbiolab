@@ -354,3 +354,16 @@ main {
   transform: scale(1.05);
 }
 
+/* Layout contato */
+.contact-flex {
+  display: flex;
+  align-items: center;
+  gap: 30px; /* espaço entre círculo e texto */
+  flex-wrap: wrap; /* em telas pequenas, fica um embaixo do outro */
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 250px;
+}
+
