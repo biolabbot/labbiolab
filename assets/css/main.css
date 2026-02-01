@@ -373,36 +373,40 @@ main {
   inset: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* separa topo e base */
+  justify-content: space-between;
   padding: 40px;
   color: #fff;
 }
 
 /* Botão no topo */
 .hero-top {
-  text-align: center;
+  position: absolute;
+  top: 40px;          /* força para o topo */
+  left: 50%;
+  transform: translateX(-50%); /* centraliza horizontalmente */
 }
 
 .btn-top {
-  font-size: 1.4rem;   /* aumenta a fonte */
-  padding: 15px 30px;  /* aumenta o tamanho do botão */
-  margin-top: 20px;    /* sobe um pouco */
+  font-size: 1.6rem;   /* aumenta a fonte */
+  padding: 18px 35px;  /* aumenta o tamanho do botão */
 }
 
 /* Texto no terço inferior à esquerda */
 .hero-bottom {
-  align-self: flex-start; /* força para a esquerda */
-  margin-bottom: 10%;     /* posiciona no terço inferior */
-  max-width: 600px;
+  position: absolute;
+  bottom: 15%;         /* força para o terço inferior */
+  left: 40px;          /* alinha à esquerda */
+  max-width: 500px;    /* reduz largura para evitar quebra feia */
   text-align: left;
 }
 
 .hero-bottom h1 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 2.2rem;
-  margin-bottom: 15px;
+  font-size: 1.8rem;   /* diminui o tamanho */
+  margin-bottom: 10px;
 }
 
 .hero-bottom p {
-  font-size: 1.2rem;
+  font-size: 1rem;     /* diminui o tamanho */
+  line-height: 1.4;    /* melhora espaçamento */
 }
