@@ -123,7 +123,7 @@ main {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,.4);
+  background: rgba(0,0,0,.4); /* overlay escuro */
   color: #fff;
 }
 
@@ -135,23 +135,9 @@ main {
   transform: translateX(-50%);
 }
 
-.btn {
-  display: inline-block;
-  background: #2563EB;
-  color: #fff;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: background 0.3s ease;
-}
-
-.btn:hover {
-  background: #1E40AF;
-}
-
 .btn-top {
-  font-size: clamp(1.2rem, 2vw, 1.6rem);
-  padding: 15px 30px;
+  font-size: 1.6rem;
+  padding: 18px 35px;
 }
 
 /* Texto no terço inferior à esquerda */
@@ -165,13 +151,29 @@ main {
 
 .hero-bottom h1 {
   font-family: 'Montserrat', sans-serif;
-  font-size: clamp(1.4rem, 3vw, 1.8rem);
+  font-size: 1.8rem;
   margin-bottom: 10px;
 }
 
 .hero-bottom p {
-  font-size: clamp(0.9rem, 2vw, 1rem);
+  font-size: 1rem;
   line-height: 1.4;
+}
+
+/* BOTÃO padrão */
+.btn {
+  display: inline-block;
+  background: #2563EB;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #1E40AF;
 }
 
 /* SERVIÇOS */
