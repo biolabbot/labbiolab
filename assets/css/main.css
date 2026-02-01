@@ -356,14 +356,14 @@ main {
 
 /* Layout contato */
 .contact-flex {
-  display: flex;
-  align-items: center;
-  gap: 30px; /* espaço entre círculo e texto */
-  flex-wrap: wrap; /* em telas pequenas, fica um embaixo do outro */
+  display: flex;          /* coloca lado a lado */
+  align-items: center;    /* alinha verticalmente */
+  gap: 30px;              /* espaço entre círculo e texto */
+  flex-wrap: wrap;        /* em telas pequenas, quebra para baixo */
 }
 
 .contact-info {
-  flex: 1;
-  min-width: 250px;
+  flex: 1;                /* ocupa o espaço restante */
+  min-width: 250px;       /* garante largura mínima */
 }
 
