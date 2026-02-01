@@ -367,3 +367,42 @@ main {
   min-width: 250px;       /* garante largura mínima */
 }
 
+/* HERO ajustes */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* separa topo e base */
+  padding: 40px;
+  color: #fff;
+}
+
+/* Botão no topo */
+.hero-top {
+  text-align: center;
+}
+
+.btn-top {
+  font-size: 1.4rem;   /* aumenta a fonte */
+  padding: 15px 30px;  /* aumenta o tamanho do botão */
+  margin-top: 20px;    /* sobe um pouco */
+}
+
+/* Texto no terço inferior à esquerda */
+.hero-bottom {
+  align-self: flex-start; /* força para a esquerda */
+  margin-bottom: 10%;     /* posiciona no terço inferior */
+  max-width: 600px;
+  text-align: left;
+}
+
+.hero-bottom h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+.hero-bottom p {
+  font-size: 1.2rem;
+}
