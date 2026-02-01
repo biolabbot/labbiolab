@@ -365,7 +365,7 @@ main {
 /* Botão no topo do banner */
 .hero-top {
   position: absolute;
-  top: 30px;          /* distância do topo */
+  top: 25px;          /* distância do topo */
   left: 50%;
   transform: translateX(-50%);
 }
