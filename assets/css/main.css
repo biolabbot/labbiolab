@@ -127,15 +127,6 @@ main {
   color: #fff;
 }
 
-/* Botão colado no topo do banner */
-.hero-top {
-  position: absolute;
-  top: 0;               /* colado no topo da imagem */
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 2000;        
-}
-
 .btn-top {
   display: inline-block;
   background: #2563EB;
