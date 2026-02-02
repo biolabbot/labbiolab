@@ -355,7 +355,7 @@ main {
 
   /* Botão no mobile: desce abaixo da logo */
   .hero-top {
-    top: 80px;   /* ajuste aqui para não ficar em cima da logo */
+    top: 150px;   /* ajuste aqui para não ficar em cima da logo */
     z-index: 2000;
   }
 
