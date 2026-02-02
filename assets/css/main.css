@@ -130,7 +130,7 @@ main {
 /* Botão colado no topo do banner */
 .hero-top {
   position: absolute;
-  top: 0;               /* colado no topo */
+  top: 80px;               /* colado no topo */
   left: 50%;
   transform: translateX(-50%);
   z-index: 2000;        
