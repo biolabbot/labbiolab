@@ -407,7 +407,7 @@ main {
 /* MOBILE */
 @media (max-width: 768px) {
   .hero-top {
-    top: 90px;   /* mobile: desce abaixo da logo */
+    top: 82px;   /* mobile: desce abaixo da logo */
     z-index: 2000;
   }
 
