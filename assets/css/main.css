@@ -126,34 +126,54 @@ main {
   color: #fff;
 }
 
-.hero-overlay h1 {
+/* Botão no topo do banner */
+.hero-top {
+  position: absolute;
+  top: 25px;          /* distância do topo */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.btn-top {
+  display: inline-block;
+  background: #2563EB;
+  color: #fff !important;
+  padding: 14px 28px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.2rem;
+  transition: background 0.3s ease;
+}
+
+.btn-top:hover {
+  background: #1E40AF;
+}
+
+/* Texto no terço inferior */
+.hero-bottom {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  max-width: 600px;
+  color: #fff;
+}
+
+.hero-bottom h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 2.5rem;
   margin-bottom: 15px;
   line-height: 1.2;
 }
 
-.hero-overlay p {
+.hero-bottom p {
   font-size: 1.2rem;
   margin-bottom: 20px;
   max-width: 600px;
   margin: 0 auto;
-}
-
-/* BOTÃO */
-.btn {
-  display: inline-block;
-  background: #2563EB;
-  color: #fff;
-  padding: 12px 25px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: background 0.3s ease;
-}
-
-.btn:hover {
-  background: #1E40AF;
 }
 
 /* SERVIÇOS */
@@ -197,16 +217,16 @@ main {
 .carousel-track {
   display: flex;
   justify-content: center;
-  gap: 15px;        /* espaço entre os cards */
+  gap: 15px;
   min-height: 200px;
-  padding: 0 15px;  /* respiro nas laterais */
+  padding: 0 15px;
 }
 
 .comentario {
   flex: 0 0 33.33%;
   box-sizing: border-box;
   padding: 12px;
-  background: #f0f4f8; /* cinza claro azulado */
+  background: #f0f4f8;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,.1);
   opacity: 0;
@@ -216,17 +236,16 @@ main {
   text-align: center;
   height: 180px;
   border: 3px solid #c2c9d6;
-
-  position: absolute;   /* mantém fora do fluxo */
-  visibility: hidden;   /* invisível mas animável */
+  position: absolute;
+  visibility: hidden;
 }
 
 .comentario.active {
   opacity: 1;
   transform: rotateY(0deg);
   pointer-events: auto;
-  position: relative;   /* entra na linha */
-  visibility: visible;  /* aparece com animação */
+  position: relative;
+  visibility: visible;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -310,37 +329,47 @@ main {
     height: 60vh;
   }
 
-  .hero-overlay h1 {
+  .hero-bottom h1 {
     font-size: 1.8rem;
   }
 
-  .hero-overlay p {
+  .hero-bottom p {
     font-size: 1rem;
   }
 
   .carousel-track {
-    flex-direction: column; /* 🔑 no mobile, empilha */
+    flex-direction: column;
     gap: 20px;
     padding: 0;
   }
 
   .comentario {
-    flex: 0 0 100%; /* um por linha */
-    position: relative; /* não sobrepõe */
-    visibility: visible; /* sempre visível no mobile */
+    flex: 0 0 100%;
+    position: relative;
+    visibility: visible;
     opacity: 1;
     transform: none;
-    height: auto; /* ajusta altura automaticamente */
+    height: auto;
+  }
+
+  /* Ajuste do botão no mobile */
+  .hero-top {
+    top: 10px; /* desce um pouco para não parecer fora da tela */
+  }
+
+  .btn-top {
+    font-size: 1rem;
+    padding: 10px 20px;
   }
 }
 
 /* MAPA em círculo */
 .map-image {
-  width: 200px;          /* tamanho fixo para manter o círculo */
-  height: 200px;         /* igual à largura */
-  object-fit: cover;     /* garante que a imagem se ajuste dentro do círculo */
-  border-radius: 50%;    /* transforma em círculo */
-  border: 3px solid #000; /* borda preta */
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #000;
   margin-top: 15px;
   transition: transform 0.3s;
 }
@@ -351,37 +380,13 @@ main {
 
 /* Layout contato */
 .contact-flex {
-  display: flex;          /* coloca lado a lado */
-  align-items: center;    /* alinha verticalmente */
-  gap: 30px;              /* espaço entre círculo e texto */
-  flex-wrap: wrap;        /* em telas pequenas, quebra para baixo */
-}
-
-/* Botão no topo do banner */
-.hero-top {
-  position: absolute;
-  top: 25px;          /* distância do topo */
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.btn-top {
-  font-size: 1.2rem;
-  padding: 14px 28px;
-}
-
-/* Texto no terço inferior */
-.hero-bottom {
-  position: absolute;
-  bottom: 15%;        /* coloca no terço inferior */
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  max-width: 600px;
-  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
 .contact-info {
-  flex: 1;                /* ocupa o espaço restante */
-  min-width: 250px;       /* garante largura mínima */
+  flex: 1;
+  min-width: 250px;
 }
