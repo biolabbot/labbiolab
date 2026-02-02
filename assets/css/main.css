@@ -355,7 +355,7 @@ main {
 
   /* Botão no mobile: desce abaixo da logo */
   .hero-top {
-    top: 30px;   /* ajuste aqui para não ficar em cima da logo */
+    top: 80px;   /* ajuste aqui para não ficar em cima da logo */
     z-index: 2000;
   }
 
@@ -391,4 +391,28 @@ main {
 .contact-info {
   flex: 1;
   min-width: 250px;
+}
+
+/* Botão colado no topo do banner (desktop) */
+.hero-top {
+  position: absolute;
+  top: 0;               /* desktop: colado no topo da imagem */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2000;        
+}
+
+/* ... outras regras ... */
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .hero-top {
+    top: 100px;   /* mobile: desce abaixo da logo */
+    z-index: 2000;
+  }
+
+  .btn-top {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
 }
