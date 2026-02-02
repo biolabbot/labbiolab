@@ -126,13 +126,13 @@ main {
   color: #fff;
 }
 
-/* Botão no topo do banner */
+/* Botão colado no topo do banner */
 .hero-top {
   position: absolute;
-  top: 25px;          /* distância do topo */
+  top: 0;               /* colado no topo */
   left: 50%;
   transform: translateX(-50%);
-  z-index: 10;
+  z-index: 2000;        /* acima do header e overlay */
 }
 
 .btn-top {
@@ -352,9 +352,10 @@ main {
     height: auto;
   }
 
-  /* Ajuste do botão no mobile */
+  /* Botão colado no topo no mobile */
   .hero-top {
-    top: 10px; /* desce um pouco para não parecer fora da tela */
+    top: 0;
+    z-index: 2000;
   }
 
   .btn-top {
