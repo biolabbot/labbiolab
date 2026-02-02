@@ -133,7 +133,7 @@ main {
   top: 0;               /* colado no topo */
   left: 50%;
   transform: translateX(-50%);
-  z-index: 2000;        /* acima do header e overlay */
+  z-index: 2000;        
 }
 
 .btn-top {
