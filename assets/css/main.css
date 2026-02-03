@@ -147,12 +147,14 @@ main {
 .hero-bottom {
   position: absolute;
   bottom: 15%;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;              /* começa na borda esquerda */
+  transform: none;      /* remove o translateX */
   text-align: center;
-  max-width: 600px;
   color: #fff;
+  width: 100%;          /* ocupa toda a largura do banner */
+  max-width: none;      /* remove limite */
 }
+
 
 .hero-bottom h1 {
   font-family: 'Montserrat', sans-serif;
@@ -452,10 +454,12 @@ main {
   }
 }
 
-/* HERO HIGHLIGHT */
 .hero-highlight {
-  background-color: #2563EB;   /* mesma cor do botão */
-  color: #fff;                 /* texto branco */
-  padding: 20px;               /* espaço interno */
-  text-align: center;          /* centraliza o texto */
-  width: 100%;                
+  background-color: #2563EB;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 0; /* cantos retos */
+}
