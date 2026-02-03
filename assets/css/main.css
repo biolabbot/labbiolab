@@ -402,6 +402,26 @@ main {
     z-index: 2000;
   }
 
+  .hero-bottom h1, 
+.hero-bottom p {
+  animation: fadeInUp 1.2s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+  .hero-bottom p {
+  animation-delay: 0.3s; /* aparece 0.3s depois do h1 */
+}
+
   .btn-top {
     font-size: 1rem;
     padding: 10px 20px;
