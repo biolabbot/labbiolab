@@ -156,13 +156,14 @@ main {
 
 .hero-bottom h1 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 2.5rem;
-  margin-bottom: 15px;
+  font-size: 2.0rem;
+  margin-bottom: 10px;
   line-height: 1.2;
+  white-space: nowrap; /* mantém tudo em uma linha */
 }
 
 .hero-bottom p {
-  font-size: 1.2rem;
+  font-size: 1.0rem;
   margin-bottom: 20px;
   max-width: 600px;
   margin: 0 auto;
@@ -404,13 +405,13 @@ main {
 
   .hero-bottom h1, 
 .hero-bottom p {
-  animation: fadeInUp 1.2s ease-out;
+  animation: fadeInUp 1.8s ease-out;
 }
 
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(10px);
   }
   to {
     opacity: 1;
