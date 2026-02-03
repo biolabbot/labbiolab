@@ -429,8 +429,11 @@ main {
   padding: 20px;               /* espaço interno */
   text-align: center;          /* centraliza o texto */
   width: 100%;                 /* ocupa toda a largura do banner */
+  margin-left: -50vw; /* “puxa” para esquerda */ 
+  left: 50%; /* centraliza */ 
+  position: relative;
   box-sizing: border-box;
-  border-radius: 8px;          /* opcional: cantos arredondados */
+  border-radius: 12px;          /* opcional: cantos arredondados */
 }
 
 .hero-highlight h1 {
