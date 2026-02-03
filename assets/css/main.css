@@ -440,13 +440,13 @@ main {
 
 .hero-highlight h1 {
   font-size: 1.8rem;
-  margin-bottom: 8px;
-  margin-top: -10px; /* sobe o título */
+  margin-bottom: 5px;
+  margin-top: -15px; /* sobe o título */
 }
 
 .hero-highlight p {
   font-size: 1.0rem;
-  line-height: 0.9;
+  line-height: 0.7;
   margin-top: -6px; /* sobe o parágrafo */
 }
 
