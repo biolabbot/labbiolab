@@ -146,7 +146,7 @@ main {
 /* Texto no terço inferior */
 .hero-bottom {
   position: absolute;
-  bottom: -2%;
+  bottom: -6%;
   left: 0;              /* começa na borda esquerda */
   transform: none;      /* remove o translateX */
   text-align: center;
@@ -459,7 +459,7 @@ main {
 .hero-highlight {
   background-color: #2563EB;
   color: #fff;
-  padding: 9px;
+  padding: 11px;
   text-align: center;
   width: 100%;
   box-sizing: border-box;
