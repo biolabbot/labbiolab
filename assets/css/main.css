@@ -448,3 +448,11 @@ main {
     padding: 10px 20px;
   }
 }
+
+/* HERO HIGHLIGHT */
+.hero-highlight {
+  background-color: #2563EB;   /* mesma cor do botão */
+  color: #fff;                 /* texto branco */
+  padding: 20px;               /* espaço interno */
+  text-align: center;          /* centraliza o texto */
+  width: 100%;                
