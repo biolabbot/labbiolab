@@ -426,7 +426,7 @@ main {
 }
 
   .hero-highlight {
-  background-color: #2B4C7E;   /* mesma cor do botão */
+  background-color: #1E3A8A;   /* mesma cor do botão */
   color: #fff;                 /* texto branco */
   padding: 20px;               /* espaço interno */
   text-align: center;          /* centraliza o texto */
@@ -457,7 +457,7 @@ main {
 }
 
 .hero-highlight {
-  background-color: #2563EB;
+  background-color: #1E3A8A;
   color: #fff;
   padding: 7px;
   text-align: center;
