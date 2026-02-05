@@ -456,7 +456,7 @@ main {
   .hero-highlight {
   background-color: #1E3A8A;   /* mesma cor do botão */
   color: #fff;                 /* texto branco */
-  padding: 30px 20px;               /* espaço interno */
+  padding: 25px 20px;               /* espaço interno */
   text-align: center;          /* centraliza o texto */
   width: 100%;                 /* ocupa toda a largura do banner */
   margin-left: -50vw; /* “puxa” para esquerda */ 
@@ -467,8 +467,8 @@ main {
 }
 
 .hero-highlight h1 {
-  font-size: 1.4rem;
-  margin-bottom: 5px;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
   margin-top: -15px; /* sobe o título */
 }
 
@@ -484,6 +484,13 @@ main {
   .btn-top {
     font-size: 1rem;
     padding: 10px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .whatsapp-float {
+    bottom: 60px; /* sobe o botão no mobile */
+    right: 10px;  /* opcional: ajusta mais para dentro */
   }
 }
 
