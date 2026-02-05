@@ -309,7 +309,7 @@ main {
 /* Versão mobile */
 @media (max-width: 768px) {
   .hero-slide.dna {
-    background-image: url('../images/dnamobile2.png');
+    background-image: url('../images/dnamobile3.png');
     background-size: cover;
     background-position: center;
   }
