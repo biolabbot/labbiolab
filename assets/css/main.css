@@ -414,6 +414,16 @@ main {
   z-index: 2000;        
 }
 
+.hero-highlight {
+  background-color: #1E3A8A;
+  color: #fff;
+  padding: 7px;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 0; /* cantos retos */
+}
+
 /* ... outras regras ... */
 
 /* MOBILE */
@@ -477,12 +487,4 @@ main {
   }
 }
 
-.hero-highlight {
-  background-color: #1E3A8A;
-  color: #fff;
-  padding: 7px;
-  text-align: center;
-  width: 100%;
-  box-sizing: border-box;
-  border-radius: 0; /* cantos retos */
-}
+
