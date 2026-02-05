@@ -298,6 +298,24 @@ main {
 }
 
 /* SLIDES ESPECÍFICOS */
+
+/* Versão desktop */
+.hero-slide.dna {
+  background-image: url('../images/dna-desktop.png');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Versão mobile */
+@media (max-width: 768px) {
+  .hero-slide.dna {
+    background-image: url('../images/dnamobile.png');
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+
 .hero-slide.biopsia {
   background-image: url('../images/biopsia2.png');
 }
