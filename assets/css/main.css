@@ -457,15 +457,18 @@ main {
 }
 
 .hero-highlight h1 {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   margin-bottom: 5px;
   margin-top: -15px; /* sobe o título */
 }
 
 .hero-highlight p {
-  font-size: 1.0rem;
+  font-size: 0.8rem;
   line-height: 0.7;
   margin-top: -6px; /* sobe o parágrafo */
+  white-space: nowrap; /* força ficar em uma linha só */ 
+  overflow: hidden; /* evita estourar a largura */ 
+  text-overflow: ellipsis; /* se passar do limite, mostra "..." */
 }
 
   .btn-top {
