@@ -579,7 +579,7 @@ main {
   font-size: 14px;           /* fonte menor */ 
   margin: 0 4px;             /* espaçamento lateral */ 
 }
-
+}
 /* Faixa azul topo */
 .top-bar {
   background-color: #004080; /* azul */
