@@ -191,12 +191,23 @@ main {
   width: 100%;
 }
 
+/* Faixa azul dentro do banner */
+.hero-highlight {
+  background-color: #1E3A8A;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 0;
+  position: relative;
+}
+
 .hero-bottom h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 2.0rem;
   margin-bottom: 5px;
   line-height: 1.2;
-  white-space: nowrap;
 }
 
 .hero-bottom p {
@@ -337,7 +348,7 @@ main {
   width: 200px;
   height: 200px;
   object-fit: cover;
-  border-radius: 50%; /* mantém circular */
+  border-radius: 50%;
   border: 3px solid #000;
   margin-top: 15px;
   transition: transform 0.3s;
@@ -368,5 +379,32 @@ main {
 
 /* MOBILE ajustes */
 @media (max-width: 768px) {
-  .logo { height: 60px; }
-  .nav
+  .
+/* Versão mobile */
+@media (max-width: 768px) {
+  .hero-slide.dna {
+    background-image: url('../images/dnamobile3.png');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hero-slide.biopsia {
+    background-image: url('../images/biomobile.png');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hero-slide.sexagem {
+    background-image: url('../images/sexagemmobile.png');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hero-slide.online {
+    background-image: url('../images/onlinemobile.png');
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+  
