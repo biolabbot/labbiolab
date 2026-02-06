@@ -540,4 +540,22 @@ main {
   font-weight: bold;
 }
 
+@media (max-width: 768px) {
+  .footer .container {
+    flex-direction: column;   /* empilha os blocos */
+    align-items: center;
+    gap: 6px;                 /* espaço entre links e © */
+    text-align: center;
+    padding: 8px 0;
+  }
+
+  .footer nav {
+    display: inline-block;    /* mantém os links em linha */
+  }
+
+  .footer nav a {
+    font-size: 14px;          /* fonte menor para caber melhor */
+    margin: 0 4px;            /* espaçamento lateral */
+  }
+}
 
