@@ -31,10 +31,40 @@ img {
   align-items: center;
 }
 
+/* FAIXA AZUL TOPO */
+.top-bar {
+  background-color: #004080; /* azul */
+  color: #fff;
+  padding: 8px 12px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1200;
+}
+
+.top-bar .container {
+  display: flex;
+  justify-content: flex-end; /* ícones à direita */
+  align-items: center;
+}
+
+.top-bar .social-links a {
+  color: #fff;
+  margin-left: 12px;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.top-bar .social-links a:hover {
+  color: #ffd700;
+}
+
+
 /* HEADER */
 .header {
   position: fixed;
-  top: 0;
+  top: 20px;
   width: 100%;
   background: #fff;
   border-bottom: 1px solid #eee;
@@ -576,3 +606,10 @@ main {
     margin: 0 4px;             /* espaçamento lateral */
   }
 }
+
+@media (max-width: 768px) {
+  main {
+    padding-top: 80px; /* reduz espaço no mobile */
+  }
+}
+
