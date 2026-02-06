@@ -31,6 +31,35 @@ img {
   align-items: center;
 }
 
+/* FAIXA AZUL TOPO */
+.top-bar {
+  background-color: #004080;
+  color: #fff;
+  padding: 8px 12px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1200;
+}
+
+.top-bar .container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.top-bar .social-links a {
+  color: #fff;
+  margin-left: 12px;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.top-bar .social-links a:hover {
+  color: #ffd700;
+}
+
 /* HEADER */
 .header {
   position: fixed;
@@ -96,7 +125,7 @@ img {
 
 /* MAIN */
 main {
-  padding-top: 140px; /* aumenta para compensar faixa azul + header */
+  padding-top: 140px; /* compensa faixa azul + header */
 }
 
 /* HERO */
@@ -143,6 +172,15 @@ main {
   background: #1E40AF;
 }
 
+/* Botão centralizado no banner */
+.hero-top {
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2000;
+}
+
 /* Texto no terço inferior */
 .hero-bottom {
   position: absolute;
@@ -151,7 +189,6 @@ main {
   text-align: center;
   color: #fff;
   width: 100%;
-  max-width: none;
 }
 
 .hero-bottom h1 {
@@ -295,6 +332,34 @@ main {
   transform: scale(1.1);
 }
 
+/* MAPA em círculo */
+.map-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%; /* mantém circular */
+  border: 3px solid #000;
+  margin-top: 15px;
+  transition: transform 0.3s;
+}
+
+.map-image:hover {
+  transform: scale(1.05);
+}
+
+/* Layout contato */
+.contact-flex {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 250px;
+}
+
 /* SLIDES ESPECÍFICOS */
 .hero-slide.dna { background-image: url('../images/dnanew.png'); }
 .hero-slide.biopsia { background-image: url('../images/biopsia2.png'); }
@@ -304,41 +369,4 @@ main {
 /* MOBILE ajustes */
 @media (max-width: 768px) {
   .logo { height: 60px; }
-  .nav { display: none; }
-  .menu-toggle { display: flex; }
-  .hero { height: 90vh; }
-  .hero-bottom h1 { font-size: 1.8rem; }
-  .hero-bottom p { font-size: 1rem; }
-  .carousel-track { flex-direction: column; gap: 20px; padding: 0; }
-  .comentario { flex: 0 0 100%; position: relative; visibility: visible; opacity: 1; transform: none; height: auto; }
-  .hero-top { top: 60px; z-index: 2000; }
-  .btn-top { font-size: 1rem; padding: 10px 20px; }
-  .footer .container { flex-direction: column; align-items: center; gap: 6px; text-align: center; padding: 8px 0; }
-  .footer nav { display: inline-block; }
-  .footer nav a { font-size: 14px; margin: 0 4px; }
-  .footer { padding: 4px 0; }
-  .top-bar .container { justify-content: center; } /* centraliza ícones no mobile */
-}
-
-/* Faixa azul topo */
-.top-bar {
-  background-color: #004080;
-  color: #fff;
-  padding: 8px 12px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1200;
-}
-
-.top-bar .container {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.top-bar .social-links a {
-  color: #fff;
-  margin-left: 12px;
-  font-size
+  .nav
