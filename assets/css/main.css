@@ -603,4 +603,14 @@ main {
     margin: 0 4px;             /* espaçamento lateral */
   }
 }
+.top-bar .social-links a {
+  color: #fff;
+  margin-left: 12px;
+  font-size: 18px;   /* tamanho dos ícones */
+  text-decoration: none;
+}
+
+.top-bar .social-links a:hover {
+  color: #ffd700;    /* muda cor ao passar o mouse */
+}
 
