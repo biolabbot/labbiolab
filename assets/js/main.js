@@ -104,6 +104,12 @@ function showGroup(index) {
 // Inicializa depoimentos
 showGroup(currentGroup);
 
+document.getElementById('contato-link').addEventListener('click', function(e) {
+  e.preventDefault();
+  const menu = document.getElementById('whatsapp-menu');
+  menu.style.display = (menu.style.display === 'flex') ? 'none' : 'flex';
+});
+
 // Troca depoimentos a cada 8 segundos
 setInterval(() => {
   currentGroup = (currentGroup + 1) % totalGroups;
