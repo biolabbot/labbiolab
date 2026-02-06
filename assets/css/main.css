@@ -306,6 +306,24 @@ main {
   background-position: center;
 }
 
+.hero-slide.biopsia {
+  background-image: url('../images/biopsia2.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-slide.sexagem {
+  background-image: url('../images/sexagemnew2.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-slide.online {
+  background-image: url('../images/res.png');
+  background-size: cover;
+  background-position: center;
+}
+
 /* Versão mobile */
 @media (max-width: 768px) {
   .hero-slide.dna {
@@ -313,15 +331,24 @@ main {
     background-size: cover;
     background-position: center;
   }
-}
 
+  .hero-slide.biopsia {
+    background-image: url('../images/biopsiambile.png');
+    background-size: cover;
+    background-position: center;
+  }
 
-.hero-slide.biopsia {
-  background-image: url('../images/biopsia2.png');
-}
+  .hero-slide.sexagem {
+    background-image: url('../images/sexagemmobile.png');
+    background-size: cover;
+    background-position: center;
+  }
 
-.hero-slide.sexagem {
-  background-image: url('../images/sexagemnew2.png');
+  .hero-slide.online {
+    background-image: url('../images/onlinemobile.png');
+    background-size: cover;
+    background-position: center;
+  }
 }
 
 /* MOBILE */
