@@ -561,7 +561,7 @@ main {
 
 @media (max-width: 768px) {
   .footer {
-    padding: 6px 0;            /* reduz a altura da faixa azul */
+    padding: 4px 0;            /* reduz a altura da faixa azul */
   }
 
   .footer .container {
