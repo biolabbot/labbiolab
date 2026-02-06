@@ -565,52 +565,42 @@ main {
   }
 
   .footer .container {
-    flex-direction: column;    /* empilha os blocos */
-    align-items: center;
-    gap: 4px;                  /* menos espaço entre links e © */
-    text-align: center;
-  }
+  flex-direction: column;    /* empilha os blocos */
+  align-items: center;
+  gap: 4px;                  /* menos espaço entre links e © */
+  text-align: center;
+}
 
-  .footer nav {
-    display: inline-block;     /* mantém os links em linha */
-  }
+.footer nav {
+  display: inline-block;     /* mantém os links em linha */
+}
 
-  .footer nav a {
+.footer nav a { 
+  font-size: 14px;           /* fonte menor */ 
+  margin: 0 4px;             /* espaçamento lateral */ 
+}
 
-    .top-bar {
+/* Faixa azul topo */
+.top-bar {
   background-color: #004080; /* azul */
   color: #fff;
   padding: 4px 12px;         /* altura pequena */
 }
 
+
 .top-bar .container {
   display: flex;
   justify-content: flex-end; /* ícones à direita */
+  align-items: center;
 }
 
 .top-bar .social-links a {
   color: #fff;
   margin-left: 12px;
-  text-decoration: none;
-  font-size: 14px;
-}
-
-.top-bar .social-links a:hover {
-  text-decoration: underline;
-}
-
-    font-size: 14px;           /* fonte menor */
-    margin: 0 4px;             /* espaçamento lateral */
-  }
-}
-.top-bar .social-links a {
-  color: #fff;
-  margin-left: 12px;
-  font-size: 18px;   /* tamanho dos ícones */
+  font-size: 18px;           /* tamanho dos ícones */
   text-decoration: none;
 }
 
 .top-bar .social-links a:hover {
-  color: #ffd700;    /* muda cor ao passar o mouse */
+  color: #ffd700;            /* muda cor ao passar o mouse */
 }
-
