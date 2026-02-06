@@ -35,7 +35,7 @@ img {
 .top-bar {
   background-color: #004080; /* azul */
   color: #fff;
-  padding: 8px 12px;
+  padding: 4px 12px;
   position: fixed;
   top: 0;
   left: 0;
@@ -610,6 +610,12 @@ main {
 @media (max-width: 768px) {
   main {
     padding-top: 80px; /* reduz espaço no mobile */
+  }
+}
+
+@media (max-width: 768px) {
+  .top-bar {
+    padding: 4px 10px; /* faixa mais fina no mobile */
   }
 }
 
