@@ -455,11 +455,7 @@ main {
 
 /* MOBILE */
 @media (max-width: 768px) {
-  .hero-top {
-    top: 85px;   /* mobile: desce abaixo da logo */
-    z-index: 2000;
-  }
-
+ 
   .hero-bottom h1, 
 .hero-bottom p {
   animation: fadeInUp 1.8s ease-out;
