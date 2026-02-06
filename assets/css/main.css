@@ -559,3 +559,25 @@ main {
   }
 }
 
+@media (max-width: 768px) {
+  .footer {
+    padding: 6px 0;            /* reduz a altura da faixa azul */
+  }
+
+  .footer .container {
+    flex-direction: column;    /* empilha os blocos */
+    align-items: center;
+    gap: 4px;                  /* menos espaço entre links e © */
+    text-align: center;
+  }
+
+  .footer nav {
+    display: inline-block;     /* mantém os links em linha */
+  }
+
+  .footer nav a {
+    font-size: 14px;           /* fonte menor */
+    margin: 0 4px;             /* espaçamento lateral */
+  }
+}
+
