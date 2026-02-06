@@ -34,7 +34,7 @@ img {
 /* HEADER */
 .header {
   position: fixed;
-  top: 0;
+  top: 40px; /* desce abaixo da faixa azul */
   width: 100%;
   background: #fff;
   border-bottom: 1px solid #eee;
@@ -96,7 +96,7 @@ img {
 
 /* MAIN */
 main {
-  padding-top: 100px;
+  padding-top: 140px; /* aumenta para compensar faixa azul + header */
 }
 
 /* HERO */
@@ -120,7 +120,7 @@ main {
 }
 
 .hero-overlay {
-  position: relative;   /* importante: relativo */
+  position: relative;
   width: 100%;
   height: 100%;
   background: none;
@@ -147,21 +147,19 @@ main {
 .hero-bottom {
   position: absolute;
   bottom: 0%;
-  left: 0;              /* começa na borda esquerda */
-  transform: none;      /* remove o translateX */
+  left: 0;
   text-align: center;
   color: #fff;
-  width: 100%;          /* ocupa toda a largura do banner */
-  max-width: none;      /* remove limite */
+  width: 100%;
+  max-width: none;
 }
-
 
 .hero-bottom h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 2.0rem;
   margin-bottom: 5px;
   line-height: 1.2;
-  white-space: nowrap; /* mantém tudo em uma linha */
+  white-space: nowrap;
 }
 
 .hero-bottom p {
@@ -298,309 +296,49 @@ main {
 }
 
 /* SLIDES ESPECÍFICOS */
+.hero-slide.dna { background-image: url('../images/dnanew.png'); }
+.hero-slide.biopsia { background-image: url('../images/biopsia2.png'); }
+.hero-slide.sexagem { background-image: url('../images/sexagemnew2.png'); }
+.hero-slide.online { background-image: url('../images/res.png'); }
 
-/* Versão desktop */
-.hero-slide.dna {
-  background-image: url('../images/dnanew.png');
-  background-size: cover;
-  background-position: center;
-}
-
-.hero-slide.biopsia {
-  background-image: url('../images/biopsia2.png');
-  background-size: cover;
-  background-position: center;
-}
-
-.hero-slide.sexagem {
-  background-image: url('../images/sexagemnew2.png');
-  background-size: cover;
-  background-position: center;
-}
-
-.hero-slide.online {
-  background-image: url('../images/res.png');
-  background-size: cover;
-  background-position: center;
-}
-
-/* Versão mobile */
+/* MOBILE ajustes */
 @media (max-width: 768px) {
-  .hero-slide.dna {
-    background-image: url('../images/dnamobile3.png');
-    background-size: cover;
-    background-position: center;
-  }
-
-  .hero-slide.biopsia {
-    background-image: url('../images/biomobile.png');
-    background-size: cover;
-    background-position: center;
-  }
-
-  .hero-slide.sexagem {
-    background-image: url('../images/sexagemmobile.png');
-    background-size: cover;
-    background-position: center;
-  }
-
-  .hero-slide.online {
-    background-image: url('../images/onlinemobile.png');
-    background-size: cover;
-    background-position: center;
-  }
+  .logo { height: 60px; }
+  .nav { display: none; }
+  .menu-toggle { display: flex; }
+  .hero { height: 90vh; }
+  .hero-bottom h1 { font-size: 1.8rem; }
+  .hero-bottom p { font-size: 1rem; }
+  .carousel-track { flex-direction: column; gap: 20px; padding: 0; }
+  .comentario { flex: 0 0 100%; position: relative; visibility: visible; opacity: 1; transform: none; height: auto; }
+  .hero-top { top: 60px; z-index: 2000; }
+  .btn-top { font-size: 1rem; padding: 10px 20px; }
+  .footer .container { flex-direction: column; align-items: center; gap: 6px; text-align: center; padding: 8px 0; }
+  .footer nav { display: inline-block; }
+  .footer nav a { font-size: 14px; margin: 0 4px; }
+  .footer { padding: 4px 0; }
+  .top-bar .container { justify-content: center; } /* centraliza ícones no mobile */
 }
 
-/* MOBILE */
-@media (max-width: 768px) {
-  .logo {
-    height: 60px;
-  }
-
-  .nav {
-    display: none;
-  }
-
-  .menu-toggle {
-    display: flex;
-  }
-
-  .hero {
-    height: 90vh;
-  }
-
-  .hero-bottom h1 {
-    font-size: 1.8rem;
-  }
-
-  .hero-bottom p {
-    font-size: 1rem;
-  }
-
-  .carousel-track {
-    flex-direction: column;
-    gap: 20px;
-    padding: 0;
-  }
-
-  .comentario {
-    flex: 0 0 100%;
-    position: relative;
-    visibility: visible;
-    opacity: 1;
-    transform: none;
-    height: auto;
-  }
-
-  /* Botão no mobile: desce abaixo da logo */
-  .hero-top {
-    top: 60px;   /* ajuste aqui para não ficar em cima da logo */
-    z-index: 2000;
-  }
-
-  .btn-top {
-    font-size: 1rem;
-    padding: 10px 20px;
-  }
-}
-
-/* MAPA em círculo */
-.map-image {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 3px solid #000;
-  margin-top: 15px;
-  transition: transform 0.3s;
-}
-
-.map-image:hover {
-  transform: scale(1.05);
-}
-
-/* Layout contato */
-.contact-flex {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-
-.contact-info {
-  flex: 1;
-  min-width: 250px;
-}
-
-/* Botão colado no topo do banner (desktop) */
-.hero-top {
-  position: absolute;
-  top: 80px;   /* desce no desktop */
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 2000;        
-}
-
-.hero-highlight {
-  background-color: #1E3A8A;
-  color: #fff;
-  padding: 7px;
-  text-align: center;
-  width: 100%;
-  box-sizing: border-box;
-  border-radius: 0; /* cantos retos */
-}
-
-/* ... outras regras ... */
-
-/* MOBILE */
-@media (max-width: 768px) {
-  .hero-top {
-    top: 85px;   /* mobile: desce abaixo da logo */
-    z-index: 2000;
-  }
-
-  .hero-bottom h1, 
-.hero-bottom p {
-  animation: fadeInUp 1.8s ease-out;
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-  .hero-bottom p {
-  animation-delay: 0.3s; /* aparece 0.3s depois do h1 */
-}
-
-  .hero-highlight {
-  background-color: #1E3A8A;   /* mesma cor do botão */
-  color: #fff;                 /* texto branco */
-  padding: 25px 20px;               /* espaço interno */
-  text-align: center;          /* centraliza o texto */
-  width: 100%;                 /* ocupa toda a largura do banner */
-  margin-left: -50vw; /* “puxa” para esquerda */ 
-  left: 50%; /* centraliza */ 
-  position: relative;
-  box-sizing: border-box;
-  border-radius: 0px;          /* opcional: cantos arredondados */
-}
-
-.hero-highlight h1 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  margin-top: -15px; /* sobe o título */
-}
-
-.hero-highlight p {
-  font-size: 0.8rem;
-  line-height: 0.7;
-  margin-top: -6px; /* sobe o parágrafo */
-  white-space: nowrap; /* força ficar em uma linha só */ 
-  overflow: hidden; /* evita estourar a largura */ 
-  text-overflow: ellipsis; /* se passar do limite, mostra "..." */
-}
-
-  .btn-top {
-    font-size: 1rem;
-    padding: 10px 20px;
-  }
-}
-
-@media (max-width: 768px) {
-  .whatsapp-float {
-    bottom: 60px; /* sobe o botão no mobile */
-    right: 10px;  /* opcional: ajusta mais para dentro */
-  }
-}
-
-.whatsapp-menu {
-  position: fixed;
-  bottom: 80px;
-  right: 20px;
-  background: #25D366;
-  padding: 12px;
-  border-radius: 8px;
-  display: none; /* escondido por padrão */
-  flex-direction: column;
-  gap: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-
-.whatsapp-menu a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-@media (max-width: 768px) {
-  .footer .container {
-    flex-direction: column;   /* empilha os blocos */
-    align-items: center;
-    gap: 6px;                 /* espaço entre links e © */
-    text-align: center;
-    padding: 8px 0;
-  }
-
-  .footer nav {
-    display: inline-block;    /* mantém os links em linha */
-  }
-
-  .footer nav a {
-    font-size: 14px;          /* fonte menor para caber melhor */
-    margin: 0 4px;            /* espaçamento lateral */
-  }
-}
-
-@media (max-width: 768px) {
-  .footer {
-    padding: 4px 0;            /* reduz a altura da faixa azul */
-  }
-
-  .footer .container {
-  flex-direction: column;    /* empilha os blocos */
-  align-items: center;
-  gap: 4px;                  /* menos espaço entre links e © */
-  text-align: center;
-}
-
-.footer nav {
-  display: inline-block;     /* mantém os links em linha */
-}
-
-.footer nav a { 
-  font-size: 14px;           /* fonte menor */ 
-  margin: 0 4px;             /* espaçamento lateral */ 
-}
-}
 /* Faixa azul topo */
 .top-bar {
-  background-color: #004080; /* azul */
+  background-color: #004080;
   color: #fff;
-  padding: 4px 12px;         /* altura pequena */
+  padding: 8px 12px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1200;
 }
-
 
 .top-bar .container {
   display: flex;
-  justify-content: flex-end; /* ícones à direita */
+  justify-content: flex-end;
   align-items: center;
 }
 
 .top-bar .social-links a {
   color: #fff;
   margin-left: 12px;
-  font-size: 18px;           /* tamanho dos ícones */
-  text-decoration: none;
-}
-
-.top-bar .social-links a:hover {
-  color: #ffd700;            /* muda cor ao passar o mouse */
-}
+  font-size
