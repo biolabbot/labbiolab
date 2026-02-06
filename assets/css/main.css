@@ -521,4 +521,23 @@ main {
   }
 }
 
+.whatsapp-menu {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  background: #25D366;
+  padding: 12px;
+  border-radius: 8px;
+  display: none; /* escondido por padrão */
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.whatsapp-menu a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 
