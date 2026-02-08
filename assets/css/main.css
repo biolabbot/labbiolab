@@ -640,20 +640,29 @@ main {
 }
 
 @media (min-width: 769px) {
+  .nav {
+    margin-left: auto;   /* empurra o menu para a direita */
+  }
+
+  .nav ul {
+    display: flex;       /* mantém os itens lado a lado */
+    justify-content: flex-end; /* garante alinhamento à direita */
+  }
+
   .nav ul li a {
-    border: 2px solid #004080;   /* moldura azul */
-    padding: 8px 20px;           /* espaço interno */
-    margin: 0 6px;               /* espaçamento entre botões */
-    border-radius: 30px;         /* formato pílula */
-    text-decoration: none;       /* remove sublinhado */
-    color: #004080;              /* texto azul */
-    background-color: #fff;      /* fundo branco */
+    border: 2px solid #004080;
+    padding: 8px 20px;
+    margin: 0 6px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #004080;
+    background-color: #fff;
     transition: background-color 0.3s, color 0.3s;
   }
 
   .nav ul li a:hover {
-    background-color: #004080;   /* fundo azul ao passar o mouse */
-    color: #fff;                 /* texto branco */
+    background-color: #004080;
+    color: #fff;
   }
 }
 
