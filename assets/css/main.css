@@ -687,3 +687,14 @@ main {
   }
 }
 
+@media (max-width: 768px) {
+  .hero-top {
+    top: 100px; /* desce mais o botão no mobile */
+  }
+
+  .btn-top {
+    font-size: 0.9rem;   /* reduz o tamanho da fonte */
+    padding: 8px 16px;   /* botão menor e mais compacto */
+    border-radius: 5px;  /* mantém formato quadrado suave */
+  }
+}
