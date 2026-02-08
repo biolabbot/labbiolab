@@ -669,7 +669,7 @@ main {
 
 @media (min-width: 769px) {
   .hero-top {
-    top: 122px; /* desce mais o botão no desktop */
+    top: 120px; /* desce mais o botão no desktop */
   }
 
   .btn-top {
