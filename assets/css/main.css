@@ -676,7 +676,7 @@ main {
     border-radius: 5px; /* mantém formato quadrado */
     background: #1E3A8A; /* azul atual */
     color: #fff !important;
-    padding: 10px 20px; /* um pouco maior para dar destaque */
+    padding: 8px 16px; /* um pouco maior para dar destaque */
     font-size: 1.0rem;
     font-weight: 600;
     transition: background 0.3s ease;
