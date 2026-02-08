@@ -667,4 +667,23 @@ main {
   }
 }
 
+@media (min-width: 769px) {
+  .hero-top {
+    top: 120px; /* desce mais o botão no desktop */
+  }
+
+  .btn-top {
+    border-radius: 5px; /* mantém formato quadrado */
+    background: #1E3A8A; /* azul atual */
+    color: #fff !important;
+    padding: 12px 24px; /* um pouco maior para dar destaque */
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: background 0.3s ease;
+  }
+
+  .btn-top:hover {
+    background: #1E40AF; /* azul mais escuro no hover */
+  }
+}
 
