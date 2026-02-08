@@ -642,10 +642,11 @@ main {
 @media (min-width: 769px) {
   .nav {
     margin-left: auto;   /* empurra o menu para a direita */
+    padding-right: 40px; /* dá espaço extra da borda direita */
   }
 
   .nav ul {
-    display: flex;       /* mantém os itens lado a lado */
+    display: flex;
     justify-content: flex-end; /* garante alinhamento à direita */
   }
 
@@ -665,4 +666,5 @@ main {
     color: #fff;
   }
 }
+
 
