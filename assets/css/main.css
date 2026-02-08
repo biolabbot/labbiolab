@@ -623,4 +623,13 @@ main {
   }
 }
 
+@media (min-width: 769px) {
+  .logo {
+    margin-top: 20px; /* afasta o logo da faixa azul só no desktop */
+  }
+
+  main {
+    padding-top: 130px; /* compensa o aumento do header, para o banner não ficar colado */
+  }
+}
 
