@@ -635,7 +635,7 @@ main {
 
 @media (min-width: 769px) {
   .hero {
-    height: 95vh; /* aumenta a altura do banner no desktop */
+    height: 100vh; /* aumenta a altura do banner no desktop */
   }
 }
 
