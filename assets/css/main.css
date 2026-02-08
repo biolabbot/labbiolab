@@ -639,3 +639,20 @@ main {
   }
 }
 
+@media (min-width: 769px) {
+  .nav-links a {
+    border: 1px solid #004080;   /* moldura azul */
+    padding: 8px 20px;           /* espaço interno */
+    margin: 0 6px;               /* espaçamento entre botões */
+    border-radius: 30px;         /* formato de cápsula (pílula) */
+    text-decoration: none;       /* remove sublinhado */
+    transition: background-color 0.3s, color 0.3s; /* efeito suave */
+  }
+
+  .nav-links a:hover {
+    background-color: #004080;   /* fundo azul ao passar o mouse */
+    color: #fff;                 /* texto branco */
+  }
+}
+
+
