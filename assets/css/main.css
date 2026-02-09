@@ -161,11 +161,11 @@ main {
   display: inline-block;
   background: #1E3A8A;
   color: #fff !important;
-  padding: 10px 20px;
+  padding: 6px 12px;
   border-radius: 5px;
   text-decoration: none;
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   transition: background 0.3s ease;
 }
 
@@ -465,7 +465,7 @@ main {
 /* Botão colado no topo do banner (desktop) */
 .hero-top {
   position: absolute;
-  top: 80px;   /* desce no desktop */
+  top: 120px;   /* desce no desktop */
   left: 50%;
   transform: translateX(-50%);
   z-index: 2000;        
