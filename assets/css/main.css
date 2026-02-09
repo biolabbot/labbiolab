@@ -641,14 +641,17 @@ main {
 
 @media (min-width: 769px) {
   .nav {
-    margin-left: auto;   /* empurra o menu para a direita */
-    padding-right: 100px; /* dá espaço extra da borda direita */
+    position: relative;
+    right: -100px; /* desloca todo o menu mais para a direita */
   }
 
   .nav ul {
     display: flex;
-    justify-content: flex-end; /* garante alinhamento à direita */
+    justify-content: flex-start; /* mantém os itens em sequência normal */
+    gap: 30px;
   }
+}
+
 
   .nav ul li a {
     border: 2px solid #004080;
