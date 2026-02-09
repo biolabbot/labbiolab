@@ -465,11 +465,22 @@ main {
 /* Botão colado no topo do banner (desktop) */
 .hero-top {
   position: absolute;
-  top: 120px;   /* desce no desktop */
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 2000;        
+  top: 120px;   /* altura ideal que você encontrou */
+  left: 0;
+  width: 100%;              /* ocupa toda a largura da tela */
+  text-align: center;       /* centraliza o botão */
+  z-index: 2000;
 }
+
+.hero-top::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #004080; /* mesma cor do botão */
+  margin-top: -2px;    /* cola na base do botão */
+}
+
 
 .hero-highlight {
   background-color: #1E3A8A;
