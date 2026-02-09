@@ -642,7 +642,7 @@ main {
 @media (min-width: 769px) {
   .nav {
     margin-left: auto;   /* empurra o menu para a direita */
-    padding-right: 40px; /* dá espaço extra da borda direita */
+    padding-right: 100px; /* dá espaço extra da borda direita */
   }
 
   .nav ul {
