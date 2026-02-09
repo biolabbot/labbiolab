@@ -357,19 +357,19 @@ main {
 /* Versão mobile */
 @media (max-width: 768px) {
   .hero-slide.dna {
-    background-image: url('../images/dnamobile3.png');
+    background-image: url('../images/dnamob3.png');
     background-size: cover;
     background-position: center;
   }
 
   .hero-slide.biopsia {
-    background-image: url('../images/biomobile.png');
+    background-image: url('../images/biomob3.png');
     background-size: cover;
     background-position: center;
   }
 
   .hero-slide.sexagem {
-    background-image: url('../images/sexagemmobile.png');
+    background-image: url('../images/sexmob3.png');
     background-size: cover;
     background-position: center;
   }
