@@ -648,7 +648,7 @@ main {
   .nav ul {
     display: flex;
     justify-content: flex-start; /* mantém os itens em sequência normal */
-    gap: 30px;
+    gap: 20px;
   }
 }
 
