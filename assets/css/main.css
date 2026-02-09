@@ -642,7 +642,7 @@ main {
 @media (min-width: 769px) {
   .nav {
     position: relative;
-    right: -160px; /* desloca todo o menu mais para a direita */
+    right: -120px; /* desloca todo o menu mais para a direita */
   }
 
   .nav ul {
