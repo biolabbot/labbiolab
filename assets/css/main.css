@@ -672,15 +672,15 @@ main {
 
 @media (min-width: 769px) {
   .hero-top {
-    top: 120px; /* desce mais o botão no desktop */
+    top: 130px; /* desce mais o botão no desktop */
   }
 
   .btn-top {
     border-radius: 5px; /* mantém formato quadrado */
     background: #1E3A8A; /* azul atual */
     color: #fff !important;
-    padding: 8px 16px; /* um pouco maior para dar destaque */
-    font-size: 1.0rem;
+    padding: 7px 14px; /* um pouco maior para dar destaque */
+    font-size: 0.9rem;
     font-weight: 600;
     transition: background 0.3s ease;
   }
