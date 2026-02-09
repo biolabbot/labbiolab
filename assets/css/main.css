@@ -642,13 +642,13 @@ main {
 @media (min-width: 769px) {
   .nav {
     position: relative;
-    right: -120px; /* desloca todo o menu mais para a direita */
+    right: -110px; /* desloca todo o menu mais para a direita */
   }
 
   .nav ul {
     display: flex;
     justify-content: flex-start; /* mantém os itens em sequência normal */
-    gap: 16px;
+    gap: 14px;
   }
 }
 
