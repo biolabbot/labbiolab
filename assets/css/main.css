@@ -642,22 +642,22 @@ main {
 @media (min-width: 769px) {
   .nav {
     position: relative;
-    right: -110px; /* desloca todo o menu mais para a direita */
+    right: -100px; /* desloca todo o menu mais para a direita */
   }
 
   .nav ul {
     display: flex;
     justify-content: flex-start; /* mantém os itens em sequência normal */
-    gap: 14px;
+    gap: 12px;
   }
 }
 
 
   .nav ul li a {
     border: 2px solid #004080;
-    padding: 6px 16px;
+    padding: 6px 14px;
     margin: 0 4px;
-    border-radius: 30px;
+    border-radius: 20px;
     text-decoration: none;
     color: #004080;
     background-color: #fff;
