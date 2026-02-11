@@ -436,10 +436,10 @@ main {
 
 /* MAPA em círculo */
 .map-image {
-  width: 200px;
+  width: 300px;
   height: 200px;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 0%;
   border: 3px solid #000;
   margin-top: 15px;
   transition: transform 0.3s;
