@@ -712,3 +712,12 @@ main {
     border-radius: 5px;  /* mantém formato quadrado suave */
   }
 }
+
+.contact {
+  margin-bottom: 40px; /* dá um respiro antes do footer */
+}
+
+.map-image {
+  margin-bottom: 20px; /* espaço extra abaixo do mapa */
+}
+
