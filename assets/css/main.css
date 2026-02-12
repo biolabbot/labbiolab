@@ -721,3 +721,29 @@ main {
   margin-bottom: 20px; /* espaço extra abaixo do mapa */
 }
 
+.horario-box {
+  background-color: #e6f0fa; /* azul acinzentado claro */
+  border: 2px solid #004080; /* borda azul */
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px; /* respiro antes do mapa */
+  color: #333;
+}
+
+.horario-box h2 {
+  color: #004080;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.horario-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.horario-box li {
+  margin: 5px 0;
+  font-size: 0.95rem;
+}
+
