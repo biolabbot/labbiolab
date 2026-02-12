@@ -764,6 +764,29 @@ main {
   color: #333;
 }
 
+@media (max-width: 768px) {
+  .contact-flex {
+    flex-direction: column;   /* empilha os blocos */
+    align-items: center;      /* centraliza horizontalmente */
+    text-align: center;       /* centraliza o texto */
+  }
+
+  .contact-info {
+    text-align: center;       /* garante que o texto do contato fique centralizado */
+  }
+
+  .horario-box {
+    width: 100%;              /* ocupa toda a largura disponível */
+    max-width: 350px;         /* limite para não ficar muito largo */
+    margin: 0 auto 20px auto; /* centraliza e dá respiro abaixo */
+  }
+
+  .map-image {
+    display: block;
+    margin: 10px auto 20px auto; /* centraliza o mapa e dá espaço abaixo */
+  }
+}
+
 .horario-box li {
   margin: 5px 0;
   font-size: 0.95rem;
