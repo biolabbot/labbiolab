@@ -742,6 +742,28 @@ main {
   margin: 0;
 }
 
+.horario-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.horario-box li {
+  display: flex;              /* coloca dia e hora lado a lado */
+  justify-content: space-between; /* joga o horário para a direita */
+  padding: 4px 0;
+  border-bottom: 1px solid #dbeafe; /* linha suave separando */
+}
+
+.horario-box .dia {
+  font-weight: 600;
+  color: #004080;
+}
+
+.horario-box .hora {
+  color: #333;
+}
+
 .horario-box li {
   margin: 5px 0;
   font-size: 0.95rem;
